@@ -1,0 +1,44 @@
+{
+    "accelerated": true,
+    "hotKey": "CommandOrControl+Alt+T",
+    "escapeExitsFullScreen": true,
+    "unitsMenu": true,
+    "developerFeatures": true,
+    "smartZoom": false,
+    "minZoomLevel": -2,
+    "maxZoomLevel": 4,
+    "window":
+    {
+        "largerDefaultWidth": 1280,
+        "largerDefaultHeight": 800,
+        "defaultWidth": 1080,
+        "defaultHeight": 675,
+        "minWidth": 720,
+        "minHeight": 450,
+        "backgroundColor": "#F5F5F5",
+        "titleTemplate": "{{unit}} | {{app}}",
+        "zoomSuffixTemplate": " ({{zoom}}%)",
+        "deferredShow": true
+    },
+    "shortAppName": "Shelf",
+    "unitsName": "Utilities",
+    "noCategoryName": "Other",
+    "description": "Collection of miscellaneous developer-oriented utilities wrapped into one single app.",
+    "copyright": "© 2019 Michel MARIANI.",
+    "electronApp":
+    {
+        "label": "Tutti Quanti Shelf | Apps | Electron",
+        "URL": "https://electronjs.org/apps/tutti-quanti-shelf"
+    },
+    "repository":
+    {
+        "label": "Repository",
+        "URL": "https://github.com/tonton-pixel/tutti-quanti-shelf"
+    },
+    "releases":
+    {
+        "label": "Latest Releases",
+        "URL": "https://github.com/tonton-pixel/tutti-quanti-shelf/releases"
+    },
+    "defaultFolder": "documents"
+}

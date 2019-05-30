@@ -1,0 +1,42 @@
+{
+    "name": "tutti-quanti-shelf",
+    "productName": "Tutti Quanti Shelf",
+    "version": "1.0.0",
+    "description": "Collection of miscellaneous developer-oriented utilities wrapped into one single app.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build-darwin-no-asar": "electron-packager . --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
+        "build-darwin": "electron-packager . --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
+        "build-linux": "electron-packager . --out=build --platform=linux --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.png --overwrite",
+        "build-mas": "electron-packager . --out=build --platform=mas --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
+        "build-win32": "electron-packager . --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite",
+        "build-all": "electron-packager . --out=build --platform=all --ignore=/~.* --ignore=^/screenshots --icon=icons/icon --overwrite"
+    },
+    "keywords": [
+        "app",
+        "collection",
+        "desktop",
+        "developer",
+        "electron",
+        "miscellaneous",
+        "modular",
+        "shelf",
+        "utility",
+        "tutti quanti"
+    ],
+    "author": {
+        "name": "Michel MARIANI",
+        "url": "https://github.com/tonton-pixel"
+    },
+    "homepage": "https://github.com/tonton-pixel/tutti-quanti-shelf",
+    "license": "MIT",
+    "private": false,
+    "dependencies": {
+        "esprima": "^4.0.1"
+    },
+    "devDependencies": {
+        "electron": "^4.2.2",
+        "electron-packager": "^13.1.1"
+    }
+}
