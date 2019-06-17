@@ -23,7 +23,7 @@ const decoderOutputString = unit.querySelector ('.decoder-output-string');
 const references = unit.querySelector ('.references');
 const links = unit.querySelector ('.links');
 //
-const upperCaseHex = false;
+const upperCaseHex = false; // Consistent with JSON.stringify () escape sequences formatting...
 //
 let defaultFolderPath;
 //
@@ -245,6 +245,7 @@ module.exports.start = function (context)
                 else if (decoderConversionType.value === 'hex')
                 {
                     input = input.slice (1, -1);
+                    input = input.replace (/[^0-9a-fA-F]/g, "");
                     if (input.match (/^([0-9a-fA-F]{2})*$/))
                     {
                         output = Buffer.from (input, 'hex').toString ('utf8');
@@ -257,7 +258,7 @@ module.exports.start = function (context)
                 else if (decoderConversionType.value === 'base64')
                 {
                     input = input.slice (1, -1);
-                    // if (input.match (/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/))
+                    input = input.replace (/\s/g, "");
                     if (input.match (/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{4})$/))
                     {
                         output = Buffer.from (input, 'base64').toString ('utf8');

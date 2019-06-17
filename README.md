@@ -19,6 +19,7 @@ The following utilities are currently available:
 - **Roman Numerals**
 - **System Information**
 - **Text Converter**
+- **XML Converter**
 
 ## CIDR Calculator
 
@@ -108,6 +109,12 @@ Encode and decode text according to several string formats:
 <img src="screenshots/text-converter-text-encoder.png" width="1080px" alt="Text Converter - Text Encoder screenshot">
 
 <img src="screenshots/text-converter-text-decoder.png" width="1080px" alt="Text Converter - Text Decoder screenshot">
+
+## XML Converter
+
+Convert XML to JSON:
+
+<img src="screenshots/xml-converter.png" width="1080px" alt="XML Converter screenshot">
 
 ## Building
 

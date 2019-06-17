@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[BBC News - World]]></title>
+        <description><![CDATA[BBC News - World]]></description>
+        <link>https://www.bbc.co.uk/news/</link>
+        <image>
+            <url>https://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+            <title>BBC News - World</title>
+            <link>https://www.bbc.co.uk/news/</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 16 Jun 2019 16:55:38 GMT</lastBuildDate>
+        <copyright><![CDATA[Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.]]></copyright>
+        <language><![CDATA[en-gb]]></language>
+        <ttl>15</ttl>
+        <item>
+            <title><![CDATA[Hong Kong protest: 'Nearly two million' join demonstration]]></title>
+            <description><![CDATA[Organisers say two million people turn up for a protest against a controversial extradition bill.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-china-48656471</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-asia-china-48656471</guid>
+            <pubDate>Sun, 16 Jun 2019 15:35:53 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/1543B/production/_107399078_hi054677146.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Hong Kong protests: Thousands march against extradition bill]]></title>
+            <description><![CDATA[The streets of Hong Kong are brought to a standstill in the third mass protest there this week.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-china-48652920</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-asia-china-48652920</guid>
+            <pubDate>Sun, 16 Jun 2019 08:44:08 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/2DEF/production/_107395711_p07d8zw3.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Electrical failure cuts power to all of Argentina and Uruguay, supplier says]]></title>
+            <description><![CDATA[Almost all of Argentina and Uruguay, with a combined population of 48m, lost their power, supplier says.]]></description>
+            <link>https://www.bbc.co.uk/news/world-latin-america-48652686</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-latin-america-48652686</guid>
+            <pubDate>Sun, 16 Jun 2019 16:54:16 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/94D3/production/_107399083_buenosaireslonelyman3.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Benjamin Netanyahu's wife Sara admits misusing public funds]]></title>
+            <description><![CDATA[Sara Netanyahu is fined $12,490 (£9,917) after being convicted of misusing state funds for meals.]]></description>
+            <link>https://www.bbc.co.uk/news/world-middle-east-48652986</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-middle-east-48652986</guid>
+            <pubDate>Sun, 16 Jun 2019 11:39:45 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/0045/production/_107396000_1afa075d-efe4-4f4b-b278-0d7b323ec3bf.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Ousted Sudan leader Bashir makes first appearance since coup]]></title>
+            <description><![CDATA[Wearing a traditional white robe, Omar al-Bashir was taken from jail to the prosecutor's office.]]></description>
+            <link>https://www.bbc.co.uk/news/world-africa-48655897</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-africa-48655897</guid>
+            <pubDate>Sun, 16 Jun 2019 15:55:11 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/FFD1/production/_107398456_reuters.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Golan Heights: Israel unveils 'Trump Heights' settlement]]></title>
+            <description><![CDATA[Mr Netanyahu said the move honoured the US president for recognising Israel's sovereignty over Golan.]]></description>
+            <link>https://www.bbc.co.uk/news/world-middle-east-48656431</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-middle-east-48656431</guid>
+            <pubDate>Sun, 16 Jun 2019 16:32:25 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/10CB/production/_107399240_hi054680562.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Ethiopia anger over texting and internet blackouts]]></title>
+            <description><![CDATA[No explanation has been given for the shut downs but they coincide with nationwide exams.]]></description>
+            <link>https://www.bbc.co.uk/news/world-africa-48653392</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-africa-48653392</guid>
+            <pubDate>Sun, 16 Jun 2019 12:49:15 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/153C3/production/_107397968_gettyimages-1084806492.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Babe Ruth jersey fetches record-breaking $5.64m at auction]]></title>
+            <description><![CDATA[The baseball legend's jersey becomes the most expensive piece of sports memorabilia ever sold.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-48651231</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-48651231</guid>
+            <pubDate>Sun, 16 Jun 2019 00:56:37 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/A757/production/_107393824_gettyimages-3209314.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Gulf of Oman: Saudi Arabia blames tanker attacks on rival Iran]]></title>
+            <description><![CDATA[Iran has denied any involvement in Thursday's attacks on two oil tankers in the Gulf of Oman.]]></description>
+            <link>https://www.bbc.co.uk/news/world-middle-east-48648788</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-middle-east-48648788</guid>
+            <pubDate>Sat, 15 Jun 2019 23:42:05 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/BE7E/production/_107366784_mediaitem107366783.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Guatemala election: Uncertainty reigns as top candidates barred]]></title>
+            <description><![CDATA[With two of the main candidates barred from running, Guatemala's presidential election is in disarray.]]></description>
+            <link>https://www.bbc.co.uk/news/world-latin-america-48621524</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-latin-america-48621524</guid>
+            <pubDate>Sun, 16 Jun 2019 14:01:17 GMT</pubDate>
+            <media:thumbnail width="768" height="432" url="http://c.files.bbci.co.uk/18462/production/_107362499_mediaitem107362498.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[South African teens attempt Cape-to-Cairo in homemade plane]]></title>
+            <description><![CDATA[It will take six weeks to cover the 12,000km route in a four-seater they assembled in three weeks.]]></description>
+            <link>https://www.bbc.co.uk/news/world-africa-48653394</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-africa-48653394</guid>
+            <pubDate>Sun, 16 Jun 2019 15:24:58 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/14A09/production/_107398448_agnes-in-cockpit976.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Maurizio Sarri: Juventus appoint Chelsea manager]]></title>
+            <description><![CDATA[Maurizio Sarri leaves Chelsea to take over at Italian champions Juventus after one season in charge of the Premier League club.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/48633265</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/sport/football/48633265</guid>
+            <pubDate>Sun, 16 Jun 2019 14:40:39 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/28EF/production/_107397401_gettyimages-1146900375.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[The day Trump ran for president (and what people predicted)]]></title>
+            <description><![CDATA[On this day in 2015, Trump said he was running for president. How did people react - and what did they get wrong?]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-48595411</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-48595411</guid>
+            <pubDate>Sat, 15 Jun 2019 23:24:43 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/EC78/production/_107363506_gettyimages-477321340.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Hong Kong protests: Scale of the march in photos]]></title>
+            <description><![CDATA[Organisers had hoped for a million people - but the attendance may have been double that.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-china-48655634</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-asia-china-48655634</guid>
+            <pubDate>Sun, 16 Jun 2019 15:59:00 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/46B3/production/_107399081_mediaitem107399080.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Ebola crosses a porous border]]></title>
+            <description><![CDATA[The Ebola virus may be easier to contain in Uganda than in DR Congo, reports Olivia Acland.]]></description>
+            <link>https://www.bbc.co.uk/news/stories-48635969</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/stories-48635969</guid>
+            <pubDate>Sat, 15 Jun 2019 23:18:31 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/6638/production/_107386162_mpondwe_getty976.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Jan Broberg: Abuser used alien conspiracy to control me]]></title>
+            <description><![CDATA[Jan Broberg from Abducted in Plain Sight tells BBC Radio 5 Live how abuser lied to control her.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-48191548</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-48191548</guid>
+            <pubDate>Sat, 15 Jun 2019 23:27:52 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/114E2/production/_106828807_fbcovercopy22.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Franco Zeffirelli - one of the greatest movie directors]]></title>
+            <description><![CDATA[Franco Zeffirelli's bold ideas and lavish productions made him one of the great post-war European directors.]]></description>
+            <link>https://www.bbc.co.uk/news/entertainment-arts-24855930</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/entertainment-arts-24855930</guid>
+            <pubDate>Sat, 15 Jun 2019 11:39:51 GMT</pubDate>
+            <media:thumbnail width="585" height="329" url="http://c.files.bbci.co.uk/D745/production/_107390155_c7ea067b-a83d-4461-a23c-9112cb607b0d.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Why would a nurse become a serial killer?]]></title>
+            <description><![CDATA[German nurse Niels Högel is just the latest health professional to be jailed for killing patients.]]></description>
+            <link>https://www.bbc.co.uk/news/world-48600478</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-48600478</guid>
+            <pubDate>Fri, 14 Jun 2019 23:22:17 GMT</pubDate>
+            <media:thumbnail width="1337" height="752" url="http://c.files.bbci.co.uk/117A2/production/_107368517_mediaitem107368516.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Nigerian weddings: Glitz, glamour but mind the cost]]></title>
+            <description><![CDATA[Why are some couples are having multiple weddings? Leah and Echina explain why they did.]]></description>
+            <link>https://www.bbc.co.uk/news/world-africa-48639078</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-africa-48639078</guid>
+            <pubDate>Sat, 15 Jun 2019 23:55:32 GMT</pubDate>
+            <media:thumbnail width="1024" height="575" url="http://c.files.bbci.co.uk/F29C/production/_107380126_p07d5zcw.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Priests wear hard hats at Notre-Dame]]></title>
+            <description><![CDATA[The first Mass has been held at Notre-Dame cathedral since the devastating fire in April.]]></description>
+            <link>https://www.bbc.co.uk/news/world-48649245</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-48649245</guid>
+            <pubDate>Sat, 15 Jun 2019 21:07:53 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/135D7/production/_107391397_p07d8bgc.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Hong Kong suspension: Residents and lawmakers react]]></title>
+            <description><![CDATA[Residents and lawmakers have reacted to the recent suspension of the extradition law proposal.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-china-48650358</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-asia-china-48650358</guid>
+            <pubDate>Sat, 15 Jun 2019 18:05:40 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/9997/production/_107391393_hi054651169.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Sudan: Friends pay tribute to victim of Sudan protests]]></title>
+            <description><![CDATA[Social media profiles have been turning blue in tribute to Mohammad Mattar who was shot dead during protests in Sudan.]]></description>
+            <link>https://www.bbc.co.uk/news/world-africa-48647568</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-africa-48647568</guid>
+            <pubDate>Sat, 15 Jun 2019 11:23:03 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/11F89/production/_107390637_p07d7j82.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[What happens if Mexico doesn't stem migrant flow?]]></title>
+            <description><![CDATA[The US will deem Mexico a "safe third country" if immigration isn't curbed. What does that mean?]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-48589942</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-48589942</guid>
+            <pubDate>Fri, 14 Jun 2019 22:15:26 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/161D2/production/_107387509_p07d6v8j.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[#OneFairWage: Is it wrong to pay tipped staff less than others?]]></title>
+            <description><![CDATA[Some US workers can be paid just $2.13 an hour by their bosses, but raising the rate is controversial.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-48584891</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-48584891</guid>
+            <pubDate>Thu, 13 Jun 2019 22:34:01 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/9909/production/_107377193_gettyimages-532193340_crop.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Fishing for crabs in Brazil's mangrove forests]]></title>
+            <description><![CDATA[Photographer Nacho Doce documents the changing landscape of Brazil's mangrove forests.]]></description>
+            <link>https://www.bbc.co.uk/news/in-pictures-48477918</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/in-pictures-48477918</guid>
+            <pubDate>Wed, 12 Jun 2019 23:07:26 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/10C62/production/_107360786_94cd851d-6e11-4eab-b3d2-b0dd1166bb19.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[The village where hairstyles are a dating code]]></title>
+            <description><![CDATA[Women in Yay Pote Gyi village in central Myanmar use their hairstyles to signal if they are married or ready to date.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-48557610</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-asia-48557610</guid>
+            <pubDate>Sun, 09 Jun 2019 23:05:06 GMT</pubDate>
+            <media:thumbnail width="1024" height="575" url="http://c.files.bbci.co.uk/142A6/production/_107289528_p07chrm9.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Very Hungry Caterpillar still being devoured 50 years on]]></title>
+            <description><![CDATA[The best-selling children's book is half a century old. Its creator tells us why it has endured so long.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-48588796</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-48588796</guid>
+            <pubDate>Wed, 12 Jun 2019 20:57:59 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/54F8/production/_107325712_c79674ac-2c9a-497c-80b6-ba17294c80b3.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Postpartum psychosis: 'I always feared I’d go mad, and when I had my son I did']]></title>
+            <description><![CDATA[Jen Wight had a good job, was happily married and had just given birth to a baby boy. But then things started to go wrong.]]></description>
+            <link>https://www.bbc.co.uk/news/stories-48259367</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/stories-48259367</guid>
+            <pubDate>Mon, 10 Jun 2019 23:21:27 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/D8BB/production/_106938455_dsc06607_976.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[How a love of surfing bring rich and poor together in Rio]]></title>
+            <description><![CDATA[How a love of surfing bring rich and poor together in Rio]]></description>
+            <link>https://www.bbc.co.uk/news/world-latin-america-48587187</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-latin-america-48587187</guid>
+            <pubDate>Mon, 10 Jun 2019 23:05:49 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/122D4/production/_107325447_p07cs0h2.jpg"/>
+        </item>
+    </channel>
+</rss>

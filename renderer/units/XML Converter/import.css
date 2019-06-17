@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+#xml-converter-unit .input-string,
+#xml-converter-unit .output-string
+{
+    font-family: Monaco, "Noto Mono", monospace;
+    font-size: 13px;
+    line-height: 1.333em;
+    width: 100%;
+    padding: 0 0.5em;
+    overflow-y: scroll;
+    resize: vertical;
+    tab-size : 4;
+    margin-bottom: 0.25em;
+    overscroll-behavior: contain;
+    white-space: pre;
+}
+
+#xml-converter-unit .actions
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+#xml-converter-unit .action-group
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#xml-converter-unit .action-group + .action-group,
+#xml-converter-unit .action + .action
+{
+    margin-left: 0.75em;
+}
+
+#xml-converter-unit .options
+{
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0 0 0;
+}
+
+#xml-converter-unit .options .output-save-button
+{
+    margin-bottom: 0;
+}
+
+#xml-converter-unit .option + .option
+{
+    margin-left: 0.75em;
+}
+
+#xml-converter-unit .output-error
+{
+    color: var(--color-error);
+    white-space: unset;
+}
+
+#xml-converter-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}

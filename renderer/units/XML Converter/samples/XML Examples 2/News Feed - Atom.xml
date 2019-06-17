@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">Newest questions tagged electron - Stack Overflow</title>
+    <link rel="self" href="https://stackoverflow.com/feeds/tag?tagnames=electron&amp;sort=newest" type="application/atom+xml" />
+    <link rel="alternate" href="https://stackoverflow.com/questions/tagged/?tagnames=electron&amp;sort=newest" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2019-06-16T17:40:14Z</updated>
+    <id>https://stackoverflow.com/feeds/tag?tagnames=electron&amp;sort=newest</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-sa/3.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>https://stackoverflow.com/q/56620618</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">Electron ERROR Error: Cannot find module &#39;mysql&#39; Require stack:</title>
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="package.json" />
+            <category scheme="https://stackoverflow.com/tags" term="electron-builder" />
+            <category scheme="https://stackoverflow.com/tags" term="mysqljs" />
+        <author>
+            <name>Francesco Borzi</name>
+            <uri>https://stackoverflow.com/users/3497671</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56620618/electron-error-error-cannot-find-module-mysql-require-stack" />
+        <published>2019-06-16T16:17:36Z</published>
+        <updated>2019-06-16T16:17:36Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;My Electron app uses a nodejs dependency (in my case it&#39;s mysqljs) and it works fine when running on development mode.&lt;/p&gt;
+
+&lt;p&gt;However when I build it and launch as a native desktop app, it fails with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Electron ERROR Error: Cannot find module &#39;mysql&#39; Require stack: ...&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56618490</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">What is the purpose of &quot;typeof&quot; in members in TypeScript typings?</title>
+            <category scheme="https://stackoverflow.com/tags" term="typescript" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="typescript-typings" />
+            <category scheme="https://stackoverflow.com/tags" term=".d.ts" />
+        <author>
+            <name>cmeeren</name>
+            <uri>https://stackoverflow.com/users/2978652</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56618490/what-is-the-purpose-of-typeof-in-members-in-typescript-typings" />
+        <published>2019-06-16T11:42:00Z</published>
+        <updated>2019-06-16T12:12:18Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;The Electron typescript definitions contain the following interface:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;interface MainInterface extends CommonInterface {
+  // I understand these
+  app: App;
+  autoUpdater: AutoUpdater;
+  // But not these
+  BrowserView: typeof BrowserView;
+  BrowserWindow: typeof BrowserWindow;
+  ClientRequest: typeof ClientRequest;
+  ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What does &lt;code&gt;typeof XX&lt;/code&gt; mean in this context? AFAIK &lt;code&gt;typeof&lt;/code&gt; returns the string name of the type, e.g. the above is equivalent to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;BrowserView: &quot;BrowserView&quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If this is the case, then what is the purpose of the member definitions that use &lt;code&gt;typeof&lt;/code&gt;?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56617113</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Writing configuration file for preinstall script to read</title>
+            <category scheme="https://stackoverflow.com/tags" term="macos" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="installer" />
+            <category scheme="https://stackoverflow.com/tags" term="electron-builder" />
+            <category scheme="https://stackoverflow.com/tags" term="pkg-file" />
+        <author>
+            <name>Akshat m</name>
+            <uri>https://stackoverflow.com/users/7906591</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56617113/writing-configuration-file-for-preinstall-script-to-read" />
+        <published>2019-06-16T07:58:15Z</published>
+        <updated>2019-06-16T08:23:16Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have an electron app I want to build in pkg for macOS&lt;/p&gt;
+
+&lt;p&gt;The use case requires the application to read a configuration file while installation to change some parameters at the time of installation&lt;/p&gt;
+
+&lt;p&gt;I&#39;m not sure what will be the type of config file and how to read it through my preinstall script.&lt;/p&gt;
+
+&lt;p&gt;I researched and came up with a solution to use a preinstall script that reads the config file and changes the parameters in the application.&lt;/p&gt;
+
+&lt;p&gt;I tried finding a sample configuration file to feed my preinstall script but didn&#39;t find any.&lt;/p&gt;
+
+&lt;p&gt;Any learning resource, a sample of the config file and preinstall script would be appreciated.&lt;/p&gt;
+
+&lt;p&gt;The pre-install script should be able to read the arguments from the config file passed as an installer parameter like:&lt;/p&gt;
+
+&lt;p&gt;sudo installer pkg target / -someConfigFile&lt;/p&gt;
+
+&lt;p&gt;and change some parameters in my application&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56615651</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Is it possible to create file list in Electron?</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Cheng Benny</name>
+            <uri>https://stackoverflow.com/users/8739807</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56615651/is-it-possible-to-create-file-list-in-electron" />
+        <published>2019-06-16T02:35:41Z</published>
+        <updated>2019-06-16T14:47:45Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I would like to create a file list that like the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/BVS2p.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/BVS2p.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As long as I input multiple files into a section, it will make a LIST that contents the files. &lt;/p&gt;
+
+&lt;p&gt;Is there any nodejs module or javascript to do that in Electron?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56614648</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">VS Code DevTools Dark Theme has black console text on dark backgrounds</title>
+            <category scheme="https://stackoverflow.com/tags" term="visual-studio-code" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="google-chrome-devtools" />
+            <category scheme="https://stackoverflow.com/tags" term="vscode-settings" />
+        <author>
+            <name>mike</name>
+            <uri>https://stackoverflow.com/users/776953</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56614648/vs-code-devtools-dark-theme-has-black-console-text-on-dark-backgrounds" />
+        <published>2019-06-15T22:30:21Z</published>
+        <updated>2019-06-15T22:30:21Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I switched the Chrome/Electron DevTools &lt;em&gt;Theme&lt;/em&gt; to &lt;em&gt;Dark&lt;/em&gt; (in the DevTools Settings, under &lt;em&gt;Preferences&lt;/em&gt;), so that it doesn&#39;t glare late at night.&lt;/p&gt;
+
+&lt;p&gt;But the console text is rendered black still, which is difficult to read on the dark backgrounds for &lt;em&gt;Errors&lt;/em&gt; or &lt;em&gt;Warnings&lt;/em&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/CDqYN.png&quot; rel=&quot;nofollow noreferrer&quot; title=&quot;Screenshot - VS Code Developer Tools window, macOS, Dark Theme&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/CDqYN.png&quot; alt=&quot;enter image description here&quot; title=&quot;Screenshot - VS Code Developer Tools window, macOS, Dark Theme&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Is there a setting for the DevTools themselves that I should look into, or is this an Issue I should raise in &lt;a href=&quot;https://github.com/microsoft/vscode/blob/master/CONTRIBUTING.md&quot; rel=&quot;nofollow noreferrer&quot;&gt;VS Code&lt;/a&gt;? Or &lt;a href=&quot;https://github.com/electron/electron/blob/master/CONTRIBUTING.md&quot; rel=&quot;nofollow noreferrer&quot;&gt;Electron&lt;/a&gt;?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56612612</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Problem with open new browser using router in Vue/Electron. Redirecting to default route</title>
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="vue.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="vuetify.js" />
+        <author>
+            <name>Leandro Campos</name>
+            <uri>https://stackoverflow.com/users/5540857</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56612612/problem-with-open-new-browser-using-router-in-vue-electron-redirecting-to-defau" />
+        <published>2019-06-15T17:26:23Z</published>
+        <updated>2019-06-15T17:26:23Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m trying to open a new window using Vue/Electron but the new windows is opening on default rounte instead the needed route.&lt;/p&gt;
+
+&lt;p&gt;*The route on navigation-drawer is working well.&lt;/p&gt;
+
+&lt;p&gt;file: router/index.js&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import Process from &#39;@/components/ProcessManager/Process.vue&#39;
+export default new Router({
+  routes: [
+    {
+      path: &#39;/&#39;,
+      name: &#39;home&#39;,
+      component: require(&#39;@/components/LandingPage&#39;).default
+    },
+    {
+      path: &#39;process&#39;,
+      name: &#39;process&#39;,
+      component: Process,
+    },
+    {
+      path: &#39;*&#39;,
+      redirect: &#39;/&#39;
+    }
+  ]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;file:main/index.js&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const processURL = process.env.NODE_ENV === &#39;development&#39;
+  ? `http://localhost:9080/#/process`
+  : `file://${__dirname}/index.html#process`
+
+function createWindow2 () {
+  let win = new BrowserWindow({ width: 400, height: 320, webPreferences: {webSecurity: false} })
+  win.loadURL(processURL)
+  win.on(&#39;closed&#39;, () =&amp;gt; {
+    win = null
+  })
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/w5c3P.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/w5c3P.png&quot; alt=&quot;Windows opening on same route&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56612109</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to path to an image file in an electron app?</title>
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="electron-builder" />
+        <author>
+            <name>Quddus George</name>
+            <uri>https://stackoverflow.com/users/10235296</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56612109/how-to-path-to-an-image-file-in-an-electron-app" />
+        <published>2019-06-15T16:17:38Z</published>
+        <updated>2019-06-16T14:43:15Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am creating an electron app and packaging for distribution with electron-builder for windows and Mac. This app creates a folder and some pdfs inside varying based on user input. The pdfs also use an image, which as a node app I was keeping in the root folder of the app.&lt;/p&gt;
+
+&lt;p&gt;I managed to write to the desktop using an absolute path.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; if (!fs.existsSync(`/Users/${user}/Desktop/2019 Certificates`)){
+        fs.mkdirSync(`/Users/${user}/Desktop/2019 Certificates`);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;but when I use this relative path &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;stampandseal.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I get the following error:&lt;/p&gt;
+
+&lt;p&gt;I expect it to find the png relative to the js file, however I get the following error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;fs.js:121 Uncaught Error: ENOENT: no such file or directory, open &#39;stampandseal.png&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56609888</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">usb_bindings.node&#39; was compiled against a different Node.js version</title>
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="npm" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>mago</name>
+            <uri>https://stackoverflow.com/users/11633439</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56609888/usb-bindings-node-was-compiled-against-a-different-node-js-version" />
+        <published>2019-06-15T11:22:57Z</published>
+        <updated>2019-06-15T11:39:28Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;ve got an error message saying:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&#39;/home/mago/dev/nodejs/indicate/node_modules/usb/build/Release/usb_bindings.node&#39;
+      was compiled against a different Node.js version using
+      NODE_MODULE_VERSION 64. This version of Node.js requires
+      NODE_MODULE_VERSION 70. Please try re-compiling or re-installing
+      the module (for instance, using &lt;code&gt;npm rebuild&lt;/code&gt; or &lt;code&gt;npm install&lt;/code&gt;).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I&#39;m using Electron with node@10.15.0 also I&#39;m using a module which is using usb module. I&#39;ve tried npm install and rebuild. I&#39;ve updated to node-gyp@5.0.0 and rebuilt the module. But the error is still the same.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56608986</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Electron application doesn&#39;t showing browser alerts</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Arjun Pokkattu</name>
+            <uri>https://stackoverflow.com/users/2713177</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56608986/electron-application-doesnt-showing-browser-alerts" />
+        <published>2019-06-15T09:10:06Z</published>
+        <updated>2019-06-15T11:00:45Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;In Electron Framework I have load the url of an external web application and everything works fine except for browser alerts (the web application&#39;s JavaScript alert). During the alert, it causes errors in the console.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;app.on(&#39;ready&#39;, function() {
+
+  mainWindow = new BrowserWindow({
+    &#39;width&#39;: 800,
+    &#39;height&#39;: 600,
+    &#39;webPreferences&#39;: {&#39;plugins&#39;: true,&#39;devTools&#39;:false,&#39;allowRunningInsecureContent&#39;:true},
+    &#39;title&#39;: &#39;Teklix, Inc.&#39;,    
+    &#39;backgroundColor&#39;: &#39;#002b36&#39;, 
+    &#39;center&#39; : true,
+    &#39;minWidth&#39; : 400,
+    &#39;minHeight&#39; : 300,
+    &#39;icon&#39;: icon_file,
+    &#39;resizable&#39; : true,
+    &#39;alwaysOnTop&#39; : false,
+    &#39;kiosk&#39;:false,      
+
+  });
+
+ mainWindow.loadURL(&#39;https://example.com/index&#39;); //external Web app URL
+
+
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please see the versions that I have used,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Node.js 10.11.0&lt;/p&gt;
+  
+  &lt;p&gt;Chromium 69.0.3497.128&lt;/p&gt;
+  
+  &lt;p&gt;Electron 4.1.0&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Can you please help me to solve this issue?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56607483</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">Electron loadURL()</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>m4c</name>
+            <uri>https://stackoverflow.com/users/10588845</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56607483/electron-loadurl" />
+        <published>2019-06-15T04:58:13Z</published>
+        <updated>2019-06-15T04:58:13Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Having an odd issue with electron,&lt;/p&gt;
+
+&lt;p&gt;When i load my app the page appears as normal but checking inspect element. all javascripts on the site don&#39;t load.&lt;/p&gt;
+
+&lt;p&gt;Any ideas why?
+Any help would be appreciated.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56602528</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Import component from a variable path name</title>
+            <category scheme="https://stackoverflow.com/tags" term="vue.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>V&#246;lund Friedemann Jordan</name>
+            <uri>https://stackoverflow.com/users/10818296</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56602528/import-component-from-a-variable-path-name" />
+        <published>2019-06-14T17:05:27Z</published>
+        <updated>2019-06-14T17:05:27Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I need to concatenate at string which contents the path to a vue file and import this one.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve tried the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const electron = require(&#39;electron&#39;);
+const fs = require(&#39;fs&#39;);
+// let electron know which OS is used and get the right path, the path is different on each OS.
+const userDataPath = (electron.app || electron.remote.app)
+    .getPath(&#39;appData&#39;);
+
+let import_path = userDataPath + &#39;/Test.vue&#39;;
+
+import test from import_path;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr&gt;
+
+&lt;pre&gt;&lt;code&gt;/src/renderer/router.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: Unexpected token (15:17)
+
+  13 | let import_path = userDataPath + &#39;/Test.vue&#39;;
+  14 | 
+&amp;gt; 15 | import test from import_path;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How can I import the vue file?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56597677</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Transfer electron renderer process to default browser</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Tahlil</name>
+            <uri>https://stackoverflow.com/users/7769344</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56597677/transfer-electron-renderer-process-to-default-browser" />
+        <published>2019-06-14T11:54:48Z</published>
+        <updated>2019-06-14T11:54:48Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I want to switch my electron app to the browser tab. Is it possible to do so like switching the renderer process to the default browser and communicate with the electron main process?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56595839</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Electron form - import data</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="mysql" />
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Daniel Curcione</name>
+            <uri>https://stackoverflow.com/users/11640880</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56595839/electron-form-import-data" />
+        <published>2019-06-14T10:00:12Z</published>
+        <updated>2019-06-14T12:24:46Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m coding my first app in Electron.js Today I have implemented a Login Form but after study hours, only with ipcMain I resolve and I import username and password. Now, I have a Database in localhost that I use for save the Users. I&#39;m trying to find in db a username that I insert in my username field in form, but when I call function .query the result is &#39;undefined&#39; and  I&#39;m going crazy with this form, there are two days that I try to implement this but there was a bad idea!! Pls enlighten my way!!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I try to connect with db with mysql.createConnection()&lt;/li&gt;
+&lt;li&gt;I try to connect with the login form with ipc method &lt;/li&gt;
+&lt;li&gt;I try to research in my db if username exist&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;main.js&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var mysql = require(&#39;mysql&#39;)
+const { app, BrowserWindow, ipcMain } = require(&#39;electron&#39;);
+const path = require (&#39;path&#39;);
+const fs = require(&#39;fs&#39;);
+const os = require(&#39;os&#39;);
+
+let win;          // window
+var connection;   // connection
+
+
+// create first BrowserWindow of my app (login page)
+function creaPagina () {
+  win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    show: false,
+    webPreferences: {
+      webSecurity: true,
+      nodeIntegration: true
+    }
+  })
+  win.loadFile(&quot;index.html&quot;)
+}
+app.on(&#39;ready&#39;, creaPagina)
+
+
+// connection with DB
+connection = mysql.createConnection({
+  host: &quot;****&quot;,
+  user: &quot;****&quot;,
+  password: &quot;****&quot;,
+  database: &quot;App-db&quot;
+});
+connection.connect(function(err) {
+  if (err) throw err
+  console.log(&quot;Connected!&quot;)
+});
+
+
+// connection with my form for import username and pass
+ipcMain.on(&#39;form-submission&#39;, function (event, username, password) {
+  console.log(&quot;this is the username from the form -&amp;gt;&quot;, username)
+  console.log(&quot;this is the password from the form -&amp;gt;&quot;, password)
+
+  var query = &quot;SELECT * FROM Users WHERE username = &quot; + username + &quot;&quot;;
+  connection.query(query, function (err, result) {
+    console.log(result)  // undefined WTF ???
+  });
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;renderer.js&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const ipcRenderer = require(&#39;electron&#39;).ipcRenderer;
+
+function sendForm(event) {
+    event.preventDefault()
+    let username = document.getElementById(&quot;username&quot;).value;
+    let password = document.getElementById(&quot;password&quot;).value;
+    ipcRenderer.send(&#39;form-submission&#39;, username, password);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;index.html&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+    &amp;lt;form name=&quot;ipcForm&quot; onSubmit=&quot;JavaScript:sendForm(event)&quot;&amp;gt;
+      &amp;lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; placeholder=&quot;Username&quot; required&amp;gt;
+      &amp;lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Password&quot; required&amp;gt;
+      &amp;lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;SIGN UP&quot;&amp;gt;
+    &amp;lt;/form&amp;gt;
+    &amp;lt;script src=&#39;renderer.js&#39;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Query to find username in db:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Result --&gt; undefined&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56593560</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Electron: files copied from asar are readonly</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Ska</name>
+            <uri>https://stackoverflow.com/users/672226</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56593560/electron-files-copied-from-asar-are-readonly" />
+        <published>2019-06-14T07:37:54Z</published>
+        <updated>2019-06-14T07:37:54Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have an electron app, and when I build it for distribution, the actual app code and build folder are on app.asar file. During the app runtime, I have to copy certain files from the app.asar onto the user&#39;s computer, wherever the user chooses, and modify  with the code.&lt;/p&gt;
+
+&lt;p&gt;The problem is that whenever the file is copied, it becomes readonly, and thus I can not write to it. Any way to handle this?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56592905</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">What does electron autoUpdater download?</title>
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="electron-builder" />
+            <category scheme="https://stackoverflow.com/tags" term="electron-updater" />
+        <author>
+            <name>vedang kulkarni</name>
+            <uri>https://stackoverflow.com/users/10288163</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56592905/what-does-electron-autoupdater-download" />
+        <published>2019-06-14T06:51:11Z</published>
+        <updated>2019-06-14T06:51:11Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;do not wish to download full application for a small update in electron application&lt;/p&gt;
+
+&lt;p&gt;I have found out that replacing the app.asar file in my electron app&#39;s resources directory , updates the &quot;code-specific-updates&quot; in my application , is this enough for an update or autoUpdater does something extra to update the application ?,&lt;/p&gt;
+
+&lt;p&gt;&quot;code-specific-updates&quot; refer to renderer and html changes
+I have also tried using squirrel for windows , but cannot use it because it does not allow me to install application to custom directory (Program Files in my case)&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56590721</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Package Electron app with dependent packages such that only the dist/ folder of each package is included</title>
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="zurb-foundation" />
+            <category scheme="https://stackoverflow.com/tags" term="electron-packager" />
+        <author>
+            <name>Hari Mahadevan</name>
+            <uri>https://stackoverflow.com/users/744769</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56590721/package-electron-app-with-dependent-packages-such-that-only-the-dist-folder-of" />
+        <published>2019-06-14T02:37:24Z</published>
+        <updated>2019-06-14T10:01:04Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;For instance, an Electron app that I&#39;m building uses Zurb Foundation whose npm module is ~25MB. The app itself just uses their CSS and JS files. So while creating the distributable package, I would like the node_modules/foundation-sites to only include its dist/ folder where the relevant production files are stored.&lt;/p&gt;
+
+&lt;p&gt;Is there a standard practice for this, other than physically deleting the irrelevant files or using the --ignore option with electron-packager?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56590283</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">Text-To-Speech without browser GUI</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="background" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Butter</name>
+            <uri>https://stackoverflow.com/users/11645475</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56590283/text-to-speech-without-browser-gui" />
+        <published>2019-06-14T01:19:10Z</published>
+        <updated>2019-06-14T21:46:34Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have been designing in HTML to create an application that has a GUI. I have created a few scripts for this - particularly one that uses the browser window Speech Synthesis Utterance.&lt;/p&gt;
+
+&lt;p&gt;Suddenly, however, the scope of the project has changed and I need to do away with the GUI, but keep the TTS script running as a background process. I&#39;m still quite new to programming, so I tried opening the script with node.js, but it didn&#39;t work like that. The utterance is programmed to read a certain xml file. So essentially, all I want to do is to do away with the HTML browser aspect, and keep the javascript. Is this possible? Does anyone have any suggestions on how I could approach this? &lt;/p&gt;
+
+&lt;p&gt;I&#39;ve tried opening the script solely in node.js
+I&#39;ve looked into element.js but it doesn&#39;t &quot;seem&quot; to be what I am after.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;            var msg = new SpeechSynthesisUtterance(&quot;Testing&quot;);
+
+
+            var voices = window.speechSynthesis.getVoices();
+            var voice = speechSynthesis.getVoices();
+            speechSynthesis.getVoices().forEach(function(voice) {
+                console.log(voice.name, voice.default ? voice.default : &#39;&#39;);
+            });
+
+            msg.pitch = 1.1;
+            msg.volume = 1;
+            msg.rate = 0.85;
+            msg.lang = &#39;en-US&#39;;
+            msg.voice = voices[1];
+            window.speechSynthesis.speak(msg);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Actual results - Opens a web browser and begins talking (there&#39;s a html file)
+Expected results I want - No web browser, just talk when the file is opened (maybe?)&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56589501</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">Sending response to ipcRenderer from ipcMain after asynchronous operation completes</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="asynchronous" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="fast-csv" />
+        <author>
+            <name>Vlad Tertyshny</name>
+            <uri>https://stackoverflow.com/users/8021163</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56589501/sending-response-to-ipcrenderer-from-ipcmain-after-asynchronous-operation-comple" />
+        <published>2019-06-13T22:59:24Z</published>
+        <updated>2019-06-13T22:59:24Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m learning Electron by writing the app that should parse and analyze .csv files. As a frontend part of it I&#39;m using Vue.js. Initial functionality should be next: user selects a file, main process parses it, file&#39;s summary displayed at the client as a part of a Vue component. Code below: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//background.js
+import Analyzer from &#39;./Analyzer&#39;
+analyzer = new Analyzer();
+
+ipcMain.on(&#39;data:upload&#39;, (event, data) =&amp;gt; {
+    let options = {
+      filters: [{ 
+        extensions: [&#39;csv&#39;]
+      }] 
+    };
+    let filepath = dialog.showOpenDialog(options);
+    analyzer.loadDataCSV(filepath);  //executes async code
+    event.sender.send(&#39;data:upload&#39;, analyzer.getState());// doesn&#39;t wait
+})                                                        // async code to be completed 
+                                                          // so the &#39;state&#39; I&#39;m sending 
+                                                          // is actually incorrect
+
+
+//Analyzer.js - class that i&#39;ve wrote
+import csv from &#39;fast-csv&#39;
+...
+loadDataCSV(filepath) {
+    if (!filepath) return;
+    this.dataWSFilepath = filepath;
+    this.showDataCard = true;
+    let rowsCount = 0;
+    csv. //async part
+        fromPath(filepath, { delimiter: &quot;|&quot; })
+        .on(&quot;data&quot;, function (data) {
+            if (data[9] == &#39;NCR&#39;) rowsCount++;
+        })
+        .on(&quot;end&quot;, function () {
+            this.NCRCount = rowsCount //Variable I&#39;m expecting to be 
+                                      //changed inside the Vue component
+        });
+}
+getState(){ return { NCRCount: this.NCRCount }}
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please tell me the right way to wait the async part of loadDataCSV() to be completed before sending answer to ipcRenderer.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56587509</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Electron and cdn links</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Lyrk</name>
+            <uri>https://stackoverflow.com/users/1939432</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56587509/electron-and-cdn-links" />
+        <published>2019-06-13T19:36:50Z</published>
+        <updated>2019-06-13T19:39:20Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Is it possible to use cdn links in renderer? I am using &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&quot;https://cdn.jsdelivr.net/npm/nerdamer@0.7.16/nerdamer.core.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;in an standalone index.html and working as intended but when I try to put this in Electron&#39;s renderer  I get &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Uncaught Error: Cannot find module &#39;./nerdamer.core.js&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Interesting thing is even when I put this file locally, I get the same error.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&quot;externalLibs/nerdamer.core.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Can you provide me some insight on this thank you...&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56585258</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">ipcRenderer.send() function not working inside setInterval</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="setinterval" />
+            <category scheme="https://stackoverflow.com/tags" term="ipcrenderer" />
+        <author>
+            <name>ife labolz</name>
+            <uri>https://stackoverflow.com/users/1108350</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56585258/ipcrenderer-send-function-not-working-inside-setinterval" />
+        <published>2019-06-13T16:51:43Z</published>
+        <updated>2019-06-13T21:23:37Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I need explanation and a solution to why the following code isnt working in in my Electron code. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const electron = require(&quot;electron&quot;);
+const ipcRenderer = electron.ipcRenderer;
+
+let seconds = 60;
+module.exports = function countdown(){
+        setInterval(function () {
+            if(seconds == 0){
+                seconds = 60;
+            }
+            seconds--
+            console.log(seconds);
+            ipcRenderer.send(&quot;ticking&quot;, seconds)
+        },1000)
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All i am trying to do is just publish an event using the &lt;code&gt;ipcRenderer.send()&lt;/code&gt; method every second, however i get an &lt;code&gt;Uncaught Exception&lt;/code&gt; error shown bellow.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Cannot read property send of undefined at Timeout_onTimeout&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/UAVXQ.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/UAVXQ.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56581667</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Prevent zoom on certain webview elements</title>
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Andy Herbert</name>
+            <uri>https://stackoverflow.com/users/3973472</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56581667/prevent-zoom-on-certain-webview-elements" />
+        <published>2019-06-13T13:30:34Z</published>
+        <updated>2019-06-13T13:30:34Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Is it possible to prevent certain element to be effected with setZoomFactor in a webview in a window? Essentially I have an application with a canvas and various tools to manipulate the canvas, and I only want the canvas to increase in magnification instead of the tools and other UI elements. Currently the entire webview is magnified when changing the zoom factor via setZoomFactor().&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56581449</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Link style in electron application</title>
+            <category scheme="https://stackoverflow.com/tags" term="css" />
+            <category scheme="https://stackoverflow.com/tags" term="webpack" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>dopeCode</name>
+            <uri>https://stackoverflow.com/users/8425145</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56581449/link-style-in-electron-application" />
+        <published>2019-06-13T13:19:11Z</published>
+        <updated>2019-06-13T13:19:11Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have application generated with electron-forge cli with webpack template. My files structure is: &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/bZop5.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/bZop5.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&#39;m trying to add some styles to index.html but it doesn&#39;t work as expected. I tried to add in &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of index.html:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../css/index.css&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;not working. I also tried to add:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import &#39;../css/index.css&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to renderer/js/index.js (since it&#39;s bundled by webpack anyway) but it also doesn&#39;t work. What I&#39;m doing wrong? Is the path to stylesheet not correct in my index.html head because of using webpack?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56581013</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to do google oauth using angular which is converted into desktop app using electron</title>
+            <category scheme="https://stackoverflow.com/tags" term="angular6" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="google-oauth2" />
+        <author>
+            <name>Vicky Pramanik</name>
+            <uri>https://stackoverflow.com/users/3043644</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56581013/how-to-do-google-oauth-using-angular-which-is-converted-into-desktop-app-using-e" />
+        <published>2019-06-13T12:54:40Z</published>
+        <updated>2019-06-13T12:54:40Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have an application in angular 6. I am using google oauth 2 for login using passport it is working fine but now I need to convert this app into desktop app using electron.&lt;/p&gt;
+
+&lt;p&gt;When I am lunching app as a electron app then google login popup is opening but it is not working because redirect url is mismatch. For example:-
+google redirect url is &lt;a href=&quot;http://localhost:4200/assests/social-login.html&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://localhost:4200/assests/social-login.html&lt;/a&gt; but insted of localhost:4200/ electron is giving file:///&lt;/p&gt;
+
+&lt;p&gt;So how can I solve this. Is there any way to perform google authentication from electron app&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56579188</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to reduce upload time while uploading multiple files</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="amazon-s3" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="aws-sdk" />
+        <author>
+            <name>Ram</name>
+            <uri>https://stackoverflow.com/users/7225816</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56579188/how-to-reduce-upload-time-while-uploading-multiple-files" />
+        <published>2019-06-13T11:12:55Z</published>
+        <updated>2019-06-13T11:12:55Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have an directory with small files at minimum ranges from 2000 files to 10000 files.&lt;/p&gt;
+
+&lt;p&gt;Currently there is no methods to directly upload folder to s3 in aws-sdk-js.&lt;/p&gt;
+
+&lt;p&gt;i need to recursively loop through files inside folder and upload it to s3.&lt;/p&gt;
+
+&lt;p&gt;I used this lines of code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const PARALLEL_UPLOADS = 10;
+const q = async.queue((task, callback) =&amp;gt; {
+  s3.upload({
+  Bucket: &#39;xxx&#39;,
+  Key: task.name,
+  Body: fs.createReadStream(task.path)
+ }, callback)
+}, PARALLEL_UPLOADS);
+
+q.drain = function() {
+  console.log(&#39;all items have been processed&#39;);
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I used walk npm package to recursively read files inside folder.
+inside it i push files to queue.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  let walker = walk.walk(path);
+  walker.on(&quot;file&quot;, async function(root, stat, next) {
+  q.push({
+     name: stat.name,
+     path: root + &quot;/&quot; + stat.name,
+ }) })
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I tested with folder with size 108 MB but it having 2700 files in nested folder inside it.&lt;/p&gt;
+
+&lt;p&gt;it takes more than 45 mins to upload.&lt;/p&gt;
+
+&lt;p&gt;so how to reduce the time of upload ???  Advance in thanks.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56576102</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Saving exe file using fs.writeFile</title>
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Perryy</name>
+            <uri>https://stackoverflow.com/users/11641104</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56576102/saving-exe-file-using-fs-writefile" />
+        <published>2019-06-13T08:11:04Z</published>
+        <updated>2019-06-14T10:44:38Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am trying to save the exe file from https location and save it for local use. File is saved but I get this error when try to run it &quot;&#39; is not recognized as an internal or external command,
+operable program or batch file.&quot;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const updaterUrl = &#39;https://xxx.xxx.com/updates/&#39;;
+
+function downloadUpdate(filename) {
+  // filename is update.exe
+  https.get(updaterUrl + filename, (resp) =&amp;gt; {
+    let data = &#39;&#39;;
+
+    resp.on(&#39;data&#39;, (chunk) =&amp;gt; {
+      data += chunk;
+    });
+
+    resp.on(&#39;end&#39;, () =&amp;gt; {
+      let dir = path.join(app.getPath(&#39;userData&#39;), &#39;Updates&#39;)
+      let p = path.join(app.getPath(&#39;userData&#39;), &#39;Updates&#39;, filename)
+
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, 484);
+      }
+
+      fs.writeFile(p, data, (err) =&amp;gt; {
+        if (err) {
+          console.log(&#39;Error: &#39; + err.message)
+        } else {
+          runUpdate(p);
+        }
+      })
+    });
+
+  }).on(&quot;error&quot;, (err) =&amp;gt; {
+    console.log(&quot;Update error: &quot; + err.message);
+  });
+}
+
+function runUpdate(path) {
+  exec(path, (err, stdout, stderr) =&amp;gt; {
+    if (err) {
+      console.log(err);
+      return;
+    }
+  });
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What am I doing wrong?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56573110</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Printer select window is shown even if silent option is true in webContents.print()</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Parth</name>
+            <uri>https://stackoverflow.com/users/11623857</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56573110/printer-select-window-is-shown-even-if-silent-option-is-true-in-webcontents-prin" />
+        <published>2019-06-13T03:46:16Z</published>
+        <updated>2019-06-13T06:22:50Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I was trying to print a BrowserWindow in Electron (SILENTLY) and I do not want any user interaction. But even when I keep the option as true, it shows the printer dialog. &lt;/p&gt;
+
+&lt;p&gt;I am using a Windows 10 machine and I want the electron app to use my default printer and print without user consent.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;webContents.print({silent: true});
+
+webContents.print({&#39;silent&#39;: true}); // Even this is not working
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56572807</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Event on BrowserWindow when page is not found in Electron?</title>
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>1.21 gigawatts</name>
+            <uri>https://stackoverflow.com/users/441016</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56572807/event-on-browserwindow-when-page-is-not-found-in-electron" />
+        <published>2019-06-13T03:01:32Z</published>
+        <updated>2019-06-13T06:58:45Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Is there an event I can listen for when the page is not found in a browser window? &lt;/p&gt;
+
+&lt;p&gt;Example: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true
+    }
+  })
+
+  // url has typo 
+  var url = __dirname + &quot;indez.html&quot;;
+  console.log(&quot;Loading app: &quot; + url);
+
+  win.loadFile(url);
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56571883</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Electron BrowserView Renderer process vs WebView</title>
+            <category scheme="https://stackoverflow.com/tags" term="webview" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="chromium" />
+        <author>
+            <name>rupps</name>
+            <uri>https://stackoverflow.com/users/1108397</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56571883/electron-browserview-renderer-process-vs-webview" />
+        <published>2019-06-13T00:24:17Z</published>
+        <updated>2019-06-15T16:25:13Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am porting an electron app from a traditional renderer + webview structure to &lt;code&gt;BrowserView&lt;/code&gt; objects. The application uses some &lt;code&gt;Browserwindows&lt;/code&gt; to display a &lt;code&gt;webview&lt;/code&gt; fullscreen in all available monitors. The renderer processes hold basically an &lt;code&gt;index.html&lt;/code&gt; with a &lt;code&gt;webview&lt;/code&gt; at 100% size.  &lt;/p&gt;
+
+&lt;p&gt;I am little confused about the renderer process and the BrowserViews.&lt;/p&gt;
+
+&lt;p&gt;With the new approach, I just inject the &lt;code&gt;preloader&lt;/code&gt; in the &lt;code&gt;BrowserView&lt;/code&gt; constructor, and do not load any page on the &lt;code&gt;BrowserWindow&lt;/code&gt; themselves:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;            browserViewOptions = {
+                webPreferences: {
+                    preload: (__dirname + &quot;/preload.js&quot;),
+                    partition: &quot;persist:ns&quot;,
+                    nodeIntegration: false,
+                    plugins: false
+                }
+            };
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What renderer process is this? Is it the traditional render process where the &lt;code&gt;WebViews&lt;/code&gt; used to be? Or do the &lt;code&gt;BrowserViews&lt;/code&gt; have their own renderer process? If it is the traditional, is it shared in the case I also load a page in the &lt;code&gt;BrowserWindow&lt;/code&gt;?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Does it make a difference the fact that &lt;strong&gt;i am not loading a page on the &lt;code&gt;BrowserWindow&lt;/code&gt;&lt;/strong&gt;? I mean, if I don&#39;t load a page on the &lt;code&gt;BrowserWindow&lt;/code&gt; (just create the window for attaching BrowserViews), &lt;strong&gt;is there anyways another chromium process with an empty page running&lt;/strong&gt;? If yes, can this be prevented if I am only interested in the &lt;code&gt;BrowserView&lt;/code&gt;? Are there &quot;overdraw&quot; issues if I keep stuff on the browserwindow and occassionally hide the browserviews to display them?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56571835</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Windows-Build-Tools cannot download python</title>
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="npm" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+        <author>
+            <name>Shahriar</name>
+            <uri>https://stackoverflow.com/users/7330316</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56571835/windows-build-tools-cannot-download-python" />
+        <published>2019-06-13T00:13:57Z</published>
+        <updated>2019-06-13T06:47:35Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m trying to install Windows-Build-Tools for an Electron project, using NPM. However when I run &lt;code&gt;npm install --global --production windows-build-tools&lt;/code&gt;, I get this error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Downloading python-2.7.15.amd64.msi
+Error: getaddrinfo EAI_AGAIN www.python.org:443
+Downloading Python failed. Error: { Error: getaddrinfo EAI_AGAIN www.python.org:443
+    at Object._errnoException (util.js:992:11)
+    at errnoException (dns.js:55:15)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+  code: &#39;EAI_AGAIN&#39;,
+  errno: &#39;EAI_AGAIN&#39;,
+  syscall: &#39;getaddrinfo&#39;,
+  hostname: &#39;www.python.org&#39;,
+  host: &#39;www.python.org&#39;,
+  port: 443 }
+windows-build-tools will now exit.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! windows-build-tools@5.1.0 postinstall: `node ./dist/index.js`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the windows-build-tools@5.1.0 postinstall script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\blahblah\AppData\Roaming\npm-cache\_logs\2019-06-13T00_02_38_046Z-debug.log
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I already have python 2.7.16 installed on my machine and I would appreciate it if there&#39;s a way to install this package without python.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://catalin.me/how-to-fix-node-js-gyp-err-cant-find-python-executable-python-on-windows/&quot; rel=&quot;nofollow noreferrer&quot;&gt;I&#39;m doing this&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/56567634</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Does anyone know how to make a custom bundler for Mac OS with an Electron Application and bash scripts</title>
+            <category scheme="https://stackoverflow.com/tags" term="macos" />
+            <category scheme="https://stackoverflow.com/tags" term="electron" />
+            <category scheme="https://stackoverflow.com/tags" term="electron-builder" />
+            <category scheme="https://stackoverflow.com/tags" term="electron-packager" />
+            <category scheme="https://stackoverflow.com/tags" term="pkg-file" />
+        <author>
+            <name>Carlos Alba</name>
+            <uri>https://stackoverflow.com/users/7853260</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/56567634/does-anyone-know-how-to-make-a-custom-bundler-for-mac-os-with-an-electron-applic" />
+        <published>2019-06-12T17:36:12Z</published>
+        <updated>2019-06-12T17:36:12Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Essentially I want to take my fully functioning Electron Application that relies on third party binaries for it&#39;s main function and want to bundle them so that the dependencies are installed with bash scripts using commands like curl and then running the binaries dependencies and then giving the user the choice to install my .app or use my .dmg installer for my electron installer.&lt;/p&gt;
+
+&lt;p&gt;I have already tried bundling the .sh scripts in the electron apps installation process and it&#39;s not working and it won&#39;t work so I want to see if their is a third party tool that takes my dmg and runs it after the user runs the .pkg installer for the other third party software.&lt;/p&gt;
+
+&lt;pre class=&quot;lang-sh prettyprint-override&quot;&gt;&lt;code&gt;#!/usr/bin/env bash 
+
+# pull pkg from facebooks repo
+curl -o dependency.pkg https://pkg.dist/dependency.pkg
+# run package 
+ ./dependnecy.pkg
+# afterwards run the .dmg
+./openproject.dmg
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I don&#39;t have errors and both binaries work standalone but I just can&#39;t seem to schedule them correctly. I know I can ask the user to install the other dependency before hand but I want the experience to be seamless.&lt;/p&gt;
+
+        </summary>
+    </entry>
+</feed>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+	<head>
+		<title>Sample Feeds</title>
+		<dateCreated>Mon, 17 Jun 2019 08:28:14 GMT</dateCreated>
+	</head>
+	<body>
+		<outline text="Sample Feeds">
+			<outline text="Electron">
+				<outline type="rss" text="Electron" title="Electron" xmlUrl="https://electronjs.org/blog.xml"/>
+				<outline type="rss" text="Newest questions tagged electron - Stack Overflow" title="Newest questions tagged electron - Stack Overflow" xmlUrl="https://stackoverflow.com/feeds/tag?tagnames=electron&amp;sort=newest"/>
+			</outline>
+			<outline text="Wikipedia">
+				<outline type="rss" text="Wikipedia featured articles feed" title="Wikipedia featured articles feed" xmlUrl="https://en.wikipedia.org/w/api.php?action=featuredfeed&amp;feed=featured&amp;feedformat=atom"/>
+				<outline type="rss" text="Wikipedia &quot;On this day...&quot; feed" title="Wikipedia &quot;On this day...&quot; feed" xmlUrl="https://en.wikipedia.org/w/api.php?action=featuredfeed&amp;feed=onthisday&amp;feedformat=atom"/>
+				<outline type="rss" text="Wikipedia picture of the day feed" title="Wikipedia picture of the day feed" xmlUrl="https://en.wikipedia.org/w/api.php?action=featuredfeed&amp;feed=potd&amp;feedformat=atom"/>
+			</outline>
+		</outline>
+	</body>
+</opml>

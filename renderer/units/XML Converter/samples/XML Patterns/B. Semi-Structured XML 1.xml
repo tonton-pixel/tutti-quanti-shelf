@@ -1,0 +1,5 @@
+<!-- B. Semi-Structured XML 1 -->
+<e>
+    some textual
+    <a>content</a>
+</e>

@@ -1,0 +1,9 @@
+<book><title>Some title</title>
+<description>some description</description>
+<author>
+    <id>1</id>
+    <name>some author name</name>
+</author>
+<review>nice book</review>
+<review>this book sucks</review>
+<review>amazing work</review></book>

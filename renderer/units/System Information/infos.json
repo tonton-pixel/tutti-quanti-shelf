@@ -44,6 +44,14 @@
                 "value": "require ('electron').remote.process.versions.v8"
             },
             {
+                "name": "ICU Version",
+                "value": "require ('electron').remote.process.versions.icu"
+            },
+            {
+                "name": "Unicode Version",
+                "value": "require ('electron').remote.process.versions.unicode"
+            },
+            {
                 "name": "All Versions",
                 "value": "require ('electron').remote.process.versions"
             },
