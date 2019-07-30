@@ -4,7 +4,9 @@
 const attributePrefix = "@";
 const textPropertyName = "#text";
 //
-function parseElement (element, trimWhitespace)
+let trimWhitespace;
+//
+function parseElement (element)
 {
     let json = { };
     if (element.hasAttributes ())
@@ -21,7 +23,7 @@ function parseElement (element, trimWhitespace)
         {
             if (childNode.nodeType === Node.CDATA_SECTION_NODE)
             {
-                childNode.replaceWith (childNode.nodeValue)
+                childNode.replaceWith (childNode.nodeValue) // DOMString objects are inserted as equivalent Text nodes.
             }
         }
         element.normalize (); // Merge adjacent text nodes
@@ -46,11 +48,11 @@ function parseElement (element, trimWhitespace)
             else if (childNode.nodeType === Node.TEXT_NODE)
             {
                 let childText = childNode.nodeValue;
-                if (childText.match (/[^ \n\r\t]/)) // Ignore whitespace-only text nodes
+                if (childText.match (/[^\t\n\r ]/)) // Ignore whitespace-only text nodes
                 {
                     if (trimWhitespace)
                     {
-                        childText = childText.replace (/^[ \n\r\t]+/, "").replace (/[ \n\r\t]+$/, "");
+                        childText = childText.replace (/^[\t\n\r ]+|[\t\n\r ]+$/g, "");
                     }
                     if (childText)
                     {
@@ -86,8 +88,20 @@ function parseElement (element, trimWhitespace)
     return json;
 }
 //
-module.exports.parse = function (xml, trimWhitespace)
+module.exports.parse = function (xml, options)
 {
+    if (options && (typeof options === 'object'))
+    {
+        trimWhitespace = options.trimWhitespace || false;
+    }
+    else
+    {
+        trimWhitespace = false;
+    }
+    // Sanitize XML input string: keep only \t, \n, \r among C0 control characters...
+    // https://en.wikipedia.org/wiki/Valid_characters_in_XML
+    // https://www.w3.org/TR/xml11/#charsets
+    xml = xml.replace (/[\u0000-\u0008\u000B-\u000C\u000E-\u001F]/g, "");
     let json = { };
     let parser = new DOMParser ();
     let doc = parser.parseFromString (xml, 'text/xml');
@@ -101,7 +115,7 @@ module.exports.parse = function (xml, trimWhitespace)
         }
         else
         {
-            json[root.tagName] = parseElement (root, trimWhitespace);
+            json[root.tagName] = parseElement (root);
         }
     }
     return json;

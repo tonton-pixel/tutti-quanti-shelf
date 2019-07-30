@@ -107,22 +107,6 @@ module.exports.start = function (context)
     defaultXmlFolderPath = prefs.defaultXmlFolderPath;
     defaultJsonFolderPath = prefs.defaultJsonFolderPath;
     //
-    const loadXmlFileFilters =
-    [
-        { name: "XML File (*.xml,*.opml)", extensions: [ 'xml', 'opml' ] }
-    ];
-    //
-    const saveXmlFileFilters =
-    [
-        { name: "XML File (*.xml)", extensions: [ 'xml' ] },
-        { name: "OPML File (*.opml)", extensions: [ 'opml' ] }
-    ];
-    //
-    const jsonFileFilters =
-    [
-        { name: "JSON File (*.json)", extensions: [ 'json' ] }
-    ];
-    //
     trimWhitespace.checked = prefs.trimWhitespace;
     trimWhitespace.addEventListener ('click', (event) => { inputString.dispatchEvent (new Event ('input')); });
     //
@@ -134,7 +118,7 @@ module.exports.start = function (context)
         {
             try
             {
-                output = json.stringify (xmlToJson.parse (xml, trimWhitespace.checked), null, 4);
+                output = json.stringify (xmlToJson.parse (xml, { trimWhitespace: trimWhitespace.checked }), null, 4);
             }
             catch (e)
             {
@@ -157,6 +141,11 @@ module.exports.start = function (context)
     inputString.value = prefs.inputString;
     inputString.dispatchEvent (new Event ('input'));
     //
+    const loadXmlFileFilters =
+    [
+        { name: "XML File (*.xml,*.opml)", extensions: [ 'xml', 'opml' ] }
+    ];
+    //
     loadButton.addEventListener
     (
         'click',
@@ -178,6 +167,12 @@ module.exports.start = function (context)
         }
     );
     //
+    const saveXmlFileFilters =
+    [
+        { name: "XML File (*.xml)", extensions: [ 'xml' ] },
+        { name: "OPML File (*.opml)", extensions: [ 'opml' ] }
+    ];
+    //
     saveButton.addEventListener
     (
         'click',
@@ -196,6 +191,11 @@ module.exports.start = function (context)
             );
         }
     );
+    //
+    const jsonFileFilters =
+    [
+        { name: "JSON File (*.json)", extensions: [ 'json' ] }
+    ];
     //
     outputSaveButton.addEventListener
     (

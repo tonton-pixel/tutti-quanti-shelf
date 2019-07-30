@@ -55,9 +55,14 @@
     margin-bottom: 0;
 }
 
+#xml-converter-unit .option label
+{
+    vertical-align: middle;
+}
+
 #xml-converter-unit .option + .option
 {
-    margin-left: 0.75em;
+    margin-left: 1em;
 }
 
 #xml-converter-unit .output-error

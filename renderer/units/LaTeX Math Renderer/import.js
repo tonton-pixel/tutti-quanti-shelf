@@ -26,6 +26,11 @@ module.exports.start = function (context)
     //
     const katex = require ('../../lib/katex/katex.min.js');
     //
+    let headLink = document.createElement ('link');
+    headLink.rel = 'stylesheet';
+    headLink.href = 'lib/katex/katex.min.css';
+    document.head.appendChild (headLink);
+    //
     const defaultPrefs =
     {
         latexFormula: "",

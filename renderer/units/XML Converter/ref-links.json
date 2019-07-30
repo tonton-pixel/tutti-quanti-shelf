@@ -47,6 +47,22 @@
     ],
     [
         {
+            "name": "Valid characters in XML - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Valid_characters_in_XML"
+        }
+    ],
+    [
+        {
+            "name": "JsonML (JSON Markup Language)",
+            "href": "http://www.jsonml.org/"
+        },
+        {
+            "name": "JsonML-related tools for losslessly converting between XML/HTML and JSON, including mixed-mode XML.",
+            "href": "https://github.com/mckamey/jsonml"
+        }
+    ],
+    [
+        {
             "name": "JSON",
             "href": "https://json.org/"
         },
