@@ -1,7 +1,7 @@
 {
     "name": "tutti-quanti-shelf",
     "productName": "Tutti Quanti Shelf",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "Collection of miscellaneous developer-oriented utilities wrapped into one single app.",
     "main": "main.js",
     "scripts": {

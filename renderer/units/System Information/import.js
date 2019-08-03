@@ -66,6 +66,19 @@ module.exports.start = function (context)
         return func ();
     }
     //
+    function updateCellValue (cell, value, disabled)
+    {
+        if (disabled)
+        {
+            cell.classList.add ('disabled');
+        }
+        else
+        {
+            cell.classList.remove ('disabled');
+        }
+        cell.textContent = (typeof value === 'object') ? JSON.stringify (value) : value;
+    }
+    //
     for (let info of infos)
     {
         let div = document.createElement ('div');
@@ -80,6 +93,7 @@ module.exports.start = function (context)
             let tr = document.createElement ('tr');
             let th = document.createElement ('th');
             let td = document.createElement ('td');
+            th.className = 'name';
             th.textContent = item["name"];
             let value = undefined;
             try
@@ -89,13 +103,25 @@ module.exports.start = function (context)
             catch (e)
             {
             }
+            td.className = 'value';
             if (typeof value === 'undefined')
             {
-                td.className = 'disabled';
-                value = "<undefined>";
+                updateCellValue (td, "<undefined>", true);
+            }
+            else if (value instanceof Promise)
+            {
+                updateCellValue (td, "<pending>", true);
+                value.then
+                (
+                    value => updateCellValue (td, value), // resolve
+                    error => updateCellValue (td, "<error>", true) // reject
+                );
+            }
+            else
+            {
+                updateCellValue (td, value);
             }
             td.title = item["value"];
-            td.textContent = (typeof value === 'object') ? JSON.stringify (value) : value;
             tr.appendChild (th);
             tr.appendChild (td);
             table.appendChild (tr);

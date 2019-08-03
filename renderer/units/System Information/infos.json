@@ -4,6 +4,10 @@
         "items":
         [
             {
+                "name": "System Version",
+                "value": "require ('electron').remote.process.getSystemVersion ()"
+            },
+            {
                 "name": "Platform",
                 "value": "require ('electron').remote.process.platform"
             },
@@ -112,6 +116,10 @@
             {
                 "name": "Executable File",
                 "value": "require ('electron').remote.process.execPath"
+            },
+            {
+                "name": "Helper Executable File",
+                "value": "require ('electron').remote.process.helperExecPath"
             }
         ]
     },
@@ -158,6 +166,10 @@
             {
                 "name": "Executable File",
                 "value": "process.execPath"
+            },
+            {
+                "name": "Helper Executable File",
+                "value": "process.helperExecPath"
             }
         ]
     },
@@ -418,16 +430,16 @@
                 "value": "require ('electron').remote.screen.getPrimaryDisplay ().id"
             },
             {
+                "name": "Internal Display",
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().internal"
+            },
+            {
                 "name": "Rotation",
                 "value": "require ('electron').remote.screen.getPrimaryDisplay ().rotation"
             },
             {
                 "name": "Scale Factor",
                 "value": "require ('electron').remote.screen.getPrimaryDisplay ().scaleFactor"
-            },
-            {
-                "name": "Touch Support",
-                "value": "require ('electron').remote.screen.getPrimaryDisplay ().touchSupport"
             },
             {
                 "name": "Screen Bounds",
@@ -444,6 +456,30 @@
             {
                 "name": "Work Area Size",
                 "value": "require ('electron').remote.screen.getPrimaryDisplay ().workAreaSize"
+            },
+            {
+                "name": "Monochrome",
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().monochrome"
+            },
+            {
+                "name": "Color Depth",
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().colorDepth"
+            },
+            {
+                "name": "Depth per Component",
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().depthPerComponent"
+            },
+            {
+                "name": "Color Space",
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().colorSpace"
+            },
+            {
+                "name": "Touch Support",
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().touchSupport"
+            },
+            {
+                "name": "Accelerometer Support",
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().accelerometerSupport"
             }
         ]
     },

@@ -36,6 +36,12 @@
     text-align: center;
 }
 
+#css-cursors-demo-unit th:hover
+{
+    color: var(--color-accent);
+    background: var(--color-accent) linear-gradient(hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.9));
+}
+
 #css-cursors-demo-unit td
 {
     padding: 0.5em 1em;
