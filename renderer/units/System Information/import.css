@@ -1,9 +1,27 @@
 @charset "utf-8";
 
-#system-information-unit h2
+#system-information-unit .title-bar
 {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+#system-information-unit .title-text
+{
     user-select: text;
+    font-size: 1.3em;
+    color: var(--color-accent);
+    padding: 0;
+    margin: 0 0 -0.2em 0;
+}
+
+#system-information-unit .refresh-button
+{
+    margin-left: 1em;
 }
 
 #system-information-unit table

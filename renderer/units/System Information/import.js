@@ -66,26 +66,74 @@ module.exports.start = function (context)
         return func ();
     }
     //
-    function updateCellValue (cell, value, disabled)
+    function updateCellValue (cell)
     {
-        if (disabled)
+        function setValue (value, disabled)
         {
-            cell.classList.add ('disabled');
+            if (disabled)
+            {
+                cell.classList.add ('disabled');
+            }
+            else
+            {
+                cell.classList.remove ('disabled');
+            }
+            cell.textContent = (typeof value === 'object') ? JSON.stringify (value) : value;
+        }
+        //
+        let value = undefined;
+        try
+        {
+            value = evaluate (cell.title);
+        }
+        catch (e)
+        {
+        }
+        if (typeof value === 'undefined')
+        {
+            setValue ("<undefined>", true);
+        }
+        else if (value instanceof Promise)
+        {
+            value.then
+            (
+                value => setValue (value), // resolve
+                error => setValue ("<error>", true) // reject
+            );
         }
         else
         {
-            cell.classList.remove ('disabled');
+            setValue (value);
         }
-        cell.textContent = (typeof value === 'object') ? JSON.stringify (value) : value;
     }
     //
     for (let info of infos)
     {
         let div = document.createElement ('div');
         div.className = 'plain-panel';
-        let h2 = document.createElement ('h2');
-        h2.textContent = info["category"];
-        div.appendChild (h2);
+        let titleBar = document.createElement ('div');
+        titleBar.className = 'title-bar';
+        let titleText = document.createElement ('span');
+        titleText.className = 'title-text';
+        titleText.textContent = info["category"];
+        titleBar.appendChild (titleText);
+        let refreshButton = document.createElement ('button');
+        refreshButton.className = 'refresh-button';
+        refreshButton.textContent = "Refresh";
+        refreshButton.addEventListener
+        (
+            'click',
+            event =>
+            {
+                let values = event.target.closest ('.plain-panel').getElementsByClassName ('value');
+                for (let value of values)
+                {
+                    updateCellValue (value);
+                }
+            }
+        );
+        titleBar.appendChild (refreshButton);
+        div.appendChild (titleBar);
         let table = document.createElement ('table');
         let items = info["items"];
         for (let item of items)
@@ -95,33 +143,9 @@ module.exports.start = function (context)
             let td = document.createElement ('td');
             th.className = 'name';
             th.textContent = item["name"];
-            let value = undefined;
-            try
-            {
-                value = evaluate (item["value"]);
-            }
-            catch (e)
-            {
-            }
             td.className = 'value';
-            if (typeof value === 'undefined')
-            {
-                updateCellValue (td, "<undefined>", true);
-            }
-            else if (value instanceof Promise)
-            {
-                updateCellValue (td, "<pending>", true);
-                value.then
-                (
-                    value => updateCellValue (td, value), // resolve
-                    error => updateCellValue (td, "<error>", true) // reject
-                );
-            }
-            else
-            {
-                updateCellValue (td, value);
-            }
             td.title = item["value"];
+            updateCellValue (td);
             tr.appendChild (th);
             tr.appendChild (td);
             table.appendChild (tr);

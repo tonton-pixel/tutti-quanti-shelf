@@ -524,6 +524,26 @@
                 "value": "require ('electron').remote.getCurrentWindow ().getContentSize ()"
             },
             {
+                "name": "Normal Bounds",
+                "value": "require ('electron').remote.getCurrentWindow ().getNormalBounds ()"
+            },
+            {
+                "name": "Normal State",
+                "value": "require ('electron').remote.getCurrentWindow ().isNormal ()"
+            },
+            {
+                "name": "Minimized",
+                "value": "require ('electron').remote.getCurrentWindow ().isMinimized ()"
+            },
+            {
+                "name": "Maximized",
+                "value": "require ('electron').remote.getCurrentWindow ().isMaximized ()"
+            },
+            {
+                "name": "Full-Screen",
+                "value": "require ('electron').remote.getCurrentWindow ().isFullScreen ()"
+            },
+            {
                 "name": "Movable",
                 "value": "require ('electron').remote.getCurrentWindow ().isMovable ()"
             },
@@ -570,6 +590,10 @@
             {
                 "name": "Kiosk",
                 "value": "require ('electron').remote.getCurrentWindow ().isKiosk ()"
+            },
+            {
+                "name": "Opacity",
+                "value": "require ('electron').remote.getCurrentWindow ().getOpacity ()"
             },
             {
                 "name": "URL",
