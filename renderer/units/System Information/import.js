@@ -66,7 +66,7 @@ module.exports.start = function (context)
         return func ();
     }
     //
-    function updateCellValue (cell)
+    function updateCellValue (cell, transition)
     {
         function setValue (value, disabled)
         {
@@ -78,7 +78,12 @@ module.exports.start = function (context)
             {
                 cell.classList.remove ('disabled');
             }
+            let previousContent = cell.textContent;
             cell.textContent = (typeof value === 'object') ? JSON.stringify (value) : value;
+            if (transition && (cell.textContent !== previousContent))
+            {
+                cell.classList.add ('begin-transition');
+            }
         }
         //
         let value = undefined;
@@ -128,7 +133,7 @@ module.exports.start = function (context)
                 let values = event.target.closest ('.plain-panel').getElementsByClassName ('value');
                 for (let value of values)
                 {
-                    updateCellValue (value);
+                    updateCellValue (value, true);
                 }
             }
         );
@@ -145,6 +150,22 @@ module.exports.start = function (context)
             th.textContent = item["name"];
             td.className = 'value';
             td.title = item["value"];
+            td.addEventListener
+            (
+                'transitionend',
+                (event) =>
+                {
+                    if (event.currentTarget.classList.contains ('begin-transition'))
+                    {
+                        td.classList.remove ('begin-transition');
+                        td.classList.add ('end-transition');
+                    }
+                    else if (event.currentTarget.classList.contains ('end-transition'))
+                    {
+                        td.classList.remove ('end-transition');
+                    }
+                }
+            );
             updateCellValue (td);
             tr.appendChild (th);
             tr.appendChild (td);

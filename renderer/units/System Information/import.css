@@ -54,6 +54,17 @@
     width: 100%;
 }
 
+#system-information-unit td.begin-transition
+{
+    background-color: var(--color-highlight);
+    transition: background-color 0.25s ease-out;
+}
+
+#system-information-unit td.end-transition
+{
+    transition: background-color 1.25s ease-out;
+}
+
 #system-information-unit td.disabled
 {
     font-style: italic;

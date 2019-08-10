@@ -32,16 +32,8 @@
                 "value": "require ('electron').remote.process.version"
             },
             {
-                "name": "Electron Version",
-                "value": "require ('electron').remote.process.versions.electron"
-            },
-            {
                 "name": "Node Version",
                 "value": "require ('electron').remote.process.versions.node"
-            },
-            {
-                "name": "Chromium Version",
-                "value": "require ('electron').remote.process.versions.chrome"
             },
             {
                 "name": "V8 Version",
@@ -54,6 +46,14 @@
             {
                 "name": "Unicode Version",
                 "value": "require ('electron').remote.process.versions.unicode"
+            },
+            {
+                "name": "Electron Version",
+                "value": "require ('electron').remote.process.versions.electron"
+            },
+            {
+                "name": "Chromium Version",
+                "value": "require ('electron').remote.process.versions.chrome"
             },
             {
                 "name": "All Versions",
@@ -86,10 +86,6 @@
                 "value": "require ('electron').remote.process.pid"
             },
             {
-                "name": "Process Uptime (Sec.)",
-                "value": "require ('electron').remote.process.uptime ()"
-            },
-            {
                 "name": "Process Memory",
                 "value": "require ('electron').remote.process.getProcessMemoryInfo ()"
             },
@@ -104,6 +100,10 @@
             {
                 "name": "Heap Statistics",
                 "value": "require ('electron').remote.process.getHeapStatistics ()"
+            },
+            {
+                "name": "Process Uptime (Sec.)",
+                "value": "require ('electron').remote.process.uptime ()"
             },
             {
                 "name": "Command Line Arguments",
@@ -136,10 +136,6 @@
                 "value": "process.pid"
             },
             {
-                "name": "Process Uptime (Sec.)",
-                "value": "process.uptime ()"
-            },
-            {
                 "name": "Process Memory",
                 "value": "process.getProcessMemoryInfo ()"
             },
@@ -154,6 +150,10 @@
             {
                 "name": "Heap Statistics",
                 "value": "process.getHeapStatistics ()"
+            },
+            {
+                "name": "Process Uptime (Sec.)",
+                "value": "process.uptime ()"
             },
             {
                 "name": "Command Line Arguments",
@@ -256,6 +256,10 @@
             {
                 "name": "GPU Feature Status",
                 "value": "require ('electron').remote.app.getGPUFeatureStatus ()"
+            },
+            {
+                "name": "GPU Basic Info",
+                "value": "require ('electron').remote.app.getGPUInfo ('basic')"
             },
             {
                 "name": "Process Metrics",
@@ -382,16 +386,16 @@
                 "value": "JSON.stringify (require ('os').EOL).slice (1, -1)"
             },
             {
-                "name": "System Uptime (Sec.)",
-                "value": "require ('os').uptime ()"
+                "name": "Total System Memory",
+                "value": "require ('os').totalmem ()"
             },
             {
                 "name": "Free System Memory",
                 "value": "require ('os').freemem ()"
             },
             {
-                "name": "Total System Memory",
-                "value": "require ('os').totalmem ()"
+                "name": "System Uptime (Sec.)",
+                "value": "require ('os').uptime ()"
             }
         ]
     },
