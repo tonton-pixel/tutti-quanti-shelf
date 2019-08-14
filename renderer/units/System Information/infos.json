@@ -70,6 +70,10 @@
             {
                 "name": "Resources Directory",
                 "value": "require ('electron').remote.process.resourcesPath"
+            },
+            {
+                "name": "Electron Module Path",
+                "value": "require.resolve ('electron')"
             }
         ]
     },
@@ -262,7 +266,7 @@
                 "value": "require ('electron').remote.app.getGPUInfo ('basic')"
             },
             {
-                "name": "Process Metrics",
+                "name": "App Process Metrics",
                 "value": "require ('electron').remote.app.getAppMetrics ()"
             }
         ]
