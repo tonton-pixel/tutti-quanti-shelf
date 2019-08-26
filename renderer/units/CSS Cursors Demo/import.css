@@ -8,7 +8,6 @@
 
 #css-cursors-demo-unit table
 {
-    display: block;
     color: var(--color);
     background-color: white;
     margin-bottom: 0.75em;
@@ -27,7 +26,7 @@
 
 #css-cursors-demo-unit th
 {
-    width: 12em;
+    width: 10em;
     font-family: Monaco, "Noto Mono", monospace;
     font-size: 16px;
     padding: 0.5em 1em;

@@ -106,16 +106,6 @@
         ]
     },
     {
-        "category": "Scrolling",
-        "items":
-        [
-            {
-                "cursor": "all-scroll",
-                "description": "Something can be scrolled in any direction (panned)."
-            }
-        ]
-    },
-    {
         "category": "Resizing",
         "items":
         [
@@ -174,6 +164,16 @@
             {
                 "cursor": "nwse-resize",
                 "description": "The corner of a box is to be moved north-west or south-east (up-left or down-right)."
+            }
+        ]
+    },
+    {
+        "category": "Scrolling",
+        "items":
+        [
+            {
+                "cursor": "all-scroll",
+                "description": "Something can be scrolled in any direction (panned)."
             }
         ]
     },
