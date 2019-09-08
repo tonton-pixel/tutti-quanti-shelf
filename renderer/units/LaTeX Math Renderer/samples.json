@@ -18,6 +18,20 @@
         ]
     },
     {
+        "label": "Fourier",
+        "items":
+        [
+            {
+                "label": "Fourier Transforms",
+                "string": "\\begin{aligned}\nF(\\xi) &= \\int_{-\\infty} ^\\infty f(x) e^{-2 \\pi i x \\xi} dx \\\\\nf(x) &= \\int_{-\\infty} ^\\infty F(\\xi) e^{2 \\pi i \\xi x} d\\xi\n\\end{aligned}\n"
+            },
+            {
+                "label": "Discrete Fourier Transform",
+                "string": "{\\begin{aligned}X_{k}&=\\sum _{n=0}^{N-1}x_{n}\\cdot e^{-{\\frac {i2\\pi }{N}}kn}\\\\&=\\sum _{n=0}^{N-1}x_{n}\\cdot [\\cos(2\\pi kn/N)-i\\cdot \\sin(2\\pi kn/N)]\\end{aligned}}"
+            }
+        ]
+    },
+    {
         "label": "HTML",
         "items":
         [

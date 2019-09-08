@@ -14,12 +14,15 @@ module.exports.loadTextFile = function (prompt, filters, defaultPath, encoding, 
             message: prompt,
             filters: filters,
             defaultPath: defaultPath
-        },
-        (filePaths) =>
+        }
+    )
+    .then
+    (
+        result =>
         {
-            if (filePaths)
+            if (!result.canceled)
             {
-                let filePath = filePaths[0];
+                let filePath = result.filePaths[0];
                 fs.readFile
                 (
                     filePath,
@@ -51,11 +54,15 @@ module.exports.saveTextFile = function (prompt, filters, defaultPath, callback)
             message: prompt,
             filters: filters,
             defaultPath: defaultPath
-        },
-        (filePath) =>
+        }
+    )
+    .then
+    (
+        result =>
         {
-            if (filePath)
+            if (!result.canceled)
             {
+                let filePath = result.filePath;
                 fs.writeFile
                 (
                     filePath,
