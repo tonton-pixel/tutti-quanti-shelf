@@ -16,6 +16,7 @@ The following utilities are currently available:
 - **JavaScript Runner**
 - **JSON Formatter**
 - **LaTeX Math Renderer**
+- **Romaji-Kana**
 - **Roman Numerals**
 - **System Information**
 - **Text Converter**
@@ -71,6 +72,15 @@ JSON data formatter and validator:
 LaTeX math expression renderer, using the KaTeX JavaScript library:
 
 <img src="screenshots/latex-math-renderer.png" width="1080px" alt="LaTeX Math Renderer screenshot">
+
+## Romaji-Kana
+
+Simple converters between rōmaji and kana:
+
+* Rōmaji to Kana
+* Kana to Rōmaji
+
+<img src="screenshots/romaji-kana.png" width="1080px" alt="Romaji-Kana screenshot">
 
 ## Roman Numerals
 

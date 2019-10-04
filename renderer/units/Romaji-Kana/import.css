@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+#romaji-kana-unit label
+{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+#romaji-kana-unit input
+{
+    font-size: 16px;
+    line-height: 1.333em;
+    padding: 0.2em 0.3em;
+    width: 100%;
+}
+
+#romaji-kana-unit .plain-panel
+{
+    padding-bottom: 0.75em;
+}
+
+#romaji-kana-unit .plain-panel div
+{
+    margin: 1em 0;
+}
+
+#romaji-kana-unit table
+{
+    font-size: 14px;
+    width: unset;
+}
+
+#romaji-kana-unit tr:nth-child(even)
+{
+    background-color: white;
+}
+
+#romaji-kana-unit tr:nth-child(odd)
+{
+    background: var(--color-accent) linear-gradient(hsla(0, 0%, 100%, 0.95), hsla(0, 0%, 100%, 0.95));
+}
+
+#romaji-kana-unit th,
+#romaji-kana-unit td
+{
+    text-align: left;
+    padding: 0.25em 0.5em;
+    white-space: nowrap;
+}
+
+#romaji-kana-unit td
+{
+    user-select: text;
+}
+
+#romaji-kana-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}

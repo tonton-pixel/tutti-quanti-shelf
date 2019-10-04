@@ -116,7 +116,7 @@ module.exports.start = function (context)
         }
     );
     //
-    let katexOptions = { allowedProtocols: [ "http", "https" ] };
+    let katexOptions = { trust: (context) => [ "http", "https" ].includes (context.protocol) };
     //
     function renderLatex (string)
     {
