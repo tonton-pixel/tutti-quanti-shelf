@@ -183,7 +183,7 @@
         [
             {
                 "name": "Name",
-                "value": "require ('electron').remote.app.getName ()"
+                "value": "require ('electron').remote.app.name"
             },
             {
                 "name": "Version",
@@ -553,27 +553,35 @@
             },
             {
                 "name": "Movable",
-                "value": "require ('electron').remote.getCurrentWindow ().isMovable ()"
+                "value": "require ('electron').remote.getCurrentWindow ().movable"
             },
             {
                 "name": "Resizable",
-                "value": "require ('electron').remote.getCurrentWindow ().isResizable ()"
+                "value": "require ('electron').remote.getCurrentWindow ().resizable"
             },
             {
                 "name": "Closable",
-                "value": "require ('electron').remote.getCurrentWindow ().isClosable ()"
+                "value": "require ('electron').remote.getCurrentWindow ().closable"
             },
             {
                 "name": "Minimizable",
-                "value": "require ('electron').remote.getCurrentWindow ().isMinimizable ()"
+                "value": "require ('electron').remote.getCurrentWindow ().minimizable"
             },
             {
                 "name": "Maximizable",
-                "value": "require ('electron').remote.getCurrentWindow ().isMaximizable ()"
+                "value": "require ('electron').remote.getCurrentWindow ().maximizable"
             },
             {
                 "name": "Full-Screenable",
-                "value": "require ('electron').remote.getCurrentWindow ().isFullScreenable ()"
+                "value": "require ('electron').remote.getCurrentWindow ().fullScreenable"
+            },
+            {
+                "name": "Auto-Hide Menu Bar",
+                "value": "require ('electron').remote.getCurrentWindow ().autoHideMenuBar"
+            },
+            {
+                "name": "Menu Bar Visible",
+                "value": "require ('electron').remote.getCurrentWindow ().isMenuBarVisible ()"
             },
             {
                 "name": "Has Shadow",
@@ -586,14 +594,6 @@
             {
                 "name": "Always On Top",
                 "value": "require ('electron').remote.getCurrentWindow ().isAlwaysOnTop ()"
-            },
-            {
-                "name": "Menu Bar Auto-Hide",
-                "value": "require ('electron').remote.getCurrentWindow ().isMenuBarAutoHide ()"
-            },
-            {
-                "name": "Menu Bar Visible",
-                "value": "require ('electron').remote.getCurrentWindow ().isMenuBarVisible ()"
             },
             {
                 "name": "Kiosk",
