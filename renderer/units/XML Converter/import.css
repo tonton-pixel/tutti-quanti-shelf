@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     margin: 0.5em 0;
 }
 
@@ -31,7 +31,7 @@
     padding: 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
 }
 
 #xml-converter-unit .action-group + .action-group,
@@ -57,7 +57,7 @@
 
 #xml-converter-unit .option label
 {
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 #xml-converter-unit .option + .option

@@ -3,13 +3,25 @@
         <h1>Rōmaji-Kana Converter</h1>
         <div class="plain-panel">
             <h2>Rōmaji to Kana</h2>
-            <div><label>Rōmaji:&nbsp;<input class="romaji-input" type="text"></label></div>
-            <div><label>Kana:&nbsp;&nbsp;&nbsp;&nbsp;<input lang="ja" class="kana-output" type="text" readonly></label></div>
+            <div class="kana-options">
+                <span>hiragana:&nbsp;</span>
+                <select class="romaji-hiragana-select">
+                    <option value="kun-yomi">Kun-Yomi</option>
+                    <option value="gairaigo">Gairaigo</option>
+                </select>
+                <span>KATAKANA:&nbsp;</span>
+                <select class="romaji-katakana-select">
+                    <option value="on-yomi">On-Yomi</option>
+                    <option value="gairaigo">Gairaigo</option>
+                </select>
+            </div>
+            <div><label class="text">Rōmaji:&nbsp;<input class="romaji-input" type="text"></label></div>
+            <div><label class="text">Kana:&nbsp;&nbsp;&nbsp;&nbsp;<input lang="ja" class="kana-output" type="text" readonly></label></div>
         </div>
         <div class="plain-panel">
             <h2>Kana to Rōmaji</h2>
-            <div><label>Kana:&nbsp;&nbsp;&nbsp;&nbsp;<input lang="ja" class="kana-input" type="text"></label></div>
-            <div><label>Rōmaji:&nbsp;<input class="romaji-output" type="text" readonly></label></div>
+            <div><label class="text">Kana:&nbsp;&nbsp;&nbsp;&nbsp;<input lang="ja" class="kana-input" type="text"></label></div>
+            <div><label class="text">Rōmaji:&nbsp;<input class="romaji-output" type="text" readonly></label></div>
         </div>
         <div class="accent-panel">
             <details class="examples">

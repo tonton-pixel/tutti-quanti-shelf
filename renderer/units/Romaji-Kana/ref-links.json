@@ -1,6 +1,20 @@
 [
     [
         {
+            "name": "simple-romaji-kana - npm",
+            "href": "https://www.npmjs.com/package/simple-romaji-kana"
+        },
+        {
+            "name": "GitHub - tonton-pixel/simple-romaji-kana: Simple Romaji-Kana Converters",
+            "href": "https://github.com/tonton-pixel/simple-romaji-kana"
+        }
+    ],
+    [
+        {
+            "name": "Transcription into Japanese - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Transcription_into_Japanese"
+        },
+        {
             "name": "Romanization of Japanese - Wikipedia",
             "href": "https://en.wikipedia.org/wiki/Romanization_of_Japanese"
         },

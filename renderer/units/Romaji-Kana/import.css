@@ -1,13 +1,27 @@
 @charset "utf-8";
 
-#romaji-kana-unit label
+#romaji-kana-unit div.kana-options
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#romaji-kana-unit div.kana-options select
+{
+    margin-right: 1.5em;
+}
+
+#romaji-kana-unit label.text
 {
     display: flex;
     align-items: center;
     font-size: 16px;
 }
 
-#romaji-kana-unit input
+#romaji-kana-unit .romaji-input,
+#romaji-kana-unit .kana-output,
+#romaji-kana-unit .kana-input,
+#romaji-kana-unit .romaji-output
 {
     font-size: 16px;
     line-height: 1.333em;
