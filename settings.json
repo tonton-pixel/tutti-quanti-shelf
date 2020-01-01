@@ -24,7 +24,7 @@
     "unitsName": "Utilities",
     "noCategoryName": "Other",
     "description": "Collection of miscellaneous developer-oriented utilities wrapped into one single app.",
-    "copyright": "© 2019 Michel MARIANI.",
+    "copyright": "© 2019-2020 Michel MARIANI.",
     "electronApp":
     {
         "label": "Tutti Quanti Shelf | Apps | Electron",

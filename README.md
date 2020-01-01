@@ -154,4 +154,4 @@ You can [download the latest release](https://github.com/tonton-pixel/tutti-quan
 
 The MIT License (MIT).
 
-Copyright © 2019 Michel MARIANI.
+Copyright © 2019-2020 Michel MARIANI.

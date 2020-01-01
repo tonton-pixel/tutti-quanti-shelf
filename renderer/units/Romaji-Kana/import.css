@@ -68,6 +68,31 @@
     user-select: text;
 }
 
+#romaji-kana-unit .hepburn-tables table
+{
+    border-bottom: none;
+}
+
+#romaji-kana-unit .hepburn-tables tr:last-child td
+{
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.06);
+}
+
+#romaji-kana-unit .hepburn-tables tr th.empty,
+#romaji-kana-unit .hepburn-tables tr td.empty
+{
+    width: 1em;
+    border-top: none;
+    border-bottom: none;
+    background: var(--color-accent) linear-gradient(hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.9));
+}
+
+#romaji-kana-unit .correlation-tables code
+{
+    color: inherit;
+    background: var(--color-accent) linear-gradient(hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0.8));
+}
+
 #romaji-kana-unit summary
 {
     font-weight: bold;

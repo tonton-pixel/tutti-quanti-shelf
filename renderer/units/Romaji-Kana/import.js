@@ -9,7 +9,11 @@ const kanaOutput = unit.querySelector ('.kana-output');
 const kanaInput = unit.querySelector ('.kana-input');
 const romajiOutput = unit.querySelector ('.romaji-output');
 //
+const correlationTables = unit.querySelector ('.correlation-tables');
+const hepburnTables = unit.querySelector ('.correlation-tables .hepburn-tables');
+//
 const examples = unit.querySelector ('.examples');
+const examplesTable = unit.querySelector ('.examples .examples-table');
 //
 const references = unit.querySelector ('.references');
 const links = unit.querySelector ('.links');
@@ -22,12 +26,13 @@ module.exports.start = function (context)
         romajiKatakanaSelect: "gairaigo",
         romajiInput: "",
         kanaInput: "",
+        correlationTables: false,
         examples: false,
         references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
-    const { romajiToKana, kanaToRomaji } = require ('simple-romaji-kana');
+    const { romajiToKana, kanaToRomaji, hepburnToKanaTable } = require ('simple-romaji-kana');
     //
     // Rōmaji to Kana
     //
@@ -78,7 +83,102 @@ module.exports.start = function (context)
         }
     );
     //
+    correlationTables.open = prefs.correlationTables;
+    //
+    let table = document.createElement ('table');
+    //
+    let headerRow = document.createElement ('tr');
+    let smallHeader = document.createElement ('th');
+    smallHeader.textContent = "hiragana";
+    headerRow.appendChild (smallHeader);
+    let hiraganaHeader = document.createElement ('th');
+    hiraganaHeader.textContent = "ひらがな";
+    headerRow.appendChild (hiraganaHeader);
+    let emptyHeader = document.createElement ('th');
+    emptyHeader.className = 'empty';
+    headerRow.appendChild (emptyHeader);
+    let capitalHeader = document.createElement ('th');
+    capitalHeader.textContent = "KATAKANA";
+    headerRow.appendChild (capitalHeader);
+    let katakanaHeader = document.createElement ('th');
+    katakanaHeader.textContent = "カタカナ";
+    headerRow.appendChild (katakanaHeader);
+    table.appendChild (headerRow);
+    for (let hepburn in hepburnToKanaTable)
+    {
+        if (/^[a-z]+$/.test (hepburn))
+        {
+            let kana = hepburnToKanaTable[hepburn];
+            if (!(Array.isArray (kana) && (typeof kana[0] === 'number')))
+            {
+                let dataRow = document.createElement ('tr');
+                let smallData = document.createElement ('td');
+                smallData.textContent = hepburn;
+                dataRow.appendChild (smallData);
+                let hiraganaData = document.createElement ('td');
+                hiraganaData.lang = 'ja';
+                if ((typeof kana === 'object') && ("kun-yomi" in kana))
+                {
+                    hiraganaData.textContent = `${kana["kun-yomi"]} [訓]\xA0／\xA0${kana["gairaigo"]} [外]`
+                }
+                else
+                {
+                    hiraganaData.textContent = Array.isArray (kana) ? `${kana[0]}（${kana[1]}）` : kana;
+                }
+                dataRow.appendChild (hiraganaData);
+                let emptyData = document.createElement ('td');
+                emptyData.className = 'empty';
+                dataRow.appendChild (emptyData);
+                let capitalHepburn = hepburn.toUpperCase ();
+                let capitalData = document.createElement ('td');
+                capitalData.textContent = capitalHepburn;
+                dataRow.appendChild (capitalData);
+                let capitalKana = hepburnToKanaTable[capitalHepburn];
+                let katakanaData = document.createElement ('td');
+                katakanaData.lang = 'ja';
+                if ((typeof capitalKana === 'object') && ("on-yomi" in capitalKana))
+                {
+                    katakanaData.textContent = `${capitalKana["gairaigo"]} [外]\xA0／\xA0${capitalKana["on-yomi"]} [音]`
+                }
+                else
+                {
+                    katakanaData.textContent = Array.isArray (capitalKana) ? `${capitalKana[0]}（${capitalKana[1]}）` : capitalKana;
+                }
+                dataRow.appendChild (katakanaData);
+                table.appendChild (dataRow);
+            }
+        }
+    }
+    hepburnTables.appendChild (table);
+    //
+    const samples = require ('./samples.json');
+    //
     examples.open = prefs.examples;
+    //
+    table = document.createElement ('table');
+    //
+    headerRow = document.createElement ('tr');
+    let romajiHeader = document.createElement ('th');
+    romajiHeader.textContent = "Rōmaji";
+    headerRow.appendChild (romajiHeader);
+    let kanaHeader = document.createElement ('th');
+    kanaHeader.textContent = "Kana";
+    headerRow.appendChild (kanaHeader);
+    table.appendChild (headerRow);
+    for (let sample of samples)
+    {
+        let dataRow = document.createElement ('tr');
+        let romajiData = document.createElement ('td');
+        romajiData.textContent = sample.romaji;
+        dataRow.appendChild (romajiData);
+        let kanaData = document.createElement ('td');
+        kanaData.lang = 'ja';
+        kanaData.textContent = romajiToKana (sample.romaji); // sample.kana
+        dataRow.appendChild (kanaData);
+        table.appendChild (dataRow);
+    }
+    //
+    examplesTable.appendChild (table);
     //
     references.open = prefs.references;
     //
@@ -96,6 +196,7 @@ module.exports.stop = function (context)
         romajiKatakanaSelect: romajiKatakanaSelect.value,
         romajiInput: romajiInput.value,
         kanaInput: kanaInput.value,
+        correlationTables: correlationTables.open,
         examples: examples.open,
         references: references.open
     };
