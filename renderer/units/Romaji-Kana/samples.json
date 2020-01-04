@@ -54,5 +54,53 @@
     { 
         "romaji": "BE-TO-VEN",
         "kana": "ベートーヴェン"
+    },
+    { 
+        "romaji": "maccha",
+        "kana": "まっちゃ"
+    },
+    { 
+        "romaji": "MATCHI",
+        "kana": "マッチ"
+    },
+    { 
+        "romaji": "hanawokamu",
+        "kana": "はなをかむ"
+    },
+    { 
+        "romaji": "WO-KUMAN",
+        "kana": "ウォークマン"
+    },
+    { 
+        "romaji": "webisu",
+        "kana": "ゑびす"
+    },
+    { 
+        "romaji": "SUWE-DEN",
+        "kana": "スウェーデン"
+    },
+    { 
+        "romaji": "MO-TSARUTO",
+        "kana": "モーツァルト"
+    },
+    { 
+        "romaji": "KWENTIN",
+        "kana": "クェンティン"
+    },
+    { 
+        "romaji": "TATU-",
+        "kana": "タトゥー"
+    },
+    { 
+        "romaji": "TYU-RINGEN",
+        "kana": "テューリンゲン"
+    },
+    { 
+        "romaji": "DONATERRO",
+        "kana": "ドナテッロ"
+    },
+    { 
+        "romaji": "VAIORIN",
+        "kana": "ヴァイオリン"
     }
 ]

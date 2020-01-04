@@ -119,7 +119,7 @@ module.exports.start = function (context)
                 hiraganaData.lang = 'ja';
                 if ((typeof kana === 'object') && ("kun-yomi" in kana))
                 {
-                    hiraganaData.textContent = `${kana["kun-yomi"]} [訓]\xA0／\xA0${kana["gairaigo"]} [外]`
+                    hiraganaData.textContent = `${kana["kun-yomi"]}［訓］／\xA0${kana["gairaigo"]}［外］`
                 }
                 else
                 {
@@ -138,7 +138,7 @@ module.exports.start = function (context)
                 katakanaData.lang = 'ja';
                 if ((typeof capitalKana === 'object') && ("on-yomi" in capitalKana))
                 {
-                    katakanaData.textContent = `${capitalKana["gairaigo"]} [外]\xA0／\xA0${capitalKana["on-yomi"]} [音]`
+                    katakanaData.textContent = `${capitalKana["gairaigo"]}［外］／\xA0${capitalKana["on-yomi"]}［音］`
                 }
                 else
                 {
