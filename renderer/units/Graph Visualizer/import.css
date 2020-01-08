@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+#graph-visualizer-unit .dot-source
+{
+    font-family: Monaco, "Noto Mono", monospace;
+    font-size: 13px;
+    line-height: 1.333em;
+    width: 100%;
+    resize: vertical;
+    padding: 0 0.5em;
+    tab-size : 4;
+    overscroll-behavior: contain;
+}
+
+#graph-visualizer-unit .actions
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 0.5em 0;
+}
+
+#graph-visualizer-unit .action-group
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+#graph-visualizer-unit .action-group + .action-group,
+#graph-visualizer-unit .action + .action
+{
+    margin-left: 0.75em;
+}
+
+#graph-visualizer-unit .options
+{
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 0.5em 0 0 0;
+}
+
+#graph-visualizer-unit .option + .option
+{
+    margin-left: 0.75em;
+}
+
+#graph-visualizer-unit .graph-rendering
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 0.5em 0 0.25em 0;
+    min-height: calc(8 * 1.2em);
+    background-color: white;
+    border: 1px solid var(--color-border);
+    overflow-x: auto;
+    margin-bottom: 0.5em;
+}
+
+#graph-visualizer-unit .graph-container
+{
+    pointer-events: none;
+    min-width: 0;
+}
+
+#graph-visualizer-unit .rendering-error
+{
+    font-family: Monaco, "Noto Mono", monospace;
+    font-size: 13px;
+    line-height: 1.333em;
+    color: var(--color-error);
+    text-align: center;
+    padding: 0.25em 0.5em;
+    pointer-events: auto;
+    user-select: text;
+}
+
+#graph-visualizer-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}

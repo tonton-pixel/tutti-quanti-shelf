@@ -11,6 +11,7 @@ The following utilities are currently available:
 - **CIDR Calculator**
 - **CSS Cursors Demo**
 - **Digital Clock**
+- **Graph Visualizer**
 - **IETF Language Tags**
 - **JavaScript Parser**
 - **JavaScript Runner**
@@ -42,6 +43,12 @@ Display CSS cursors by category:
 Customizable clock, using language-sensitive text formatting for date and time:
 
 <img src="screenshots/digital-clock.png" width="1080px" alt="Digital Clock screenshot">
+
+## Graph Visualizer
+
+Graph visualizer, using the Graphviz visualization software:
+
+<img src="screenshots/graph-visualizer.png" width="1080px" alt="Graph Visualizer screenshot">
 
 ## IETF Language Tags
 

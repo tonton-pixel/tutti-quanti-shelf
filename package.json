@@ -1,7 +1,7 @@
 {
     "name": "tutti-quanti-shelf",
     "productName": "Tutti Quanti Shelf",
-    "version": "1.7.1",
+    "version": "1.8.0",
     "description": "Collection of miscellaneous developer-oriented utilities wrapped into one single app.",
     "main": "main.js",
     "scripts": {
@@ -32,6 +32,7 @@
     "license": "MIT",
     "private": false,
     "dependencies": {
+        "d3-graphviz": "^2.6.1",
         "esprima": "^4.0.1",
         "simple-romaji-kana": "^2.4.1"
     },
