@@ -37,7 +37,7 @@
         [
             {
                 "label": "Goose Variants",
-                "string": "digraph G\n{\n    node\n    [\n        shape = circle,\n        fixedsize = true,\n        width = 0.75,\n        fontsize = 36\n        fontname = \"system-ui, sans-serif\"\n    ]\n    \"鵝\" -> \"鵞\"\n    \"鵝\" -> \"鹅\"\n    \"鵞\" -> \"鵝\"\n    \"鹅\" -> \"鵝\"\n}\n"
+                "string": "digraph \"\"\n{\n    node\n    [\n        shape = circle\n        style = filled\n        #color = none\n        fillcolor = red3\n        fixedsize = true\n        width = 0.75\n        fontname = \"system-ui, sans-serif\"\n        fontsize = 36\n        fontcolor = white\n    ]\n    edge\n    [\n        fontsize = 12\n        #arrowsize = 0.75\n    ]\n    \"鵝\" [ tooltip = \"U+9D5D 鵝\" ]\n    \"鵞\" [ tooltip = \"U+9D5E 鵞\" ]\n    \"鹅\" [ tooltip = \"U+9E45 鹅\" ]\n    \"鵞\" -> \"鵝\" [ label = \"Shape\\nVariant\" ]\n    \"鵝\" -> \"鵞\" [ label = \"Semantic\\nVariant\" ]\n    \"鵝\" -> \"鹅\" [ label = \"Simplified\\nVariant\" ]\n    \"鵞\" -> \"鵝\" [ label = \"Semantic\\nVariant\" ]\n    \"鹅\" -> \"鵝\" [ label = \"Traditional\\nVariant\" ]\n}\n"
             }
         ]
     }

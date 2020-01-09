@@ -67,7 +67,6 @@
 
 #graph-visualizer-unit .graph-container
 {
-    pointer-events: none;
     min-width: 0;
 }
 
@@ -79,7 +78,6 @@
     color: var(--color-error);
     text-align: center;
     padding: 0.25em 0.5em;
-    pointer-events: auto;
     user-select: text;
 }
 

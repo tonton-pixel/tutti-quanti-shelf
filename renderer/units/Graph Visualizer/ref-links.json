@@ -1,20 +1,34 @@
 [
     [
         {
-            "name": "d3-graphviz - npm",
-            "href": "https://www.npmjs.com/package/d3-graphviz"
+            "name": "Viz.js",
+            "href": "http://viz-js.com/"
         },
         {
-            "name": "GitHub - magjac/d3-graphviz: Graphviz DOT rendering and animated transitions using D3",
-            "href": "https://github.com/magjac/d3-graphviz"
+            "name": "viz.js - npm",
+            "href": "https://www.npmjs.com/package/viz.js"
+        },
+        {
+            "name": "GitHub - mdaines/viz.js: A hack to put Graphviz on the web.",
+            "href": "https://github.com/mdaines/viz.js"
+        },
+        {
+            "name": "Home · mdaines/viz.js Wiki · GitHub",
+            "href": "https://github.com/mdaines/viz.js/wiki"
+        }
+    ],
+    [
+        {
+            "name": "Graphviz Online",
+            "href": "https://dreampuf.github.io/GraphvizOnline/"
         },
         {
             "name": "Graphviz - Graph Visualization Software",
-            "href": "http://www.graphviz.org/"
+            "href": "https://www.graphviz.org/"
         },
         {
-            "name": "The DOT Language",
-            "href": "https://www.graphviz.org/doc/info/lang.html"
+            "name": "GraphViz Reference",
+            "href": "https://www.graphviz.org/doc/info/"
         }
     ]
 ]

@@ -23,7 +23,13 @@ module.exports.start = function (context)
     const pullDownMenus = require ('../../lib/pull-down-menus.js');
     const sampleMenus = require ('../../lib/sample-menus');
     //
-    const d3 = require ('d3-graphviz');
+    // https://github.com/mdaines/viz.js/wiki/Usage
+    // https://github.com/mdaines/viz.js/wiki/Caveats
+    //
+    const Viz = require ('viz.js');
+    const { Module, render } = require ('viz.js/full.render.js');
+    //
+    let viz = new Viz ({ Module, render });
     //
     const defaultPrefs =
     {
@@ -108,26 +114,37 @@ module.exports.start = function (context)
         }
     );
     //
+    let svgResult;
+    //
     function renderGraph ()
     {
+        svgResult = "";
         saveSVGButton.disabled = true;
-        try
+        graphContainer.innerHTML = '';
+        let trimmedString = dotSource.value.trim ();
+        if (trimmedString)
         {
-            graphContainer.innerHTML = '';
-            let trimmedString = dotSource.value.trim ();
-            if (trimmedString)
+            try
             {
-                let container = d3.graphviz ('.graph-container');
-                container.engine (engineType.value).renderDot (trimmedString);
-                saveSVGButton.disabled = false;
+                viz.renderString (trimmedString, { engine: engineType.value, format: 'svg' })
+                .then (result =>
+                {
+                    svgResult = result;
+                    graphContainer.innerHTML = svgResult;
+                    saveSVGButton.disabled = false;
+                })
+                .catch (error =>
+                {
+                    viz = new Viz ({ Module, render });
+                    let paragraph = document.createElement ('p');
+                    paragraph.className = 'rendering-error';
+                    paragraph.textContent = error;
+                    graphContainer.innerHTML = paragraph.outerHTML;
+                });
             }
-        }
-        catch (e)
-        {
-            let paragraph = document.createElement ('p');
-            paragraph.className = 'rendering-error';
-            paragraph.textContent = e;
-            graphContainer.innerHTML = paragraph.outerHTML;
+            catch (e)
+            {
+            }
         }
     }
     //
@@ -155,7 +172,7 @@ module.exports.start = function (context)
                 (filePath) =>
                 {
                     defaultFolderPath = path.dirname (filePath);
-                    return graphContainer.innerHTML;
+                    return svgResult;
                 }
             );
         }
