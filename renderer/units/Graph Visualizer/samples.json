@@ -1,5 +1,19 @@
 [
     {
+        "label": "Debian Man Page",
+        "items":
+        [
+            {
+                "label": "Example 1",
+                "string": "digraph test123 {\n    a -> b -> c;\n    a -> {x y};\n    b [shape=box];\n    c [label=\"hello\\nworld\",color=blue,fontsize=24,\n        fontname=\"Palatino-Italic\",fontcolor=red,style=filled];\n    a -> z [label=\"hi\", weight=100];\n    x -> z [label=\"multi-line\\nlabel\"];\n    edge [style=dashed,color=red];\n    b -> x;\n    {rank=same; b x}\n}"
+            },
+            {
+                "label": "Example 2",
+                "string": "graph test123 {\n    a -- b -- c;\n    a -- {x y};\n    x -- c [w=10.0];\n    x -- y [w=5.0,len=3];\n}"
+            }
+        ]
+    },
+    {
         "label": "Graphviz Examples",
         "items":
         [
@@ -8,12 +22,30 @@
                 "string": "digraph { a -> b }"
             },
             {
+                "label": "Clusters",
+                "string": "digraph G {\n\n    subgraph cluster_0 {\n        style=filled;\n        color=lightgrey;\n        node [style=filled,color=white];\n        a0 -> a1 -> a2 -> a3;\n        label = \"process #1\";\n    }\n\n    subgraph cluster_1 {\n        node [style=filled];\n        b0 -> b1 -> b2 -> b3;\n        label = \"process #2\";\n        color=blue\n    }\n    start -> a0;\n    start -> b0;\n    a1 -> b3;\n    b2 -> a3;\n    a3 -> a0;\n    a3 -> end;\n    b3 -> end;\n\n    start [shape=Mdiamond];\n    end [shape=Msquare];\n}"
+            },
+            {
                 "label": "Gradients",
-                "string": "digraph G\n{\n    bgcolor=\"purple:pink\"\n    label=\"agraph\"\n    fontcolor=\"white\"\n    subgraph cluster1\n    {\n        fillcolor=\"blue:cyan\"\n        label=\"acluster\"\n        fontcolor=\"white\"\n        style=\"filled\"\n        gradientangle=\"270\"\n\t\tnode\n        [\n            shape=box\n            fillcolor=\"red:yellow\"\n            style=\"filled\"\n            gradientangle=90\n        ]\n\t\tanode\n\t}\n} \n\n"
+                "string": "digraph G\n{\n    bgcolor=\"purple:pink\"\n    label=\"agraph\"\n    fontcolor=\"white\"\n    subgraph cluster1\n    {\n        fillcolor=\"blue:cyan\"\n        label=\"acluster\"\n        fontcolor=\"white\"\n        style=\"filled\"\n        gradientangle=\"270\"\n\t\tnode\n        [\n            shape=box\n            fillcolor=\"red:yellow\"\n            style=\"filled\"\n            gradientangle=90\n        ]\n\t\tanode\n\t}\n}"
             },
             {
                 "label": "Traffic Lights",
-                "string": "##\"I played some days with making an interface between our ConceptBase system (essentially a database system to store models) and graphviz. One example graph is attached. It is a so-called petri net for Dutch traffic lights. The example is actually taken from a book by Wil van der Aalst.\" Contributed by Manfred Jeusfeld.\n\n##Command to produce the output: \"neato -Tpng thisfile > thisfile.png\"\n\ndigraph TrafficLights {\nnode [shape=box];  gy2; yr2; rg2; gy1; yr1; rg1;\nnode [shape=circle,fixedsize=true,width=0.9];  green2; yellow2; red2; safe2; safe1; green1; yellow1; red1;\ngy2->yellow2;\nrg2->green2;\nyr2->safe1;\nyr2->red2;\nsafe2->rg2;\ngreen2->gy2;\nyellow2->yr2;\nred2->rg2;\ngy1->yellow1;\nrg1->green1;\nyr1->safe2;\nyr1->red1;\nsafe1->rg1;\ngreen1->gy1;\nyellow1->yr1;\nred1->rg1;\n\noverlap=false\nlabel=\"PetriNet Model TrafficLights\\nExtracted from ConceptBase and layed out by Graphviz\"\nfontsize=12;\n}\n\n"
+                "string": "##\"I played some days with making an interface between our ConceptBase system (essentially a database system to store models) and graphviz. One example graph is attached. It is a so-called petri net for Dutch traffic lights. The example is actually taken from a book by Wil van der Aalst.\" Contributed by Manfred Jeusfeld.\n\n##Command to produce the output: \"neato -Tpng thisfile > thisfile.png\"\n\ndigraph TrafficLights {\nnode [shape=box];  gy2; yr2; rg2; gy1; yr1; rg1;\nnode [shape=circle,fixedsize=true,width=0.9];  green2; yellow2; red2; safe2; safe1; green1; yellow1; red1;\ngy2->yellow2;\nrg2->green2;\nyr2->safe1;\nyr2->red2;\nsafe2->rg2;\ngreen2->gy2;\nyellow2->yr2;\nred2->rg2;\ngy1->yellow1;\nrg1->green1;\nyr1->safe2;\nyr1->red1;\nsafe1->rg1;\ngreen1->gy1;\nyellow1->yr1;\nred1->rg1;\n\noverlap=false\nlabel=\"PetriNet Model TrafficLights\\nExtracted from ConceptBase and layed out by Graphviz\"\nfontsize=12;\n}"
+            }
+        ]
+    },
+    {
+        "label": "Linux Journal",
+        "items":
+        [
+            {
+                "label": "Binary Tree",
+                "string": "digraph G\n{\n    node [shape = record];\n\n    node0 [ label =\"<f0> | <f1> J | <f2> \"];\n    node1 [ label =\"<f0> | <f1> E | <f2> \"];\n    node4 [ label =\"<f0> | <f1> C | <f2> \"];\n    node6 [ label =\"<f0> | <f1> I | <f2> \"];\n    node2 [ label =\"<f0> | <f1> U | <f2> \"];\n    node5 [ label =\"<f0> | <f1> N | <f2> \"];\n    node9 [ label =\"<f0> | <f1> Y | <f2> \"];\n    node8 [ label =\"<f0> | <f1> W | <f2> \"];\n    node10 [ label =\"<f0> | <f1> Z | <f2> \"];\n    node7 [ label =\"<f0> | <f1> A | <f2> \"];\n    node3 [ label =\"<f0> | <f1> G | <f2> \"];\n\n\n    \"node0\":f0 -> \"node1\":f1;\n    \"node0\":f2 -> \"node2\":f1;\n\n    \"node1\":f0 -> \"node4\":f1;\n    \"node1\":f2 -> \"node6\":f1;\n    \"node4\":f0 -> \"node7\":f1;\n    \"node4\":f2 -> \"node3\":f1;\n\n    \"node2\":f0 -> \"node5\":f1;\n    \"node2\":f2 -> \"node9\":f1;\n\n    \"node9\":f0 -> \"node8\":f1;\n    \"node9\":f2 -> \"node10\":f1;\n}\n"
+            },
+            {
+                "label": "Hash Table",
+                "string": "digraph G\n{\n    rankdir = LR;\n    node [shape=record, width=.1, height=.1];\n\n    node0 [label = \"<p0> | <p1> | <p2> | <p3> | <p4> | | \", height = 1];\n\n    node[ width=2 ];\n    node1 [label = \"{<e> r0 | 123 | <p> }\" ];\n    node2 [label = \"{<e> r10 | 13 | <p> }\" ];\n    node3 [label = \"{<e> r11 | 23 | <p> }\" ];\n    node4 [label = \"{<e> r12 | 326 | <p> }\" ];\n    node5 [label = \"{<e> r13 | 1f3 | <p> }\" ];\n    node6 [label = \"{<e> r20 | 123 | <p> }\" ];\n    node7 [label = \"{<e> r40 | b23 | <p> }\" ];\n    node8 [label = \"{<e> r41 | 12f | <p> }\" ];\n    node9 [label = \"{<e> r42 | 1d3 | <p> }\" ];\n\n    node0:p0 -> node1:e;\n    node0:p1 -> node2:e;\n    node2:p -> node3:e;\n    node3:p -> node4:e;\n    node4:p -> node5:e;\n\n    node0:p2 -> node6:e;\n    node0:p4 -> node7:e;\n    node7:p -> node8:e;\n    node8:p -> node9:e;\n\n}"
             }
         ]
     },
@@ -27,7 +59,7 @@
             },
             {
                 "label": "Example 2",
-                "string": "graph G\n{\n    run -- intr;\n    intr -- runbl;\n    runbl -- run;\n    run -- kernel;\n    kernel -- zombie;\n    kernel -- sleep;\n    kernel -- runmem;\n    sleep -- swap;\n    swap -- runswap;\n    runswap -- new;\n    runswap -- runmem;\n    new -- runmem;\n    sleep -- runmem;\n}"
+                "string": "graph G\n{\n    graph [ overlap = false ]\n    run -- intr;\n    intr -- runbl;\n    runbl -- run;\n    run -- kernel;\n    kernel -- zombie;\n    kernel -- sleep;\n    kernel -- runmem;\n    sleep -- swap;\n    swap -- runswap;\n    runswap -- new;\n    runswap -- runmem;\n    new -- runmem;\n    sleep -- runmem;\n}"
             }
         ]
     },
@@ -36,8 +68,26 @@
         "items":
         [
             {
-                "label": "Goose Variants",
-                "string": "digraph \"\"\n{\n    node\n    [\n        shape = circle\n        style = filled\n        #color = none\n        fillcolor = red3\n        fixedsize = true\n        width = 0.75\n        fontname = \"system-ui, sans-serif\"\n        fontsize = 36\n        fontcolor = white\n    ]\n    edge\n    [\n        fontsize = 12\n        #arrowsize = 0.75\n    ]\n    \"鵝\" [ tooltip = \"U+9D5D 鵝\" ]\n    \"鵞\" [ tooltip = \"U+9D5E 鵞\" ]\n    \"鹅\" [ tooltip = \"U+9E45 鹅\" ]\n    \"鵞\" -> \"鵝\" [ label = \"Shape\\nVariant\" ]\n    \"鵝\" -> \"鵞\" [ label = \"Semantic\\nVariant\" ]\n    \"鵝\" -> \"鹅\" [ label = \"Simplified\\nVariant\" ]\n    \"鵞\" -> \"鵝\" [ label = \"Semantic\\nVariant\" ]\n    \"鹅\" -> \"鵝\" [ label = \"Traditional\\nVariant\" ]\n}\n"
+                "label": "Goose Variants (Tooltips)",
+                "string": "digraph \"\"\n{\n    graph\n    [\n        #bgcolor = lightyellow\n        #rankdir = LR\n        #nodesep = 0.5\n    ]\n    node\n    [\n        shape = circle\n        style = filled\n        #color = none\n        fillcolor = red3\n        fixedsize = true\n        width = 0.75\n        fontname = \"system-ui, sans-serif\"\n        fontsize = 36\n        fontcolor = white\n    ]\n    edge\n    [\n        fontsize = 11\n        fontname = \"system-ui, sans-serif\"\n        arrowsize = 0.75\n    ]\n    \"鵝\" [ tooltip = \"U+9D5D 鵝\" ]\n    \"鵞\" [ tooltip = \"U+9D5E 鵞\" ]\n    \"鹅\" [ tooltip = \"U+9E45 鹅\" ]\n    \"鵞\" -> \"鵝\" [ label = \" Shape \\n Variant \" ]\n    \"鵝\" -> \"鵞\" [ label = \" Semantic \\n Variant \" ]\n    \"鵝\" -> \"鹅\" [ label = \" Simplified \\n Variant \" ]\n    \"鵞\" -> \"鵝\" [ label = \" Semantic \\n Variant \" ]\n    \"鹅\" -> \"鵝\" [ label = \" Traditional \\n Variant \" ]\n}"
+            },
+            {
+                "label": "Goose Variants (Links)",
+                "string": "digraph \"\"\n{\n    graph\n    [\n        #bgcolor = lightyellow\n        #rankdir = LR\n        #nodesep = 0.5\n    ]\n    node\n    [\n        shape = circle\n        style = filled\n        #color = none\n        fillcolor = red3\n        fixedsize = true\n        width = 0.75\n        fontname = \"system-ui, sans-serif\"\n        fontsize = 36\n        fontcolor = white\n    ]\n    edge\n    [\n        fontsize = 11\n        fontname = \"system-ui, sans-serif\"\n        arrowsize = 0.75\n    ]\n    \"鵝\"\n    [\n        tooltip = \"https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9D5D\"\n        URL = \"https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9D5D\"\n    ]\n    \"鵞\"\n    [\n        tooltip = \"https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9D5E\"\n        URL = \"https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9D5E\"\n    ]\n    \"鹅\"\n    [\n        tooltip = \"https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9E45\"\n        URL = \"https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9E45\"\n    ]\n    \"鵞\" -> \"鵝\" [ label = \" Shape \\n Variant \" ]\n    \"鵝\" -> \"鵞\" [ label = \" Semantic \\n Variant \" ]\n    \"鵝\" -> \"鹅\" [ label = \" Simplified \\n Variant \" ]\n    \"鵞\" -> \"鵝\" [ label = \" Semantic \\n Variant \" ]\n    \"鹅\" -> \"鵝\" [ label = \" Traditional \\n Variant \" ]\n}"
+            }
+        ]
+    },
+    {
+        "label": "Wikimedia Commons",
+        "items":
+        [
+            {
+                "label": "Red Black Tree",
+                "string": "// Red Black Tree Example\n\ndigraph G {\n\tgraph [ratio=.48];\n\tnode [style=filled, color=black, shape=circle, width=.6 \n\t\tfontname=Helvetica, fontweight=bold, fontcolor=white, \n\t\tfontsize=24, fixedsize=true];\n\t{rank = same; n1; 6; n4; n5; n6; n7; 22; 27};\n\t\n\t6, 8, 17, 22, 27\n\t[fillcolor=red];\n\t\n\tn1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11\n\t[label=\"NIL\", shape=record, width=.4,height=.25, fontsize=16];\n\t\n\t13 -> 8, 17;\n\t8 -> 1 [weight=6]; \n\t8 -> 11 [weight=5];\n\t17 -> 15 [weight=4]; \n\t17 -> 25 [weight=5];\n\t1 -> n1 [weight=7]; \n\t1 -> 6;\n\t11 -> n4 [weight=10]; \n\t11 -> n5 [weight=14];\n\t6 -> n2, n3;\n\t15 -> n6 [weight=14]; \n\t15 -> n7 [weight=10];\n\t25 -> 22; \n\t25 -> 27 [weight=6];\n\t22 -> n8 [weight=5]; \n\t22 -> n9 [weight=3];\n\t27 -> n10 [weight=3];\n\t27 -> n11 [weight=5];\n}"
+            },
+            {
+                "label": "Clickable Graph",
+                "string": "digraph {\n\nnode [shape=\"box\",style=filled,fillcolor=pink]\n\nlabel=\"Dependency graph of Reftoolbar scripts (as of 30 April 2014).\\nThe scripts not related to Reftoolbar 2.0b have grey text.\\nEach arrow means \\\"calls\\\". This map is click-able.\"\n\nnode [color=black,fontcolor=black,URL=\"https://en.wikipedia.org/wiki/MediaWiki:Gadgets-definition\"];\nedge [color=black];\n\"MediaWiki:\\nGadgets-definition\"\n\nnode [color=black,fontcolor=black,URL=\"https://en.wikipedia.org/wiki/MediaWiki:Gadget-refToolbar.js\"];\nedge [color=black];\n\"MediaWiki:\\nGadget-refToolbar.js\";\n\n\"MediaWiki:\\nGadgets-definition\"->\"MediaWiki:\\nGadget-refToolbar.js\";\n\nnode [color=gray,fontcolor=gray,URL=\"\"];\nedge [color=gray];\n\"MediaWiki:\\nGadget-[...several unrelated sources...]\";\n\n\"MediaWiki:\\nGadgets-definition\"->\"MediaWiki:\\nGadget-[...several unrelated sources...]\";\n\nnode [color=black,fontcolor=black,URL=\"https://en.wikipedia.org/wiki/MediaWiki:Gadget-refToolbarBase.js\"];\nedge [color=black];\n\"MediaWiki:\\nGadget-refToolbar.js\"->\"MediaWiki:\\nGadget-refToolbarBase.js\";\n\nnode [URL=\"https://en.wikipedia.org/wiki/MediaWiki:RefToolbar.js\"];\n\"MediaWiki:\\nGadget-refToolbar.js\"->\"MediaWiki:\\nRefToolbar.js\";\n\nedge [color=gray];\n\nnode [color=gray,fontcolor=gray,URL=\"https://en.wikipedia.org/wiki/MediaWiki:RefToolbarNoDialogs.js\"];\n\"MediaWiki:\\nGadget-refToolbar.js\"->\"MediaWiki:\\nRefToolbarNoDialogs.js\";\n\nnode [URL=\"https://en.wikipedia.org/wiki/MediaWiki:RefToolbarLegacy.js\"];\n\"MediaWiki:\\nGadget-refToolbar.js\"->\"MediaWiki:\\nRefToolbarLegacy.js\";\n\nedge [color=black];\nnode [color=black,fontcolor=black,URL=\"https://en.wikipedia.org/wiki/MediaWiki:RefToolbarMessages-en.js\"\n];\n\"MediaWiki:\\nRefToolbar.js\"->\"MediaWiki:\\nRefToolbarMessages-en.js\";\nnode [URL=\"https://en.wikipedia.org/wiki/MediaWiki:RefToolbarMessages-de.js\"];\n\"MediaWiki:\\nRefToolbar.js\"->\"MediaWiki:\\nRefToolbarMessages-de.js\";\nnode [URL=\"https://tools.wmflabs.org/reftoolbar/lookup.php\",fillcolor=orange];\n\"MediaWiki:\\nRefToolbar.js\"->\"tools.wmflabs.org/\\nreftoolbar/lookup.php\"\n\nnode [URL=\"https://tools.wmflabs.org/reftoolbar/crossref.php\",fillcolor=orange];\n\"tools.wmflabs.org/\\nreftoolbar/lookup.php\"->\"tools.wmflabs.org/\\nreftoolbar/crossref.php\"\n\nnode [URL=\"https://en.wikipedia.org/wiki/MediaWiki:RefToolbarConfig.js\",fillcolor=pink];\n\"MediaWiki:\\nRefToolbarMessages-en.js\"->\"MediaWiki:\\nRefToolbarConfig.js\";\n\"MediaWiki:\\nRefToolbarMessages-de.js\"->\"MediaWiki:\\nRefToolbarConfig.js\";\n}"
             }
         ]
     }

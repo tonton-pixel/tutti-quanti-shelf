@@ -29,6 +29,22 @@
         {
             "name": "GraphViz Reference",
             "href": "https://www.graphviz.org/doc/info/"
+        },
+        {
+            "name": "Graphviz - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Graphviz"
+        }
+    ],
+    [
+        {
+            "name": "An Introduction to GraphViz | Linux Journal",
+            "href": "https://www.linuxjournal.com/article/7275"
+        }
+    ],
+    [
+        {
+            "name": "dot(1) — graphviz — Debian jessie — Debian Manpages",
+            "href": "https://manpages.debian.org/jessie/graphviz/dot.1.en.html"
         }
     ]
 ]
