@@ -13,8 +13,7 @@ const outputString = unit.querySelector ('.output-string');
 const references = unit.querySelector ('.references');
 const links = unit.querySelector ('.links');
 //
-let defaultXmlFolderPath;
-let defaultJsonFolderPath;
+let defaultFolderPath;
 //
 module.exports.start = function (context)
 {
@@ -31,8 +30,7 @@ module.exports.start = function (context)
     {
         inputString: "",
         trimWhitespace: false,
-        defaultXmlFolderPath: context.defaultFolderPath,
-        defaultJsonFolderPath: context.defaultFolderPath,
+        defaultFolderPath: context.defaultFolderPath,
         references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
@@ -104,8 +102,7 @@ module.exports.start = function (context)
         }
     );
     //
-    defaultXmlFolderPath = prefs.defaultXmlFolderPath;
-    defaultJsonFolderPath = prefs.defaultJsonFolderPath;
+    defaultFolderPath = prefs.defaultFolderPath;
     //
     trimWhitespace.checked = prefs.trimWhitespace;
     trimWhitespace.addEventListener ('click', (event) => { inputString.dispatchEvent (new Event ('input')); });
@@ -155,13 +152,13 @@ module.exports.start = function (context)
             (
                 "Load XML file:",
                 loadXmlFileFilters,
-                defaultXmlFolderPath,
+                defaultFolderPath,
                 'utf8',
                 (text, filePath) =>
                 {
                     inputString.value = text;
                     inputString.dispatchEvent (new Event ('input'));
-                    defaultXmlFolderPath = path.dirname (filePath);
+                    defaultFolderPath = path.dirname (filePath);
                 }
             );
         }
@@ -182,10 +179,10 @@ module.exports.start = function (context)
             (
                 "Save XML file:",
                 saveXmlFileFilters,
-                defaultXmlFolderPath,
+                defaultFolderPath,
                 (filePath) =>
                 {
-                    defaultXmlFolderPath = path.dirname (filePath);
+                    defaultFolderPath = path.dirname (filePath);
                     return inputString.value;
                 }
             );
@@ -206,10 +203,10 @@ module.exports.start = function (context)
             (
                 "Save JSON file:",
                 jsonFileFilters,
-                defaultJsonFolderPath,
+                defaultFolderPath,
                 (filePath) =>
                 {
-                    defaultJsonFolderPath = path.dirname (filePath);
+                    defaultFolderPath = path.dirname (filePath);
                     return outputString.value;
                 }
             );
@@ -230,8 +227,7 @@ module.exports.stop = function (context)
     {
         inputString: inputString.value,
         trimWhitespace: trimWhitespace.checked,
-        defaultXmlFolderPath: defaultXmlFolderPath,
-        defaultJsonFolderPath: defaultJsonFolderPath,
+        defaultFolderPath: defaultFolderPath,
         references: references.open
     };
     context.setPrefs (prefs);
