@@ -1,7 +1,7 @@
 {
     "name": "tutti-quanti-shelf",
     "productName": "Tutti Quanti Shelf",
-    "version": "1.8.4",
+    "version": "1.8.5",
     "description": "Collection of miscellaneous developer-oriented utilities wrapped into one single app.",
     "main": "main.js",
     "scripts": {
@@ -9,8 +9,7 @@
         "build-darwin": "electron-packager . --asar --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
         "build-linux": "electron-packager . --asar --out=build --platform=linux --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.png --overwrite",
         "build-mas": "electron-packager . --asar --out=build --platform=mas --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
-        "build-win32": "electron-packager . --asar --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite",
-        "build-all": "electron-packager . --asar --out=build --platform=all --ignore=/~.* --ignore=^/screenshots --icon=icons/icon --overwrite"
+        "build-win32": "electron-packager . --asar --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite"
     },
     "keywords": [
         "app",
@@ -37,7 +36,7 @@
         "viz.js": "^2.1.2"
     },
     "devDependencies": {
-        "electron": "^7.1.9",
+        "electron": "^7.1.10",
         "electron-packager": "^14.2.0"
     }
 }

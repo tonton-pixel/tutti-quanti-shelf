@@ -1,6 +1,11 @@
-# Release notes
+# Release Notes
 
-This project adheres to [Semantic Versioning](http://semver.org/).
+This project adheres to [Semantic Versioning](https://semver.org/).
+
+## 1.8.5
+
+- Added release notes (CHANGES.md).
+- Updated `Electron` to version `7.1.10`.
 
 ## 1.8.4
 
