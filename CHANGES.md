@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.8.6
+
+- Updated `simple-romaji-kana` module to version `2.4.2`.
+- Updated obsolete reference link and examples of the **Romaji-Kana** utility.
+- Updated release notes (CHANGES.md).
+
 ## 1.8.5
 
 - Added release notes (CHANGES.md).
@@ -9,8 +15,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ## 1.8.4
 
-- Used only one common default folder for both XML and JSON in the `XML Converter` utility.
-- Added new Unihan variant samples to the `Graph Visualizer` utility.
+- Used only one common default folder for both XML and JSON in the **XML Converter** utility.
+- Added new Unihan variant samples to the **Graph Visualizer** utility.
 
 ## 1.8.3
 
@@ -19,28 +25,28 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ## 1.8.2
 
-- Enabled opening of external links in graphs, added new samples and reference links in the `Graph Visualizer` utility.
+- Enabled opening of external links in graphs, added new samples and reference links in the **Graph Visualizer** utility.
 
 ## 1.8.1
 
 - Used `viz.js` module directly, instead of `d3-graphviz`.
-- Fixed saving of potentially invalid SVG, and updated samples and reference links in the `Graph Visualizer` utility.
+- Fixed saving of potentially invalid SVG, and updated samples and reference links in the **Graph Visualizer** utility.
 - Updated screenshot accordingly.
 - Fixed opening of invalid anchors.
 - Updated `Electron` to version `7.1.8`.
 
 ## 1.8.0
 
-- Added a new `Graph Visualizer` utility.
+- Added a new **Graph Visualizer** utility.
 
 ## 1.7.1
 
-- Improved legibility of correlation tables and updated examples of the `Romaji-Kana` utility.
+- Improved legibility of correlation tables and updated examples of the **Romaji-Kana** utility.
 
 ## 1.7.0
 
 - Updated `simple-romaji-kana` module to version `2.4.1`.
-- Added correlation tables to the `Romaji-Kana` utility, and generated examples dynamically.
+- Added correlation tables to the **Romaji-Kana** utility, and generated examples dynamically.
 - Updated screenshot accordingly.
 - Fixed app timestamp date.
 - Updated copyright years.
@@ -85,7 +91,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## 1.4.4
 
 - Improved layout of checkboxes.
-- Improved the `Romaji-Kana` utility.
+- Improved the **Romaji-Kana** utility.
 - Updated `simple-romaji-kana` module to version `2.0.0`.
 - Updated `Electron` to version `7.1.1`.
 - Updated `Electron Packager` to version `14.1.0`.
