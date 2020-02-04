@@ -7,7 +7,11 @@ module.exports.makeMenu = function (samples, callback)
     let menu = new Menu ();
     for (let sample of samples)
     {
-        if ("string" in sample)
+        if (sample === null)
+        {
+            menu.append (new MenuItem ({ type: 'separator' }));
+        }
+        else if ("string" in sample)
         {
             let menuItem = new MenuItem
             (

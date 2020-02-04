@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.9.0
+
+- Revamped the zoom level actions (`Actual Size`, `Zoom In`, `Zoom Out`) of the `View` menu.
+- Updated `Electron` to version `8.0.0`.
+
 ## 1.8.6
 
 - Updated `simple-romaji-kana` module to version `2.4.2`.
