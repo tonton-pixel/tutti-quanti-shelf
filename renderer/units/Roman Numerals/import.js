@@ -27,13 +27,16 @@ module.exports.start = function (context)
     //
     const numerals = require ('./numerals.js');
     //
-    romanSample.textContent = "MMXIX";
     arabicOutput.value = numerals.romanToArabic (romanInput.value = prefs.romanInput);
     romanInput.addEventListener ('input', (event) => { arabicOutput.value = numerals.romanToArabic (event.currentTarget.value); });
     //
-    arabicSample.textContent = "2019";
     romanOutput.value = numerals.arabicToRoman (arabicInput.value = prefs.arabicInput);
     arabicInput.addEventListener ('input', (event) => { romanOutput.value = numerals.arabicToRoman (event.currentTarget.value) });
+    //
+    let currentYear = new Date ().getFullYear ().toString ();
+    //
+    arabicSample.textContent = currentYear;
+    romanSample.textContent = numerals.arabicToRoman (currentYear);
     //
     notes.open = prefs.notes;
     //

@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-#cidr-calculator-unit code
-{
-    user-select: text;
-}
-
 #cidr-calculator-unit code,
 #cidr-calculator-unit input,
 #cidr-calculator-unit textarea
@@ -12,6 +7,16 @@
     font-family: Monaco, "Noto Mono", monospace;
     font-size: 13px;
     line-height: 1.333em;
+}
+
+#cidr-calculator-unit code.select-all
+{
+    user-select: all;
+    cursor: text;
+}
+
+#cidr-calculator-unit textarea
+{
     overscroll-behavior: contain;
 }
 

@@ -16,6 +16,7 @@
 #css-cursors-demo-unit tr
 {
     user-select: text;
+    cursor: text;
 }
 
 #css-cursors-demo-unit th,

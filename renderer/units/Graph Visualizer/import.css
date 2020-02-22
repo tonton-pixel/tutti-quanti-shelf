@@ -79,6 +79,7 @@
     text-align: center;
     padding: 0.25em 0.5em;
     user-select: text;
+    cursor: text;
 }
 
 #graph-visualizer-unit summary

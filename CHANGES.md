@@ -2,6 +2,13 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.9.2
+
+- Improved user selection of code examples and table cells.
+- Reorganized CSS code architecture.
+- Updated all screenshots.
+- Updated `Electron` to version `8.0.1`.
+
 ## 1.9.1
 
 - Updated `KaTeX` to version `0.11.1`.

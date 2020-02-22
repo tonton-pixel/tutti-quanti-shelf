@@ -1,7 +1,7 @@
 {
     "name": "tutti-quanti-shelf",
     "productName": "Tutti Quanti Shelf",
-    "version": "1.9.1",
+    "version": "1.9.2",
     "description": "Collection of miscellaneous developer-oriented utilities wrapped into one single app.",
     "main": "main.js",
     "scripts": {
@@ -36,7 +36,7 @@
         "viz.js": "^2.1.2"
     },
     "devDependencies": {
-        "electron": "^8.0.0",
+        "electron": "^8.0.1",
         "electron-packager": "^14.2.1"
     }
 }

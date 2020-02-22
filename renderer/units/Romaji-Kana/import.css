@@ -66,6 +66,7 @@
 #romaji-kana-unit td
 {
     user-select: text;
+    cursor: text;
 }
 
 #romaji-kana-unit .hepburn-tables table
