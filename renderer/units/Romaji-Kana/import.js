@@ -149,6 +149,7 @@ module.exports.start = function (context)
             }
         }
     }
+    table.appendChild (headerRow.cloneNode (true));
     hepburnTables.appendChild (table);
     //
     const samples = require ('./samples.json');
@@ -177,6 +178,7 @@ module.exports.start = function (context)
         dataRow.appendChild (kanaData);
         table.appendChild (dataRow);
     }
+    table.appendChild (headerRow.cloneNode (true));
     //
     examplesTable.appendChild (table);
     //

@@ -4,6 +4,7 @@
 {
     text-align: center;
     user-select: text;
+    cursor: text;
 }
 
 #css-cursors-demo-unit table
