@@ -31,7 +31,7 @@ module.exports.loadTextFile = function (prompt, filters, defaultPath, encoding, 
                     {
                         if (err)
                         {
-                            alert ("An error ocurred reading the file: " + err.message);
+                            alert ("An error occurred reading the file: " + err.message);
                         }
                         else
                         {
@@ -71,7 +71,7 @@ module.exports.saveTextFile = function (prompt, filters, defaultPath, callback)
                     {
                         if (err)
                         {
-                            alert ("An error ocurred writing the file: " + err.message);
+                            alert ("An error occurred writing the file: " + err.message);
                         }
                     }
                 );

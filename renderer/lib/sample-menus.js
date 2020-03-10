@@ -32,6 +32,8 @@ module.exports.makeMenu = function (samples, callback)
                 (
                     new MenuItem
                     (
+                        (item === null) ?
+                        { type: 'separator' } :
                         {
                             label: item.label.replace (/&/g, "&&"),
                             click: () => { callback (item); }

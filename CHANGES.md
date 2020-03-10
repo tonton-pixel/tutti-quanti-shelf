@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.9.4
+
+- Updated `Electron` to version `8.1.1`.
+
 ## 1.9.3
 
 - Used text cursor for all user-selectable text.
