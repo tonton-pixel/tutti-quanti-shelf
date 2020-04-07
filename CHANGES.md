@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.10.1
+
+- Fixed 1 low severity vulnerability.
+- Updated `Electron` to version `8.2.1`.
+
 ## 1.10.0
 
 - Updated `Electron` to version `8.2.0`.

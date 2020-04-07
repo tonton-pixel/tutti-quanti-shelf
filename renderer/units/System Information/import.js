@@ -181,7 +181,7 @@ module.exports.start = function (context)
     const linksList = require ('../../lib/links-list.js');
     //
     linksList (links, refLinks);
-}
+};
 //
 module.exports.stop = function (context)
 {
