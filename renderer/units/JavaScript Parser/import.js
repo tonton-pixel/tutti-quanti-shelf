@@ -8,6 +8,9 @@ const saveButton = unit.querySelector ('.save-button');
 const codeString = unit.querySelector ('.code-string');
 const parseButton = unit.querySelector ('.parse-button');
 const tokenizeButton = unit.querySelector ('.tokenize-button');
+const rangeCheckbox = unit.querySelector ('.range-checkbox');
+const locCheckbox = unit.querySelector ('.loc-checkbox');
+const commentCheckbox = unit.querySelector ('.comment-checkbox');
 const resultString = unit.querySelector ('.result-string');
 //
 const references = unit.querySelector ('.references');
@@ -35,6 +38,9 @@ module.exports.start = function (context)
     const defaultPrefs =
     {
         codeString: "",
+        rangeCheckbox: false,
+        locCheckbox: false,
+        commentCheckbox: false,
         defaultFolderPath: context.defaultFolderPath,
         references: false
     };
@@ -209,6 +215,19 @@ module.exports.start = function (context)
             event.dataTransfer.clearData ();
         };
     //
+    rangeCheckbox.checked = prefs.rangeCheckbox;
+    locCheckbox.checked = prefs.locCheckbox;
+    commentCheckbox.checked = prefs.commentCheckbox;
+    //
+    function getCurrentOptions ()
+    {
+        let currentOptions = { };
+        currentOptions.range = rangeCheckbox.checked;
+        currentOptions.loc = locCheckbox.checked;
+        currentOptions.comment = commentCheckbox.checked;
+        return currentOptions;
+    }
+    //
     function adjustRegexLiteral (key, value)
     {
         if ((key === 'value') && (value instanceof RegExp))
@@ -222,7 +241,8 @@ module.exports.start = function (context)
     {
         resultString.classList.remove ('parse-error');
         resultString.value = "";
-        if (codeString.value)
+        let script = codeString.value.trim ();
+        if (script)
         {
             setTimeout
             (
@@ -230,7 +250,7 @@ module.exports.start = function (context)
                 {
                     try
                     {
-                        resultString.value = json.stringify (parser (codeString.value), adjustRegexLiteral, 4);
+                        resultString.value = json.stringify (parser (script, getCurrentOptions ()), adjustRegexLiteral, 4);
                     }
                     catch (e)
                     {
@@ -273,6 +293,9 @@ module.exports.stop = function (context)
     let prefs =
     {
         codeString: codeString.value,
+        rangeCheckbox: rangeCheckbox.checked,
+        locCheckbox: locCheckbox.checked,
+        commentCheckbox: commentCheckbox.checked,
         defaultFolderPath: defaultFolderPath,
         references: references.open
     };

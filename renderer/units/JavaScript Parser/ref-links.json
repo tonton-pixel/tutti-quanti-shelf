@@ -3,10 +3,28 @@
         {
             "name": "Esprima",
             "href": "http://esprima.org/"
-        },
+        }
+    ],
+    [
         {
             "name": "GitHub - jquery/esprima: ECMAScript parsing infrastructure for multipurpose analysis",
             "href": "https://github.com/jquery/esprima"
+        },
+        {
+            "name": "esprima/getting-started.md at master · jquery/esprima · GitHub",
+            "href": "https://github.com/jquery/esprima/blob/master/docs/getting-started.md"
+        },
+        {
+            "name": "esprima/syntactic-analysis.md at master · jquery/esprima · GitHub",
+            "href": "https://github.com/jquery/esprima/blob/master/docs/syntactic-analysis.md"
+        },
+        {
+            "name": "esprima/lexical-analysis.md at master · jquery/esprima · GitHub",
+            "href": "https://github.com/jquery/esprima/blob/master/docs/lexical-analysis.md"
+        },
+        {
+            "name": "esprima/syntax-tree-format.md at master · jquery/esprima · GitHub",
+            "href": "https://github.com/jquery/esprima/blob/master/docs/syntax-tree-format.md"
         }
     ],
     [

@@ -64,7 +64,8 @@ module.exports.start = function (context)
     {
         let error = false;
         let output = '';
-        if (input)
+        let string = input.trim ();
+        if (string)
         {
             try
             {
@@ -77,7 +78,7 @@ module.exports.start = function (context)
                 {
                     space = '\t';
                 }
-                output = (balancedSpacing.checked ? json : JSON).stringify (JSON.parse (input), null, space);
+                output = (balancedSpacing.checked ? json : JSON).stringify (JSON.parse (string), null, space);
                 if (finalLineBreak.checked)
                 {
                     output += "\n";

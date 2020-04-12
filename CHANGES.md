@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.11.0
+
+- Added three parser option checkboxes to the **JavaScript Parser** utility: `Range`, `Loc`, `Comment`.
+- Added reference links to `Esprima` documentation in the **JavaScript Parser** utility.
+- Added trimming of input string to avoid cryptic error messages in the **JSON Formatter** utility.
+
 ## 1.10.1
 
 - Fixed 1 low severity vulnerability.

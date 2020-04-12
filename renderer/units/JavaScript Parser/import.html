@@ -20,11 +20,24 @@
         </div>
         <label>Code:<textarea class="code-string" rows="12"></textarea></label>
         <div class="interface">
-            <span class="option">
-                <button class="parse-button" type="button">Parse&nbsp;Script</button>
+            <span class="option-group">
+                <span class="option">
+                    <button class="parse-button" type="button">Parse&nbsp;Script</button>
+                </span>
+                <span class="option">
+                    <button class="tokenize-button" type="button">Tokenize</button>
+                </span>
             </span>
-            <span class="option">
-                <button class="tokenize-button" type="button">Tokenize</button>
+            <span class="option-group">
+                <span class="option">
+                    <label class="checkbox" title=""><input class="range-checkbox" type="checkbox">&nbsp;Range</label>
+                </span>
+                <span class="option">
+                    <label class="checkbox" title=""><input class="loc-checkbox" type="checkbox">&nbsp;Loc</label>
+                </span>
+                <span class="option">
+                    <label class="checkbox" title=""><input class="comment-checkbox" type="checkbox">&nbsp;Comment</label>
+                </span>
             </span>
         </div>
         <label>Result:<textarea class="result-string" rows="12" readonly></textarea></label>

@@ -44,14 +44,23 @@
 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 1em 0 -0.25em 0;
+    margin: 1em 0 0.25em 0;
 }
 
-#javascript-parser-unit .option + .option
+#javascript-parser-unit .option-group
 {
-    margin-left: 0.75em;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#javascript-parser-unit .option .checkbox
+{
+    margin-left: 1em;
 }
 
 #javascript-parser-unit .option .parse-button
