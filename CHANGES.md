@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.11.1
+
+- Added keyboard shortcut (`CommandOrControl+Enter`) to parse script (or tokenize it if `Alt` or `Shift` key is held down too) while focus is in the code text area in the `JavaScript Parser` utility.
+- Added keyboard shortcut (`CommandOrControl+Enter`) to run script while focus is in the code text area in the `JavaScript Runner` utility.
+- Updated `Electron` to version `8.2.3`.
+
 ## 1.11.0
 
 - Added three parser option checkboxes to the **JavaScript Parser** utility: `Range`, `Loc`, `Comment`.

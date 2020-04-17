@@ -215,6 +215,26 @@ module.exports.start = function (context)
             event.dataTransfer.clearData ();
         };
     //
+    codeString.addEventListener
+    (
+        'keydown',
+        (event) =>
+        {
+            if ((event.key === 'Enter') && ((process.platform === 'darwin') ? event.metaKey : event.ctrlKey))
+            {
+                event.preventDefault ();
+                if (event.altKey || event.shiftKey)
+                {
+                    tokenizeButton.click ();
+                }
+                else
+                {
+                    parseButton.click ();
+                }
+            }
+        }
+    );
+    //
     rangeCheckbox.checked = prefs.rangeCheckbox;
     locCheckbox.checked = prefs.locCheckbox;
     commentCheckbox.checked = prefs.commentCheckbox;

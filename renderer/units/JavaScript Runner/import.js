@@ -209,6 +209,19 @@ module.exports.start = function (context)
             event.dataTransfer.clearData ();
         };
     //
+    codeString.addEventListener
+    (
+        'keydown',
+        (event) =>
+        {
+            if ((event.key === 'Enter') && ((process.platform === 'darwin') ? event.metaKey : event.ctrlKey))
+            {
+                event.preventDefault ();
+                runButton.click ();
+            }
+        }
+    );
+    //
     runButton.addEventListener
     (
         'click',
