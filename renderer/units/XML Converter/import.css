@@ -3,7 +3,7 @@
 #xml-converter-unit .input-string,
 #xml-converter-unit .output-string
 {
-    font-family: Monaco, "Noto Mono", monospace;
+    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
     font-size: 13px;
     line-height: 1.333em;
     width: 100%;

@@ -1,8 +1,8 @@
 {
     "name": "tutti-quanti-shelf",
     "productName": "Tutti Quanti Shelf",
-    "version": "1.11.1",
-    "description": "Collection of miscellaneous developer-oriented utilities wrapped into one single app.",
+    "version": "1.11.2",
+    "description": "Collection of miscellaneous developer-oriented utilities.",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
@@ -12,7 +12,7 @@
         "build-win32": "electron-packager . --asar --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite"
     },
     "keywords": [
-        "app",
+        "application",
         "collection",
         "desktop",
         "developer",
@@ -36,7 +36,7 @@
         "viz.js": "^2.1.2"
     },
     "devDependencies": {
-        "electron": "^8.2.3",
+        "electron": "^8.2.4",
         "electron-packager": "^14.2.1"
     }
 }

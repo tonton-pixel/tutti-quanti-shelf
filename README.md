@@ -2,7 +2,7 @@
 
 **Tutti Quanti Shelf** is a collection of miscellaneous developer-oriented utilities wrapped into one single app, built with [Electron](https://electronjs.org).
 
-This app works on macOS, Linux and Windows operating systems.
+This desktop application works on macOS, Linux and Windows operating systems.
 
 ## Utilities
 
@@ -135,7 +135,7 @@ Convert XML to JSON:
 
 ## Building
 
-You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
+You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this application.
 
 ```bash
 git clone https://github.com/tonton-pixel/tutti-quanti-shelf
@@ -146,7 +146,7 @@ npm start
 
 If you don't wish to clone, you can [download the source code](https://github.com/tonton-pixel/tutti-quanti-shelf/archive/master.zip).
 
-Several scripts are also defined in the `package.json` file to build OS-specific bundles of the app, using the simple yet powerful [Electron Packager](https://github.com/electron-userland/electron-packager) Node module.\
+Several scripts are also defined in the `package.json` file to build OS-specific bundles of the application, using the simple yet powerful [Electron Packager](https://github.com/electron-userland/electron-packager) Node module.\
 For instance, running the following command will create a `Tutti Quanti Shelf.app` version for macOS:
 
 ```bash
