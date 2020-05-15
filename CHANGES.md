@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.12.0
+
+- Improved security.
+- Updated `Electron` to version `8.3.0`.
+
 ## 1.11.2
 
 - Improved display of monospaced fonts on Linux by adding "DejaVu Sans Mono" to the font stack.
