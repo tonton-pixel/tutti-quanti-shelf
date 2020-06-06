@@ -1,6 +1,6 @@
 # <img src="icons/icon-256.png" width="64px" align="center" alt="Tutti Quanti Shelf icon"> TUTTI QUANTI SHELF
 
-**Tutti Quanti Shelf** is a collection of miscellaneous developer-oriented utilities wrapped into one single app, built with [Electron](https://electronjs.org).
+**Tutti Quanti Shelf** is a collection of miscellaneous developer-oriented utilities wrapped into one single app, built with [Electron](https://www.electronjs.org/).
 
 This desktop application works on macOS, Linux and Windows operating systems.
 
@@ -135,21 +135,41 @@ Convert XML to JSON:
 
 ## Building
 
-You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this application.
+You'll need [Node.js](https://nodejs.org) (which comes with [npm](http://npmjs.com/)) installed on your computer in order to build this application.
+
+### Clone method
 
 ```bash
+# Clone the repository
 git clone https://github.com/tonton-pixel/tutti-quanti-shelf
+# Go into the repository
 cd tutti-quanti-shelf
+# Install dependencies
 npm install
+# Run the application
 npm start
 ```
 
-If you don't wish to clone, you can [download the source code](https://github.com/tonton-pixel/tutti-quanti-shelf/archive/master.zip).
+**Note**: to use the clone method, the core tool [Git](https://git-scm.com/) must also be installed.
 
-Several scripts are also defined in the `package.json` file to build OS-specific bundles of the application, using the simple yet powerful [Electron Packager](https://github.com/electron-userland/electron-packager) Node module.\
-For instance, running the following command will create a `Tutti Quanti Shelf.app` version for macOS:
+### Download method
+
+If you don't wish to clone, you can [download the source code](https://github.com/tonton-pixel/tutti-quanti-shelf/archive/master.zip), unZip it, then directly run the following commands from a Terminal opened at the resulting `tutti-quanti-shelf-master` folder location:
 
 ```bash
+# Install dependencies
+npm install
+# Run the application
+npm start
+```
+
+### Packaging
+
+Several scripts are also defined in the `package.json` file to build OS-specific bundles of the application, using the simple yet powerful [Electron Packager](https://github.com/electron-userland/electron-packager) Node module.\
+For instance, running the following command (once the dependencies are installed) will create a `Tutti Quanti Shelf.app` version for macOS:
+
+```bash
+# Build macOS (Darwin) application
 npm run build-darwin
 ```
 
