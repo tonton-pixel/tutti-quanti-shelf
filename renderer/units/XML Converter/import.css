@@ -57,7 +57,7 @@
 
 #xml-converter-unit .option label
 {
-    /* vertical-align: middle; */
+    white-space: nowrap;
 }
 
 #xml-converter-unit .option + .option

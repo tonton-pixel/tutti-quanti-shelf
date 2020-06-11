@@ -44,6 +44,7 @@
     justify-content: space-between;
     /* align-items: center; */
     margin: 0;
+    white-space: nowrap;
 }
 
 #latex-math-renderer-unit .option + .option

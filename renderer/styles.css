@@ -2,10 +2,8 @@
 
 :focus
 {
-    outline: -webkit-focus-ring-color auto 3px;
+    outline: var(--color-focus) auto 3px;
     outline-offset: -2px;
-    /* outline: var(--color-accent) auto 3px; */
-    /* outline: rgb(229, 151, 0) auto 3px; */
 }
 
 :not(input):not(textarea)::selection
@@ -389,11 +387,6 @@ kbd
     margin-top: -0.5em;
 }
 
-textarea
-{
-    border-color: #a9a9a9;
-}
-
 button.mouse-focus,
 input[type=button].mouse-focus,
 input[type=checkbox].mouse-focus,
@@ -459,13 +452,6 @@ select
 select:disabled
 {
     border-color: gray;
-}
-
-input[type=checkbox],
-input[type=radio]
-{
-    margin: 0;
-    zoom: 1.01;
 }
 
 input[type=number]

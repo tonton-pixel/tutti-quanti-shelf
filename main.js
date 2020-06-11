@@ -401,7 +401,9 @@ else
                 show: !settings.window.deferredShow,
                 webPreferences:
                 {
-                    nodeIntegration: true
+                    nodeIntegration: true,
+                    enableRemoteModule: true,
+                    spellcheck: false
                 }
             }
         );

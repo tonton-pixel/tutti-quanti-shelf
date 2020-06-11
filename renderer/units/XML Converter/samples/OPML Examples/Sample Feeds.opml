@@ -7,7 +7,7 @@
 	<body>
 		<outline text="Sample Feeds">
 			<outline text="Electron">
-				<outline type="rss" text="Electron" title="Electron" xmlUrl="https://electronjs.org/blog.xml"/>
+				<outline type="rss" text="Electron" title="Electron" xmlUrl="https://www.electronjs.org/blog.xml"/>
 				<outline type="rss" text="Newest questions tagged electron - Stack Overflow" title="Newest questions tagged electron - Stack Overflow" xmlUrl="https://stackoverflow.com/feeds/tag?tagnames=electron&amp;sort=newest"/>
 			</outline>
 			<outline text="Wikipedia">

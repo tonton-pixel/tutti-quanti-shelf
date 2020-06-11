@@ -8,45 +8,45 @@
     [
         {
             "name": "Stable Releases | Electron",
-            "href": "https://electronjs.org/releases/stable"
+            "href": "https://www.electronjs.org/releases/stable"
         },
         {
             "name": "Beta Releases | Electron",
-            "href": "https://electronjs.org/releases/beta"
+            "href": "https://www.electronjs.org/releases/beta"
         },
         {
             "name": "Nightly Releases | Electron",
-            "href": "https://electronjs.org/releases/nightly"
+            "href": "https://www.electronjs.org/releases/nightly"
         }
     ],
     [
         {
             "name": "All of the Documentation | Electron",
-            "href": "https://electronjs.org/docs/all/"
+            "href": "https://www.electronjs.org/docs/all/"
         },
         {
             "name": "Documentation | Electron",
-            "href": "https://electronjs.org/docs/"
+            "href": "https://www.electronjs.org/docs/"
         },
         {
             "name": "app | Electron",
-            "href": "https://electronjs.org/docs/api/app/"
+            "href": "https://www.electronjs.org/docs/api/app/"
         },
         {
             "name": "BrowserWindow | Electron",
-            "href": "https://electronjs.org/docs/api/browser-window/"
+            "href": "https://www.electronjs.org/docs/api/browser-window/"
         },
         {
             "name": "process | Electron",
-            "href": "https://electronjs.org/docs/api/process/"
+            "href": "https://www.electronjs.org/docs/api/process/"
         },
         {
             "name": "remote | Electron",
-            "href": "https://electronjs.org/docs/api/remote/"
+            "href": "https://www.electronjs.org/docs/api/remote/"
         },
         {
             "name": "screen | Electron",
-            "href": "https://electronjs.org/docs/api/screen/"
+            "href": "https://www.electronjs.org/docs/api/screen/"
         }
     ],
     [

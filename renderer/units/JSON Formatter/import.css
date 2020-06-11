@@ -42,6 +42,7 @@
 #json-formatter-unit .option + .option
 {
     margin-left: 0.75em;
+    white-space: nowrap;
 }
 
 #json-formatter-unit .output-string

@@ -49,8 +49,16 @@
     ],
     [
         {
+            "name": "Graphviz (dot) examples",
+            "href": "https://renenyffenegger.ch/notes/tools/Graphviz/examples/"
+        },
+        {
             "name": "dot(1) — graphviz — Debian jessie — Debian Manpages",
             "href": "https://manpages.debian.org/jessie/graphviz/dot.1.en.html"
+        },
+        {
+            "name": "DOT (graph description language) - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/DOT_(graph_description_language)"
         }
     ]
 ]
