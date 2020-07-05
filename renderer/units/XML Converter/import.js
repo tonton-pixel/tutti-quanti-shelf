@@ -89,6 +89,7 @@ module.exports.start = function (context)
         (sample) =>
         {
             inputString.value = sample.string;
+            inputString.scrollTop = 0;
             inputString.dispatchEvent (new Event ('input'));
         }
     );
@@ -124,6 +125,7 @@ module.exports.start = function (context)
             }
         }
         outputString.value = output;
+        outputString.scrollTop = 0;
         if (error)
         {
             outputString.classList.add ('output-error');
@@ -157,6 +159,7 @@ module.exports.start = function (context)
                 (text, filePath) =>
                 {
                     inputString.value = text;
+                    inputString.scrollTop = 0;
                     inputString.dispatchEvent (new Event ('input'));
                     defaultFolderPath = path.dirname (filePath);
                 }

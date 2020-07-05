@@ -27,7 +27,7 @@ module.exports.start = function (context)
     //
     const fileDialogs = require ('../../lib/file-dialogs.js');
     const pullDownMenus = require ('../../lib/pull-down-menus.js');
-    const sampleMenus = require ('../../lib/sample-menus');
+    const sampleMenus = require ('../../lib/sample-menus.js');
     //
     const json = require ('../../lib/json2.js');
     //
@@ -95,6 +95,7 @@ module.exports.start = function (context)
         {
             outputString.value = "";
             codeString.value = sample.string;
+            codeString.scrollTop = 0;
         }
     );
     //
@@ -124,6 +125,7 @@ module.exports.start = function (context)
                 {
                     outputString.value = "";
                     codeString.value = text;
+                    codeString.scrollTop = 0;
                     defaultFolderPath = path.dirname (filePath);
                 }
             );

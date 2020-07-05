@@ -3,6 +3,8 @@ const unit = document.getElementById ('json-formatter-unit');
 //
 const clearButton = unit.querySelector ('.clear-button');
 const samplesButton = unit.querySelector ('.samples-button');
+const loadButton = unit.querySelector ('.load-button');
+const saveButton = unit.querySelector ('.save-button');
 const inputString = unit.querySelector ('.input-string');
 const spaceType = unit.querySelector ('.space-type');
 const balancedSpacing = unit.querySelector ('.balanced-spacing');
@@ -12,8 +14,13 @@ const outputString = unit.querySelector ('.output-string');
 const references = unit.querySelector ('.references');
 const links = unit.querySelector ('.links');
 //
+let defaultFolderPath;
+//
 module.exports.start = function (context)
 {
+    const path = require ('path');
+    //
+    const fileDialogs = require ('../../lib/file-dialogs.js');
     const pullDownMenus = require ('../../lib/pull-down-menus.js');
     const sampleMenus = require ('../../lib/sample-menus');
     const json = require ('../../lib/json2.js');
@@ -24,6 +31,7 @@ module.exports.start = function (context)
         spaceType: "",
         balancedSpacing: false,
         finalLineBreak: false,
+        defaultFolderPath: context.defaultFolderPath,
         references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
@@ -47,6 +55,7 @@ module.exports.start = function (context)
         (sample) =>
         {
             inputString.value = sample.string;
+            inputString.scrollTop = 0;
             inputString.dispatchEvent (new Event ('input'));
         }
     );
@@ -60,10 +69,12 @@ module.exports.start = function (context)
         }
     );
     //
+    defaultFolderPath = prefs.defaultFolderPath;
+    //
     function reformat (input)
     {
         let error = false;
-        let output = '';
+        let output = "";
         let string = input.trim ();
         if (string)
         {
@@ -91,6 +102,7 @@ module.exports.start = function (context)
             }
         }
         outputString.value = output;
+        outputString.scrollTop = 0;
         if (error)
         {
             outputString.classList.add ('output-error');
@@ -104,6 +116,47 @@ module.exports.start = function (context)
     inputString.addEventListener ('input', (event) => reformat (event.currentTarget.value));
     inputString.value = prefs.inputString;
     inputString.dispatchEvent (new Event ('input'));
+    //
+    loadButton.addEventListener
+    (
+        'click',
+        (event) =>
+        {
+            fileDialogs.loadTextFile
+            (
+                "Load JSON file:",
+                [ { name: "JSON File (*.json)", extensions: [ 'json' ] } ],
+                defaultFolderPath,
+                'utf8',
+                (text, filePath) =>
+                {
+                    inputString.value = text;
+                    inputString.scrollTop = 0;
+                    inputString.dispatchEvent (new Event ('input'));
+                    defaultFolderPath = path.dirname (filePath);
+                }
+            );
+        }
+    );
+    //
+    saveButton.addEventListener
+    (
+        'click',
+        (event) =>
+        {
+            fileDialogs.saveTextFile
+            (
+                "Save JSON file:",
+                [ { name: "JSON File (*.json)", extensions: [ 'json' ] } ],
+                defaultFolderPath,
+                (filePath) =>
+                {
+                    defaultFolderPath = path.dirname (filePath);
+                    return inputString.value;
+                }
+            );
+        }
+    );
     //
     function changeSpaceType (value)
     {
@@ -150,6 +203,7 @@ module.exports.stop = function (context)
         spaceType: spaceType.value,
         balancedSpacing: balancedSpacing.checked,
         finalLineBreak: finalLineBreak.checked,
+        defaultFolderPath: defaultFolderPath,
         references: references.open
     };
     context.setPrefs (prefs);

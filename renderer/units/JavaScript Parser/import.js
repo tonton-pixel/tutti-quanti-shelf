@@ -101,6 +101,7 @@ module.exports.start = function (context)
         {
             resultString.value = "";
             codeString.value = sample.string;
+            codeString.scrollTop = 0;
         }
     );
     //
@@ -130,6 +131,7 @@ module.exports.start = function (context)
                 {
                     resultString.value = "";
                     codeString.value = text;
+                    codeString.scrollTop = 0;
                     defaultFolderPath = path.dirname (filePath);
                 }
             );

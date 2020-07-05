@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.15.0
+
+- Added `Load...` and `Save...` buttons to the `JSON Formatter` utility.
+- Fixed resetting multiline fields scroll to top.
+- Updated `Electron Packager` to version `15.0.0`.
+
 ## 1.14.0
 
 - Added display of `System Info` dialog from the `Help` menu.
