@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.16.0
+
+- Updated `Electron` to version `9.1.0`.
+
 ## 1.15.0
 
 - Added `Load...` and `Save...` buttons to the `JSON Formatter` utility.
