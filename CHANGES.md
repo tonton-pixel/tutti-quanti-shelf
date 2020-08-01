@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 1.16.1
+
+- Updated `Electron` to version `9.1.2`.
+
 ## 1.16.0
 
 - Updated `Electron` to version `9.1.0`.
