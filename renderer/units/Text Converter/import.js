@@ -137,6 +137,7 @@ module.exports.start = function (context)
         }
         encoderOutputString.value = output;
         encoderOutputString.scrollTop = 0;
+        encoderOutputString.scrollLeft = 0;
     }
     //
     encoderInputString.addEventListener ('input', (event) => encode (event.currentTarget.value));
@@ -171,6 +172,7 @@ module.exports.start = function (context)
                 {
                     encoderInputString.value = text;
                     encoderInputString.scrollTop = 0;
+                    encoderInputString.scrollLeft = 0;
                     encoderInputString.dispatchEvent (new Event ('input'));
                     defaultFolderPath = path.dirname (filePath);
                 }
@@ -279,6 +281,7 @@ module.exports.start = function (context)
         }
         decoderOutputString.value = output;
         decoderOutputString.scrollTop = 0;
+        decoderOutputString.scrollLeft = 0;
         if (error)
         {
             decoderOutputString.classList.add ('output-error');
@@ -321,6 +324,7 @@ module.exports.start = function (context)
                 {
                     decoderInputString.value = text;
                     decoderInputString.scrollTop = 0;
+                    decoderInputString.scrollLeft = 0;
                     decoderInputString.dispatchEvent (new Event ('input'));
                     defaultFolderPath = path.dirname (filePath);
                 }

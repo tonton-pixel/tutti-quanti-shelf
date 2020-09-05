@@ -1,5 +1,5 @@
 //
-//  Adapted by Michel MARIANI:
+//  Adapted by Michel Mariani:
 //  - Used module.exports to allow Node.js require ().
 //  json2.stringify ():
 //  - Used Array.isArray () to test if the value is an array.

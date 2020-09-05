@@ -1,7 +1,7 @@
 {
     "name": "tutti-quanti-shelf",
     "productName": "Tutti Quanti Shelf",
-    "version": "1.16.1",
+    "version": "2.0.0",
     "description": "Collection of miscellaneous developer-oriented utilities.",
     "main": "main.js",
     "scripts": {
@@ -24,7 +24,7 @@
         "tutti quanti"
     ],
     "author": {
-        "name": "Michel MARIANI",
+        "name": "Michel Mariani",
         "url": "https://github.com/tonton-pixel"
     },
     "homepage": "https://github.com/tonton-pixel/tutti-quanti-shelf",
@@ -36,7 +36,7 @@
         "viz.js": "^2.1.2"
     },
     "devDependencies": {
-        "electron": "^9.1.2",
-        "electron-packager": "^15.0.0"
+        "electron": "^10.1.1",
+        "electron-packager": "^15.1.0"
     }
 }

@@ -20,9 +20,7 @@ let defaultFolderPath;
 //
 module.exports.start = function (context)
 {
-    const { remote } = require ('electron');
-    const { getCurrentWebContents } = remote;
-    const webContents = getCurrentWebContents ();
+    const { shell } = require ('electron');
     //
     const fs = require ('fs');
     const path = require ('path');
@@ -102,6 +100,7 @@ module.exports.start = function (context)
             resultString.value = "";
             codeString.value = sample.string;
             codeString.scrollTop = 0;
+            codeString.scrollLeft = 0;
         }
     );
     //
@@ -132,6 +131,7 @@ module.exports.start = function (context)
                     resultString.value = "";
                     codeString.value = text;
                     codeString.scrollTop = 0;
+                    codeString.scrollLeft = 0;
                     defaultFolderPath = path.dirname (filePath);
                 }
             );
@@ -211,7 +211,7 @@ module.exports.start = function (context)
                 }
                 else
                 {
-                    remote.shell.beep ();
+                    shell.beep ();
                 }
             }
             event.dataTransfer.clearData ();

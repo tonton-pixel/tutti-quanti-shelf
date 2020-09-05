@@ -62,6 +62,7 @@ module.exports.start = function (context)
         {
             latexFormula.value = sample.string;
             latexFormula.scrollTop = 0;
+            latexFormula.scrollLeft = 0;
             latexFormula.dispatchEvent (new Event ('input'));
         }
     );
@@ -92,6 +93,7 @@ module.exports.start = function (context)
                 {
                     latexFormula.value = text;
                     latexFormula.scrollTop = 0;
+                    latexFormula.scrollLeft = 0;
                     latexFormula.dispatchEvent (new Event ('input'));
                     defaultFolderPath = path.dirname (filePath);
                 }

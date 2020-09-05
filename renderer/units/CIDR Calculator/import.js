@@ -35,6 +35,7 @@ module.exports.start = function (context)
         let cidrs = cidr.ipRangeToCidrs (string.trim ());
         cidrListOutput.value = cidrs ? cidrs.join ("\n") : "";
         cidrListOutput.scrollTop = 0;
+        cidrListOutput.scrollLeft = 0;
     }
     getCidrList (ipRangeInput.value = prefs.ipRangeInput);
     ipRangeInput.addEventListener ('input', (event) => { getCidrList (event.currentTarget.value) });

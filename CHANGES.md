@@ -2,6 +2,13 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.0.0
+
+- Updated global hot key.
+- Fixed resetting multiline fields scroll to left as well as top.
+- Updated `Electron` to version `10.1.1`.
+- Updated `Electron Packager` to version `15.1.0`.
+
 ## 1.16.1
 
 - Updated `Electron` to version `9.1.2`.
