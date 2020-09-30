@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.0.1
+
+- Restricted display of modal dialogs over main window only.
+- Updated `Electron` to version `10.1.3`.
+
 ## 2.0.0
 
 - Updated global hot key.
