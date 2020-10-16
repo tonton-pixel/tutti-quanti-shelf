@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.1.0
+
+- Added `Country Code` to the `Application` section of the **System Information** utility. 
+- Forced proper Latin font `Segoe UI` as a substitute to `system-ui` on Windows.
+
 ## 2.0.1
 
 - Restricted display of modal dialogs over main window only.

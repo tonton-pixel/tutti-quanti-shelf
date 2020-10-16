@@ -194,6 +194,10 @@
                 "value": "require ('electron').remote.app.getLocale ()"
             },
             {
+                "name": "Country Code",
+                "value": "require ('electron').remote.app.getLocaleCountryCode ()"
+            },
+            {
                 "name": "Packaged",
                 "value": "require ('electron').remote.app.isPackaged"
             },
