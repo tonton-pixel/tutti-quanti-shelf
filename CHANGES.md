@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.1.1
+
+- Added context menu to external reference links, allowing copy of URL to clipboard.
+- Updated `Electron` to version `10.1.5`.
+
 ## 2.1.0
 
 - Added `Country Code` to the `Application` section of the **System Information** utility. 
