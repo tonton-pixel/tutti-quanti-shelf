@@ -218,8 +218,8 @@
                 "value": "require ('electron').remote.app.getPath ('userData')"
             },
             {
-                "name": "Logs Directory",
-                "value": "require ('electron').remote.app.getPath ('logs')"
+                "name": "Cache Directory",
+                "value": "require ('electron').remote.app.getPath ('cache')"
             },
             {
                 "name": "Temporary Directory",
@@ -256,6 +256,18 @@
             {
                 "name": "Videos Directory",
                 "value": "require ('electron').remote.app.getPath ('videos')"
+            },
+            {
+                "name": "Recent Files Directory",
+                "value": "require ('electron').remote.app.getPath ('recent')"
+            },
+            {
+                "name": "Logs Directory",
+                "value": "require ('electron').remote.app.getPath ('logs')"
+            },
+            {
+                "name": "Crash Dumps Directory",
+                "value": "require ('electron').remote.app.getPath ('crashDumps')"
             },
             {
                 "name": "Pepper Flash Plugin",

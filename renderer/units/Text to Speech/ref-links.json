@@ -1,0 +1,40 @@
+[
+    [
+        {
+            "name": "Web Speech API - Web APIs | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API"
+        },
+        {
+            "name": "Window.speechSynthesis - Web APIs | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API/Window/speechSynthesis"
+        },
+        {
+            "name": "SpeechSynthesis - Web APIs | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis"
+        },
+        {
+            "name": "SpeechSynthesis.getVoices() - Web APIs | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/getVoices"
+        },
+        {
+            "name": "SpeechSynthesisVoice - Web APIs | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisVoice"
+        },
+        {
+            "name": "SpeechSynthesisUtterance - Web APIs | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance"
+        }
+    ],
+    [
+        {
+            "name": "Speech synthesiser",
+            "href": "https://mdn.github.io/web-speech-api/speak-easy-synthesis/"
+        }
+    ],
+    [
+        {
+            "name": "Speech Synthesis Markup Language (SSML) Version 1.1",
+            "href": "https://www.w3.org/TR/speech-synthesis/"
+        }
+    ]
+]

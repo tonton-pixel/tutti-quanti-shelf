@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+#speech-to-text-unit .text-string
+{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.333em;
+    width: 100%;
+    padding: 0.25em 0.5em;
+    overflow-y: scroll;
+    resize: vertical;
+    tab-size : 4;
+    overscroll-behavior: contain;
+}
+
+#speech-to-text-unit .actions
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+#speech-to-text-unit .action-group
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#speech-to-text-unit .action-group + .action-group,
+#speech-to-text-unit .action + .action
+{
+    margin-left: 0.75em;
+}
+
+#speech-to-text-unit .interface
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0 0.25em 0;
+}
+
+#speech-to-text-unit .option-group
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#speech-to-text-unit .option-group + .option-group,
+#speech-to-text-unit .option + .option
+{
+    margin-left: 0.75em;
+}
+
+#speech-to-text-unit .play-stop-button
+{
+    width: 4em;
+}
+
+#speech-to-text-unit .plain-panel
+{
+    padding-bottom: 1.25em;
+}
+
+#speech-to-text-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}

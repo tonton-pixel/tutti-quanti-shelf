@@ -21,6 +21,7 @@ The following utilities are currently available:
 - **Roman Numerals**
 - **System Information**
 - **Text Converter**
+- **Text to Speech**
 - **XML Converter**
 
 ## CIDR Calculator
@@ -126,6 +127,12 @@ Encode and decode text according to several string formats:
 <img src="screenshots/text-converter-text-encoder.png" width="1080px" alt="Text Converter - Text Encoder screenshot">
 
 <img src="screenshots/text-converter-text-decoder.png" width="1080px" alt="Text Converter - Text Decoder screenshot">
+
+## Text to Speech
+
+Speak text according to voice settings:
+
+<img src="screenshots/text-to-speech.png" width="1080px" alt="Text to Speech screenshot">
 
 ## XML Converter
 

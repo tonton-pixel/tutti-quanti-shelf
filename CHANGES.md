@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.2.0
+
+- Added new **Text to Speech** utility.
+- Updated `Application` section of the **System Information** utility.
+- Updated `Electron` to version `11.0.1`.
+
 ## 2.1.1
 
 - Added context menu to external reference links, allowing copy of URL to clipboard.
