@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.2.1
+
+- Updated `KaTeX` to version `0.12.0`.
+- Updated `Electron` to version `11.0.3`: fixed `screen` methods not being accessible via `remote.screen` in the **System Information** utility.
+
 ## 2.2.0
 
 - Added new **Text to Speech** utility.
