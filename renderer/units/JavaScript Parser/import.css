@@ -5,13 +5,12 @@
 {
     /* display: block; */
     vertical-align: top;
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
     font-size: 13px;
     line-height: 1.333em;
     width: 100%;
     resize: vertical;
     padding: 0 0.5em;
-    /* white-space: pre; */
     tab-size : 4;
     overscroll-behavior: contain;
 }

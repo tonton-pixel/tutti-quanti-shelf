@@ -4,7 +4,7 @@
 #cidr-calculator-unit input,
 #cidr-calculator-unit textarea
 {
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
     font-size: 13px;
     line-height: 1.333em;
 }

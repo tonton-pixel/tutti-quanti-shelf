@@ -63,11 +63,11 @@
 #text-converter-unit .decoder-input-string,
 #text-converter-unit .decoder-output-string
 {
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
-    font-size: 13px;
+    font-family: var(--sans-serif-family);
+    font-size: 14px;
     line-height: 1.333em;
     width: 100%;
-    padding: 0 0.5em;
+    padding: 0.25em 0.5em;
     overflow-y: scroll;
     resize: vertical;
     tab-size : 4;

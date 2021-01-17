@@ -33,7 +33,7 @@
 #digital-clock-unit .clock
 {
     border: 1px solid var(--color-border);
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
     font-size: 22px;
     text-align: center;
     background-color: white;

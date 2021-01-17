@@ -15,7 +15,7 @@
 #roman-numerals-unit code,
 #roman-numerals-unit input
 {
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
     font-size: 1em;
     line-height: 1.333em;
 }

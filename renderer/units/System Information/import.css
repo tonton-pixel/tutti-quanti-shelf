@@ -52,7 +52,7 @@
 
 #system-information-unit td
 {
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
     width: 100%;
 }
 

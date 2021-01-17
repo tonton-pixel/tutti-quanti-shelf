@@ -29,7 +29,7 @@
 #css-cursors-demo-unit th
 {
     width: 10em;
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
     font-size: 16px;
     padding: 0.5em 1em;
     height: 4em;

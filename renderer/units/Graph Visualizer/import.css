@@ -2,7 +2,7 @@
 
 #graph-visualizer-unit .dot-source
 {
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
     font-size: 13px;
     line-height: 1.333em;
     width: 100%;
@@ -72,7 +72,7 @@
 
 #graph-visualizer-unit .rendering-error
 {
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
     font-size: 13px;
     line-height: 1.333em;
     color: var(--color-error);

@@ -28,7 +28,7 @@ module.exports.start = function (context)
     const fileDialogs = require ('../../lib/file-dialogs.js');
     const pullDownMenus = require ('../../lib/pull-down-menus.js');
     const sampleMenus = require ('../../lib/sample-menus.js');
-    //
+    const linksList = require ('../../lib/links-list.js');
     const json = require ('../../lib/json2.js');
     //
     const defaultPrefs =
@@ -290,8 +290,6 @@ module.exports.start = function (context)
     references.open = prefs.references;
     //
     const refLinks = require ('./ref-links.json');
-    const linksList = require ('../../lib/links-list.js');
-    //
     linksList (links, refLinks);
 };
 //
