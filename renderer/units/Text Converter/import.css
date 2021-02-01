@@ -63,8 +63,8 @@
 #text-converter-unit .decoder-input-string,
 #text-converter-unit .decoder-output-string
 {
-    font-family: var(--sans-serif-family);
-    font-size: 14px;
+    font-family: var(--monospace-family);
+    font-size: 13px;
     line-height: 1.333em;
     width: 100%;
     padding: 0.25em 0.5em;
