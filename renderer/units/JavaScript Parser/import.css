@@ -3,7 +3,6 @@
 #javascript-parser-unit .code-string,
 #javascript-parser-unit .result-string
 {
-    /* display: block; */
     vertical-align: top;
     font-family: var(--monospace-family);
     font-size: 13px;
