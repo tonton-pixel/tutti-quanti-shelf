@@ -2,27 +2,27 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
-# 2.5.0
+## 2.5.0
 
 - Added optional confirm quit dialog.
 - Updated `Electron` to version `12.0.0`.
 
-# 2.4.2
+## 2.4.2
 
 - Updated `Electron` to version `11.2.3`.
 
-# 2.4.1
+## 2.4.1
 
 - Updated font stacks: improved display on Windows.
 - Updated `Electron` to version `11.2.1`.
 
-# 2.4.0
+## 2.4.0
 
 - Used common CSS variables for font stacks.
 - Updated and expanded font stacks.
 - Updated `Electron` to version `11.1.1`.
 
-# 2.3.0
+## 2.3.0
 
 - Updated `Electron` to version `11.1.0`.
 - Updated `Electron Packager` to version `15.2.0`.
