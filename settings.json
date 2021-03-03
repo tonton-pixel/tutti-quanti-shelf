@@ -40,5 +40,6 @@
         "label": "Latest Releases",
         "URL": "https://github.com/tonton-pixel/tutti-quanti-shelf/releases"
     },
-    "defaultFolder": "documents"
+    "defaultFolder": "documents",
+    "confirmQuit": false
 }

@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+# 2.5.0
+
+- Added optional confirm quit dialog.
+- Updated `Electron` to version `12.0.0`.
+
 # 2.4.2
 
 - Updated `Electron` to version `11.2.3`.
