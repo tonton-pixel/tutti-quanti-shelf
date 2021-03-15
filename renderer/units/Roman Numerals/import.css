@@ -1,27 +1,10 @@
 @charset "utf-8";
 
-#roman-numerals-unit code
-{
-    color: inherit;
-    background: var(--color-accent) linear-gradient(hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0.8));
-}
-
-#roman-numerals-unit code.select-all
-{
-    user-select: all;
-    cursor: text;
-}
-
-#roman-numerals-unit code,
 #roman-numerals-unit input
 {
     font-family: var(--monospace-family);
     font-size: 1em;
     line-height: 1.333em;
-}
-
-#roman-numerals-unit input
-{
     padding: 0.2em 0.3em;
 }
 
@@ -33,6 +16,18 @@
 #roman-numerals-unit .plain-panel div
 {
     margin: 1em 0 0.5em 0;
+}
+
+#roman-numerals-unit code
+{
+    color: inherit;
+    background: var(--color-accent) linear-gradient(hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0.8));
+}
+
+#roman-numerals-unit code.select-all
+{
+    user-select: all;
+    cursor: text;
 }
 
 #roman-numerals-unit .notes ul

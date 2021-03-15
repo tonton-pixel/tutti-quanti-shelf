@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.6.0
+
+- Updated `KaTeX` to version `0.13.0`.
+- Improved styling of `<code>` and `<kbd>` tags.
+- Updated `Electron` to version `12.0.1`.
+
 ## 2.5.0
 
 - Added optional confirm quit dialog.

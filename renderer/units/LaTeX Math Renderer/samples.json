@@ -37,7 +37,7 @@
         [
             {
                 "label": "KaTeX",
-                "string": "\\href{https://katex.org}\\text{KaTeX}"
+                "string": "\\href{https://katex.org}{\\text{KaTeX}}"
             }
         ]
     },
@@ -46,7 +46,7 @@
         "items":
         [
             {
-                "label": "No Such Environment",
+                "label": "Only in Display Mode",
                 "string": "\\begin{equation}\nf(x) = ax^2 + bx + c\n\\end{equation}"
             },
             {

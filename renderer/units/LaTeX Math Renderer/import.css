@@ -54,13 +54,12 @@
 
 #latex-math-renderer-unit .latex-rendering
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.2em;
-    min-height: calc(5 * 1.2em);
+    text-align: center;
+    vertical-align: middle;
     background-color: white;
     border: 1px solid var(--color-border);
+    padding: 0.5em 1em;
     overflow-x: auto;
     margin-bottom: 0.5em;
 }
