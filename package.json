@@ -6,13 +6,13 @@
     "main": "main.js",
     "scripts": {
         "start": "electron .",
-        "build-pkg": "electron-builder --macos",
+        "build-mac": "electron-builder --macos",
         "build-darwin": "electron-packager . --asar --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
         "build-linux": "electron-packager . --asar --out=build --platform=linux --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.png --overwrite",
         "build-win32": "electron-packager . --asar --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite"
     },
     "build": {
-        "appId": "com.tonton-pixel.${name}",
+        "appId": "com.tonton-pixel.tutti-quanti-shelf",
         "copyright": "Copyright © 2019-2021 ${author}.",
         "directories": {
             "output": "build",
@@ -23,16 +23,17 @@
             "!screenshots/*"
         ],
         "mac": {
+            "artifactName": "${name}-${os}-${version}.${ext}",
             "category": "public.app-category.utilities",
             "icon": "icons/icon.icns",
             "target": "pkg"
         },
         "pkg": {
-            "artifactName": "${name}-${os}-${version}.${ext}",
+            "license": "license-index.html",
             "installLocation": "/Applications",
-            "allowAnywhere": true,
+            "allowAnywhere": false,
             "isRelocatable": false,
-            "license": "license-index.html"
+            "isVersionChecked": false
         }
     },
     "keywords": [
