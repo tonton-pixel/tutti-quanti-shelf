@@ -31,7 +31,7 @@
         "pkg": {
             "license": "license-index.html",
             "installLocation": "/Applications",
-            "allowAnywhere": false,
+            "allowAnywhere": true,
             "isRelocatable": false,
             "isVersionChecked": false
         }
