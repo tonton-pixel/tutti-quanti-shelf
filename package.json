@@ -1,15 +1,39 @@
 {
     "name": "tutti-quanti-shelf",
     "productName": "Tutti Quanti Shelf",
-    "version": "2.6.1",
+    "version": "2.6.2",
     "description": "Collection of miscellaneous developer-oriented utilities.",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
+        "build-pkg": "electron-builder --macos",
         "build-darwin": "electron-packager . --asar --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
         "build-linux": "electron-packager . --asar --out=build --platform=linux --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.png --overwrite",
-        "build-mas": "electron-packager . --asar --out=build --platform=mas --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
         "build-win32": "electron-packager . --asar --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite"
+    },
+    "build": {
+        "appId": "com.tonton-pixel.${name}",
+        "copyright": "Copyright © 2019-2021 ${author}.",
+        "directories": {
+            "output": "build",
+            "buildResources": "build-res"
+        },
+        "files": [
+            "!**/~*",
+            "!screenshots/*"
+        ],
+        "mac": {
+            "category": "public.app-category.utilities",
+            "icon": "icons/icon.icns",
+            "target": "pkg"
+        },
+        "pkg": {
+            "artifactName": "${name}-${os}-${version}.${ext}",
+            "installLocation": "/Applications",
+            "allowAnywhere": true,
+            "isRelocatable": false,
+            "license": "license-index.html"
+        }
     },
     "keywords": [
         "application",
@@ -36,7 +60,8 @@
         "viz.js": "^2.1.2"
     },
     "devDependencies": {
-        "electron": "^12.0.2",
+        "electron": "^12.0.5",
+        "electron-builder": "^22.10.5",
         "electron-packager": "^15.2.0"
     }
 }

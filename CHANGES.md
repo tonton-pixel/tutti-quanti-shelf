@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.6.2
+
+- Added support for building .pkg installer file for macOS.
+- Updated `Electron` to version `12.0.5`.
+
 ## 2.6.1
 
 - Updated `Electron` to version `12.0.2`.
