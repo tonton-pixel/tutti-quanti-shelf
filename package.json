@@ -1,12 +1,14 @@
 {
     "name": "tutti-quanti-shelf",
     "productName": "Tutti Quanti Shelf",
-    "version": "2.6.2",
+    "version": "2.6.3",
     "description": "Collection of miscellaneous developer-oriented utilities.",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
-        "build-mac": "electron-builder --macos",
+        "build:macos": "electron-builder --macos",
+        "build:linux": "electron-builder --linux",
+        "build:win": "electron-builder --win",
         "build-darwin": "electron-packager . --asar --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
         "build-linux": "electron-packager . --asar --out=build --platform=linux --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.png --overwrite",
         "build-win32": "electron-packager . --asar --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite"
@@ -14,6 +16,7 @@
     "build": {
         "appId": "com.tonton-pixel.tutti-quanti-shelf",
         "copyright": "Copyright © 2019-2021 ${author}.",
+        "artifactName": "${name}-${os}-${version}.${ext}",
         "directories": {
             "output": "build",
             "buildResources": "build-res"
@@ -23,7 +26,6 @@
             "!screenshots/*"
         ],
         "mac": {
-            "artifactName": "${name}-${os}-${version}.${ext}",
             "category": "public.app-category.utilities",
             "icon": "icons/icon.icns",
             "target": [
@@ -38,6 +40,15 @@
             "allowAnywhere": true,
             "isRelocatable": false,
             "isVersionChecked": false
+        },
+        "linux": {
+            "category": "Development",
+            "icon": "icons/icon.png",
+            "target": "AppImage"
+        },
+        "win": {
+            "icon": "icons/icon.ico",
+            "target": "portable"
         }
     },
     "keywords": [
@@ -65,8 +76,8 @@
         "viz.js": "^2.1.2"
     },
     "devDependencies": {
-        "electron": "^12.0.5",
-        "electron-builder": "^22.10.5",
+        "electron": "^12.0.7",
+        "electron-builder": "22.10.5",
         "electron-packager": "^15.2.0"
     }
 }

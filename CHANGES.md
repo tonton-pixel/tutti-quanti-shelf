@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.6.3
+
+- Added support for building `.zip` (compressed archive), `.dmg` (disk image), and `.pkg` (installer) files for macOS.
+- Added support for building `.AppImage` (for Linux), and `.exe` (for Windows) executable files.
+- Updated `Electron` to version `12.0.7`.
+
 ## 2.6.2
 
 - Added support for building .pkg installer file for macOS.
