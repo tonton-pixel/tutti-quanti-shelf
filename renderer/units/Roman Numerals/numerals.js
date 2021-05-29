@@ -1,5 +1,4 @@
 //
-// References:
 // http://blog.stevenlevithan.com/archives/javascript-roman-numeral-converter
 // https://stackoverflow.com/questions/9083037/convert-a-number-into-a-roman-numeral-in-javascript
 // https://stackoverflow.com/questions/267399/how-do-you-match-only-valid-roman-numerals-with-a-regular-expression
