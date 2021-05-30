@@ -4,6 +4,8 @@
 
 This desktop application works on macOS, Linux and Windows operating systems.
 
+<img src="screenshots/TQS-social-preview.png" alt="Tutti Quanti Shelf social preview">
+
 ## Utilities
 
 The following utilities are currently available:
