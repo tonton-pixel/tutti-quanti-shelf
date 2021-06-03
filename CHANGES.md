@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.7.0
+
+- Used `@electron/remote` module.
+- Added new built-in function `$.save ()` to the **JavaScript Runner** utility.
+- Updated `Electron` to version `13.1.0`.
+
 ## 2.6.4
 
 - Updated `Electron` to version `13.0.1`.

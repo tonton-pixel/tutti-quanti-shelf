@@ -51,6 +51,12 @@
     ],
     [
         {
+            "name": "GitHub - electron/remote: Bridge JavaScript objects from the main process to the renderer process in Electron.",
+            "href": "https://github.com/electron/remote"
+        }
+    ],
+    [
+        {
             "name": "Index | Node.js Documentation",
             "href": "https://nodejs.org/api/"
         },

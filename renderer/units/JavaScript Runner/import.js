@@ -18,8 +18,9 @@ let defaultFolderPath;
 //
 module.exports.start = function (context)
 {
-    const { remote, shell } = require ('electron');
-    const { getCurrentWebContents } = remote;
+    const { shell } = require ('electron');
+    const { app, getCurrentWebContents } = require ('@electron/remote');
+    //
     const webContents = getCurrentWebContents ();
     //
     const fs = require ('fs');
@@ -262,7 +263,39 @@ module.exports.start = function (context)
                                         };
                                     },
                                 //
-                                stringify: json.stringify
+                                stringify: json.stringify,
+                                //
+                                save:
+                                    (string, filename, dirname) =>
+                                    {
+                                        let filepath = null;
+                                        let desktopPath = app.getPath ('desktop');
+                                        if (dirname)
+                                        {
+                                            let dirpath = path.join (desktopPath, dirname);
+                                            if (dirpath.startsWith (desktopPath))
+                                            {
+                                                if (!fs.existsSync (dirpath))
+                                                {
+                                                    fs.mkdirSync (dirpath);
+                                                }
+                                                filepath = path.join (dirpath, filename);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            filepath = path.join (desktopPath, filename);
+                                        }
+                                        if (filepath && filepath.startsWith (desktopPath))
+                                        {
+                                            fs.writeFileSync (filepath, string);
+                                        }
+                                        else
+                                        {
+                                            filepath = null;
+                                        }
+                                        return filepath;
+                                    }
                             };
                             // http://dfkaye.github.io/2014/03/14/javascript-eval-and-function-constructor/
                             // Because Function does not have access to the local scope, the "use strict"

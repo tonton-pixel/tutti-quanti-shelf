@@ -1,6 +1,5 @@
 //
-const { remote } = require ('electron');
-const { dialog, getCurrentWindow } = remote;
+const { dialog, getCurrentWindow } = require ('@electron/remote');
 //
 const fs = require ('fs');
 //

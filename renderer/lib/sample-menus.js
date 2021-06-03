@@ -1,6 +1,5 @@
 //
-const { remote } = require ('electron');
-const { Menu, MenuItem } = remote;
+const { Menu, MenuItem } = require ('@electron/remote');
 //
 module.exports.makeMenu = function (samples, callback)
 {

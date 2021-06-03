@@ -1,7 +1,7 @@
 {
     "name": "tutti-quanti-shelf",
     "productName": "Tutti Quanti Shelf",
-    "version": "2.6.4",
+    "version": "2.7.0",
     "description": "Collection of miscellaneous developer-oriented utilities.",
     "main": "main.js",
     "scripts": {
@@ -71,12 +71,13 @@
     "license": "MIT",
     "private": false,
     "dependencies": {
+        "@electron/remote": "^1.1.0",
         "esprima": "^4.0.1",
         "simple-romaji-kana": "^2.4.2",
         "viz.js": "^2.1.2"
     },
     "devDependencies": {
-        "electron": "^13.0.1",
+        "electron": "^13.1.0",
         "electron-builder": "22.10.5",
         "electron-packager": "^15.2.0"
     }
