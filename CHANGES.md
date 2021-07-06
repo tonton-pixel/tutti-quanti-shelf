@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.8.0
+
+- Updated `@electron/remote` module to version `1.2.0`.
+- Updated `Electron` to version `13.1.6`.
+
 ## 2.7.0
 
 - Used `@electron/remote` module.
