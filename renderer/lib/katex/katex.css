@@ -124,13 +124,13 @@
   line-height: 1.2;
   text-indent: 0;
   text-rendering: auto;
-  border-color: currentColor;
 }
 .katex * {
   -ms-high-contrast-adjust: none !important;
+  border-color: currentColor;
 }
 .katex .katex-version::after {
-  content: "0.13.0";
+  content: "0.13.11";
 }
 .katex .katex-mathml {
   /* Accessibility hack to only show to screen readers
@@ -270,18 +270,28 @@
   min-width: 2px;
 }
 .katex .vbox {
+  display: -webkit-inline-box;
   display: inline-flex;
-  flex-direction: column;
-  align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+          align-items: baseline;
 }
 .katex .hbox {
+  display: -webkit-inline-box;
   display: inline-flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
   width: 100%;
 }
 .katex .thinbox {
+  display: -webkit-inline-box;
   display: inline-flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
   width: 0;
   max-width: 0;
 }
@@ -1038,12 +1048,14 @@
 .katex .cd-label-left {
   display: inline-block;
   position: absolute;
+  right: -webkit-calc(50% + 0.3em);
   right: calc(50% + 0.3em);
   text-align: left;
 }
 .katex .cd-label-right {
   display: inline-block;
   position: absolute;
+  left: -webkit-calc(50% + 0.3em);
   left: calc(50% + 0.3em);
   text-align: right;
 }

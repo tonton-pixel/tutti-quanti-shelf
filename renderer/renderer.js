@@ -590,7 +590,7 @@ ipcRenderer.on ('scroll-to-bottom', () => { scroll.toBottom (unitElements[curren
 // Adapted from https://github.com/ten1seven/track-focus
 (function (body)
 {
-    let mouseFocus;
+    let mouseFocus = true;
     let bindEvents = function ()
     {
         body.addEventListener ('keydown', (event) => { mouseFocus = false; });

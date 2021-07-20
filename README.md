@@ -18,7 +18,7 @@ The following utilities are currently available:
 - **JavaScript Parser**
 - **JavaScript Runner**
 - **JSON Formatter**
-- **LaTeX Math Renderer**
+- **Math Renderer**
 - **Romaji-Kana**
 - **Roman Numerals**
 - **System Information**
@@ -77,11 +77,11 @@ JSON data formatter and validator:
 
 <img src="screenshots/json-formatter.png" width="1080px" alt="JSON Formatter screenshot">
 
-## LaTeX Math Renderer
+## Math Renderer
 
-LaTeX math expression renderer, using the KaTeX JavaScript library:
+Math expression renderer, using the KaTeX JavaScript library:
 
-<img src="screenshots/latex-math-renderer.png" width="1080px" alt="LaTeX Math Renderer screenshot">
+<img src="screenshots/math-renderer.png" width="1080px" alt="Math Renderer screenshot">
 
 ## Romaji-Kana
 

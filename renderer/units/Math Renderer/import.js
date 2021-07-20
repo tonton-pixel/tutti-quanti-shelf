@@ -1,5 +1,5 @@
 //
-const unit = document.getElementById ('latex-math-renderer-unit');
+const unit = document.getElementById ('math-renderer-unit');
 //
 const clearButton = unit.querySelector ('.clear-button');
 const samplesButton = unit.querySelector ('.samples-button');

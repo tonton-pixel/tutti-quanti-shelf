@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#latex-math-renderer-unit .latex-formula
+#math-renderer-unit .latex-formula
 {
     font-family: var(--monospace-family);
     font-size: 13px;
@@ -12,7 +12,7 @@
     overscroll-behavior: contain;
 }
 
-#latex-math-renderer-unit .actions
+#math-renderer-unit .actions
 {
     padding: 0;
     display: flex;
@@ -22,7 +22,7 @@
     margin: 0.5em 0;
 }
 
-#latex-math-renderer-unit .action-group
+#math-renderer-unit .action-group
 {
     padding: 0;
     display: flex;
@@ -30,13 +30,13 @@
     /* align-items: center; */
 }
 
-#latex-math-renderer-unit .action-group + .action-group,
-#latex-math-renderer-unit .action + .action
+#math-renderer-unit .action-group + .action-group,
+#math-renderer-unit .action + .action
 {
     margin-left: 0.75em;
 }
 
-#latex-math-renderer-unit .options
+#math-renderer-unit .options
 {
     padding: 0.5em 0;
     display: flex;
@@ -47,12 +47,12 @@
     white-space: nowrap;
 }
 
-#latex-math-renderer-unit .option + .option
+#math-renderer-unit .option + .option
 {
     margin-left: 0.75em;
 }
 
-#latex-math-renderer-unit .latex-rendering
+#math-renderer-unit .latex-rendering
 {
     font-size: 1.2em;
     text-align: center;
@@ -64,12 +64,12 @@
     margin-bottom: 0.5em;
 }
 
-#latex-math-renderer-unit .latex-container
+#math-renderer-unit .latex-container
 {
     min-width: 0;
 }
 
-#latex-math-renderer-unit .rendering-error
+#math-renderer-unit .rendering-error
 {
     font-family: var(--monospace-family);
     font-size: 13px;
@@ -81,7 +81,7 @@
     cursor: text;
 }
 
-#latex-math-renderer-unit summary
+#math-renderer-unit summary
 {
     font-weight: bold;
     margin: 1.2em 0 1em 0;

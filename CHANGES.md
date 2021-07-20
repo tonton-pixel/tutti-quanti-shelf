@@ -2,6 +2,13 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.8.1
+
+- Renamed `LaTeX Math Renderer` utility to `Math Renderer`.
+- Updated `KaTeX` to version `0.13.11`.
+- Updated `Electron` to version `13.1.7`.
+- Updated `Electron Packager` to version `15.3.0`.
+
 ## 2.8.0
 
 - Updated `@electron/remote` module to version `1.2.0`.
